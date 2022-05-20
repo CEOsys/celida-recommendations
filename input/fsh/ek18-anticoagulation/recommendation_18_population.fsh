@@ -1,22 +1,17 @@
 /**************/
 /* Population */
 /**************/
-Instance: PopHospitalisedCOVID19PatientsWOVenousThrombosisWOCI
+Instance: PopHospitalisedICUCOVID19Patients
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
-Title: "Population: Hospitalised COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
-Description: "Population for recommendation 15: Hospitalised COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
-* name = "HospitalisedCOVID19PatientsWOVenousThrombosisWOCI"
+Title: "Hospitalised COVID-19 patients, treated on ICU, without thrombembolic complication"
+Description: "Hospitalised COVID-19 patients, treated on ICU, without thrombembolic complication"
+* name = "HospitalICUCOVID19WOThrombembolic"
 * actual = false
-// * characteristic[+]
-//   * code = $cochrane-pico#Population
-// * characteristic[=].exclude = false
-//  do we need this characteristic anymore: $ochrane-pico#Population
-* identifier.value = "WOThrombosisWOCI"
+* identifier.value = "HospitalICUCOVID19WOThrombembolic"
 * identifier.system = $ceosys
-// which values are actually allowed?
 * status = #active
-* name = "COVID19_patients_without_venous_thrombosis_without_contraindications"
+* name = "COVID19_ICU_patients_without_thrombembolic complication"
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
 * url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WO_Thrombosis_WO_Highrisk"
 // TODO unique URL
