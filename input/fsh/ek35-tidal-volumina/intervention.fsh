@@ -13,28 +13,18 @@ Description: "In ventilated patients with COVID-19 and ARDS, tidal volume should
 * status = #active
 * description = "In ventilated patients with COVID-19 and ARDS, tidal volume should be ≤ 6 ml/kg standard body weight, end-inspiratory airway pressure ≤ 30 cm H2O."
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patientsWithARDS)
-* goal[+]
+* goal[ventilatorManagement][+]
+  * id = "tidal-volume-goal"
   * description.text = "Tidal volume ≤ 6 ml/kg standard body weight"
   * target[+]
     * measure = $loinc#20117-8 "Tidal volume.spontaneous+mechanical/Body weight [Volume/mass] --on ventilator"
     * detailRange.high = 6 'ml/kg' "ml/kg"
-* goal[+]
+* goal[ventilatorManagement][+]
+  * id = "end-inspiratory-pressure-goal"
   * description.text = "End-inspiratory airway pressure ≤ 30 cm H2O"
   * target[+]
     * measure = $loinc#20060-0 "Airway pressure --at zero inspiratory flow on ventilator" // TODO: is this the correct code for end inspiratory airway pressure?
     * detailRange.high = 30 'cm[H2O]' "cm[H2O]"
-* action[+]
-  * definitionCanonical = Canonical(VentilatorManagement)
-
-/*************************/
-/* Intervention Activity */
-/*************************/
-Instance: VentilatorManagement
-InstanceOf: recommendation-action
-Usage: #example
-Title: "Ventilator Management"
-Description: "Ventilator Management."
-* name = "VentilatorManagement"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/ventilator-management"
-* status = #active
-* code = $sct#410210009 "Ventilator care management (procedure)"
+* action[ventilatorManagement][+]
+  * goalId[+] = "tidal-volume-goal"
+  * goalId[+] = "end-inspiratory-pressure-goal"

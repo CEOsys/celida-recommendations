@@ -9,22 +9,20 @@ Description: "" // TODO: add description
 * description = "Ventilated COVID-19 patients with ARDS"
 * characteristic[+].definitionByCombination
   * code = #all-of
-  * characteristic[+]
+  * characteristic[condition][+]
+    * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
+      * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+  * characteristic[condition][=].exclude = false
+
+  * characteristic[procedure][+]
+    * definitionByTypeAndValue
+      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+  * characteristic[procedure][=].exclude = false
 
   * characteristic[+]
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#40617009 "Artificial respiration (procedure)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-
-  * characteristic[+]
-    * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
+      * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
+  * characteristic[procedure][=].exclude = false
 
 * characteristic[=].exclude = false
