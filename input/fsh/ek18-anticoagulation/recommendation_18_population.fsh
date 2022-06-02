@@ -30,7 +30,7 @@ Description: "Hospitalised COVID-19 patients, treated on ICU, without thrombembo
       * typeCodeableConcept.coding[sct] = $sct#309904001 "Intensive care unit (environment)"
       * valueBoolean = true
   * characteristic[=].exclude = false
-* characteristic[=].exclude = true
+* characteristic[=].exclude = false
 
 // Exclude patients with Thrombosis or pulmonary embolism
 * characteristic[+].definitionByCombination
