@@ -17,34 +17,23 @@ Description: "In intensive care patients without a specific indication (e.g. pul
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NonProphylacticAnticoagulationWDalteparin)
   * selectionBehavior = #all
-  * code.coding = $sct#372563008 "Dalteparin (substance)"
+  * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NonProphylacticAnticoagulationWEnoxaparin)
   * selectionBehavior = #all
-  * code.coding = $sct#372562003 "Enoxaparin (substance)"
+  * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(NonProphylacticAnticoagulationWNadroparin)
+  * definitionCanonical = Canonical(NonProphylacticAnticoagulationWNadroparinLowWeight)
   * selectionBehavior = #all
-  * code.coding = $sct#699946002 "Nadroparin (substance)"
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NonProphylacticAnticoagulationWNadroparinHighWeight)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NonProphylacticAnticoagulationWCertoparin)
   * selectionBehavior = #all
-  * code.coding = $sct#395961003 "Certoparin (substance)"
-
-
-Instance: TherapeuticAntiCoagulationICUCOVID19NoIndicationUFHArgatra
-InstanceOf: recommendation-plan
-Usage: #example
-Title: "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients with no specific indication, when using UFH or Argatroban"
-Description: "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
-* name = "Anticoagulation_Plan_UFH_Argatra_No_Specific_Indication"
-* title = "Anticoagulation Plan (UFH/Argatra) for hospitalized intensive-care COVID-19 patients with no specific indication"
-* version = "7.0" 
-* date = "2022-02" 
-* identifier.value = "TherapeuticAnticoagulationICUHospitalisedCOVID19NoIndicationUFHArgatra"
-* status = #active
-* description = "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
-* subjectCanonical = Canonical(PopHospitalisedICUCOVID19Patients)
+  * code = $sct#432102000 "Administration of substance (procedure)"
 * goal[laboratoryValue][+]
   * id = "aPTT-goal"
   * description.text = "aPTT value should not be > 50 sec."
@@ -52,17 +41,19 @@ Description: "In intensive care patients without a specific indication (e.g. pul
   * target
     * measure = $loinc#50754-1 "aPTT in Pooled Platelet poor plasma by Coagulation assay"
     * detailRange
-      * high = 50 'sec'
+      * high = 50 's' "sec"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NonProphylacticAnticoagulationWArgatra)
   * goalId = "aPTT-goal"
   * selectionBehavior = #all
-  * code.coding = $sct#116508003 "Argatroban (substance)"
+  * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NonProphylacticAnticoagulationWUFH)
   * goalId = "aPTT-goal"
   * selectionBehavior = #all
-  * code.coding = $sct#372877000 "Heparin (substance)"
+  * code = $sct#432102000 "Administration of substance (procedure)"
+
+
 
 
 /*************************/
@@ -79,7 +70,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-i
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-dalteparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept.coding = $sct#372563008 "Dalteparin (substance)" 
+* productCodeableConcept = $sct#372563008 "Dalteparin (substance)" 
 * dosage
   * timing
     * repeat
@@ -88,7 +79,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-i
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 5000 'IE'
+      * low = 5000 $ucum#[iU] "IU"
     * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
@@ -101,7 +92,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-i
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-enoxaparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept.coding = $sct#372562003 "Enoxaparin (substance)"
+* productCodeableConcept = $sct#372562003 "Enoxaparin (substance)"
 * dosage
   * timing
     * repeat
@@ -114,25 +105,53 @@ Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-i
     * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
-Instance: NonProphylacticAnticoagulationWNadroparin
+Instance: NonProphylacticAnticoagulationWNadroparinLowWeight
 InstanceOf: drug-administration-action
 Usage: #example
-Title: "No Therapeutic Anticoagulation Treatment with Nadroparin"
+Title: "No Therapeutic Anticoagulation Treatment with Nadroparin Low Weight"
 Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* name = "NoTherapeuticAnticoagulationPlanNadroparin"
+* name = "NoTherapeuticAnticoagulationPlanNadroparinLowWeight"
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept.coding = $sct#699946002 "Nadroparin (substance)"
-//this part is not completed, need to find out how to express condition of weight
-* dosage
+* productCodeableConcept = $sct#699946002 "Nadroparin (substance)"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.high = 70 'kg' "kg"
   * timing
     * repeat
       * frequency = 1
       * period = 1
       * periodUnit = $ucum#d "d"
   * doseAndRate
-    * doseQuantity = 2.5 'mg' "mg"
+    * doseRange
+      * low = 3800 $ucum#[iU] "IU"
+    * rateQuantity = 1 '/d' "/d"
+* doNotPerform = true
+
+Instance: NonProphylacticAnticoagulationWNadroparinHighWeight
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "No Therapeutic Anticoagulation Treatment with Nadroparin High Weight"
+Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* name = "NoTherapeuticAnticoagulationPlanNadroparinHighWeight"
+* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration"
+* status = #active
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept = $sct#699946002 "Nadroparin (substance)"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 70 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * low = 5700 $ucum#[iU] "IU"
     * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
@@ -145,7 +164,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-i
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-certoparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept.coding = $sct#395961003 "Certoparin (substance)"
+* productCodeableConcept = $sct#395961003 "Certoparin (substance)"
 * dosage
   * timing
     * repeat
@@ -154,7 +173,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-i
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 3000 'IE'
+      * low = 3000 $ucum#[iU] "IU"
     * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
@@ -167,7 +186,7 @@ Description: "No Therapeutic Anticoagulation Treatment with UFH for non-intensiv
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-UFH-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept.coding = $sct#372877000 "Heparin (substance)" 
+* productCodeableConcept = $sct#372877000 "Heparin (substance)" 
 * doNotPerform = true
 
 Instance: NonProphylacticAnticoagulationWArgatra
@@ -179,5 +198,5 @@ Description: "No Therapeutic Anticoagulation Treatment with Argatroban for non-i
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-argatroban-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept.coding = $sct#116508003 "Argatroban (substance)"
+* productCodeableConcept = $sct#116508003 "Argatroban (substance)"
 * doNotPerform = true

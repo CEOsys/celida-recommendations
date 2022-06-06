@@ -18,33 +18,33 @@ Description: "Hospitalised COVID-19 patients, treated on ICU, without thrombembo
 // Include COVID-19 patients, treated in ICU 
 * characteristic[+].definitionByCombination
   * code = #all-of
-  * characteristic[+]
+  * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-  * characteristic[+]
-    * linkId = "ICU"
+      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+  * characteristic[condition][=].exclude = false
+  * characteristic[episodeOfCare][+]
+    * linkId = "intensive-care-treatment"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#309904001 "Intensive care unit (environment)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
+      * typeCodeableConcept = $loinc#78030-4 "Episode of care Type"
+      * valueCodeableConcept = $sct#182810003 "Intensive care monitoring (regime/therapy)"
+  * characteristic[episodeOfCare][=].exclude = false
 * characteristic[=].exclude = false
 
 // Exclude patients with Thrombosis or pulmonary embolism
 * characteristic[+].definitionByCombination
   * code = #any-of  
-  * characteristic[+]
+  * characteristic[condition][+]
     * linkId = "venous-thrombosis"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#111293003 "Venous Thrombosis"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-  * characteristic[+]
+      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * valueCodeableConcept = $sct#111293003 "Venous Thrombosis"
+  * characteristic[condition][=].exclude = false
+  * characteristic[condition][+]
     * linkId = "pulmonary-embolism"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#59282003 "Pulmonary embolism (disorder)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
+      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * valueCodeableConcept = $sct#59282003 "Pulmonary embolism (disorder)"
+  * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = true
