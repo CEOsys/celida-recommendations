@@ -21,48 +21,42 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 * url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WO_Thrombosis_WO_Highrisk"
 // TODO unique URL
 // Beginning of conditions to include patients
-* characteristic[+]
+* characteristic[condition][+]
   * linkId = "covid19"
   * definitionByTypeAndValue
-    * typeCodeableConcept.coding[sct] = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
-    * valueBoolean = true
-* characteristic[=].exclude = false
+    * valueCodeableConcept = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+* characteristic[condition][=].exclude = false
 
 // Exclude patients with Thrombosis
-* characteristic[+]
+* characteristic[condition][+]
   * linkId = "venous-thrombosis"
   * definitionByTypeAndValue
-    * typeCodeableConcept.coding[sct] = $sct#111293003 "Venous Thrombosis"
-    * valueBoolean = true
-* characteristic[=].exclude = true
+    * valueCodeableConcept = $sct#111293003 "Venous Thrombosis"
+* characteristic[condition][=].exclude = true
 
 // Exclude patients with any of the following contraindications
 * characteristic[+].definitionByCombination
   * code = #any-of
-  * characteristic[+]
+  * characteristic[condition][+]
     * linkId = "hit2"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#111588002 "Heparin-induced thrombocytopenia with thrombosis (disorder)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-  * characteristic[+]
+      * valueCodeableConcept = $sct#111588002 "Heparin-induced thrombocytopenia with thrombosis (disorder)"
+  * characteristic[condition][=].exclude = false
+  * characteristic[condition][+]
     * linkId = "heparin-allergy"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#294872001 "Allergy to heparin (finding)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-  * characteristic[+]
+      * valueCodeableConcept = $sct#294872001 "Allergy to heparin (finding)"
+  * characteristic[condition][=].exclude = false
+  * characteristic[condition][+]
     * linkId = "heparinoid-allergy"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#294876003 "Allergy to heparinoid (finding)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-  * characteristic[+]
+      * valueCodeableConcept = $sct#294876003 "Allergy to heparinoid (finding)"
+  * characteristic[condition][=].exclude = false
+  * characteristic[condition][+]
     * linkId = "thrombocytopenia"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#302215000 "Thrombocytopenic disorder (disorder)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
+      * valueCodeableConcept = $sct#302215000 "Thrombocytopenic disorder (disorder)"
+  * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = true
 
 
@@ -90,46 +84,40 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 
 * characteristic[+].definitionByCombination
   * code = #all-of
-  * characteristic[+]
+  * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-  * characteristic[+]
+      * valueCodeableConcept = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+  * characteristic[condition][=].exclude = false
+  * characteristic[condition][+]
     * linkId = "venous-thrombosis"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#111293003 "Venous thrombosis (disorder)"
-      * valueBoolean = true
-  * characteristic[=].exclude = true
+      * valueCodeableConcept = $sct#111293003 "Venous thrombosis (disorder)"
+  * characteristic[condition][=].exclude = true
 * characteristic[=].exclude = false
 // exclude patients with the following contraindications
 * characteristic[+].definitionByCombination 
   * code = #any-of
-  * characteristic[+]
+  * characteristic[condition][+]
     * linkId = "hit2"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#111588002 "Heparin-induced thrombocytopenia with thrombosis (disorder)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-  * characteristic[+]
+      * valueCodeableConcept = $sct#111588002 "Heparin-induced thrombocytopenia with thrombosis (disorder)"
+  * characteristic[condition][=].exclude = false
+  * characteristic[condition][+]
     * linkId = "heparin-allergy"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#294872001 "Allergy to heparin (finding)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-  * characteristic[+]
+      * valueCodeableConcept = $sct#294872001 "Allergy to heparin (finding)"
+  * characteristic[condition][=].exclude = false
+  * characteristic[condition][+]
     * linkId = "heparinoid-allergy"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#294876003 "Allergy to heparinoid (finding)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-  * characteristic[+]
+      * valueCodeableConcept = $sct#294876003 "Allergy to heparinoid (finding)"
+  * characteristic[condition][=].exclude = false
+  * characteristic[condition][+]
     * linkId = "thrombocytopenia"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#302215000 " Thrombocytopenic disorder (disorder)"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
+      * valueCodeableConcept = $sct#302215000 " Thrombocytopenic disorder (disorder)"
+  * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = false
 
 Instance: PopHospitalisedCOVID19PatientsWITHThrombosis
@@ -154,16 +142,14 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 Patients w
 // Include COVID-19 patients without thrombosis
 * characteristic[+].definitionByCombination
   * code = #all-of
-  * characteristic[+]
+  * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#840539006 "COVID-19"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
-  * characteristic[+]
+      * valueCodeableConcept = $sct#840539006 "COVID-19"
+  * characteristic[condition][=].exclude = false
+  * characteristic[condition][+]
     * linkId = "venous-thrombosis"
     * definitionByTypeAndValue
-      * typeCodeableConcept.coding[sct] = $sct#111293003 "Venous Thrombosis"
-      * valueBoolean = true
-  * characteristic[=].exclude = false
+      * valueCodeableConcept = $sct#111293003 "Venous Thrombosis"
+  * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = false
