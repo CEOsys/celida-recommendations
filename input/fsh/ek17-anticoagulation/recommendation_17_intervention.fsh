@@ -17,17 +17,17 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMH)
   * selectionBehavior = #exactly-one
-  * code.coding = $sct#373294004 "Low molecular weight heparin (substance)"
+  * code.coding = $sct#432102000 "Administration of substance (procedure)"
   * precheckBehavior = #yes
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationUFH)
   * selectionBehavior = #exactly-one
-  * code.coding = $sct#372877000 "Heparin (substance)"
+  * code = $sct#432102000 "Administration of substance (procedure)"
   * precheckBehavior = #yes
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationFondaparinux)
   * selectionBehavior = #exactly-one
-  * code.coding = $sct#708189008 "Fondaparinux (substance)" 
+  * code = $sct#432102000 "Administration of substance (procedure)"
   * precheckBehavior = #no
 
 
@@ -45,7 +45,9 @@ Description: "Therapeutic Anticoagulation Treatment (UFH) for non-intensive care
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/therapeutic-anticoagulant-administration-UFH"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept.coding = $sct#372877000 "Heparin (substance)" 
+* productCodeableConcept
+  * coding [atcde] = $atcde#B01AB01 "Heparin"
+  * coding [sct] = $sct#372877000 "Heparin (substance)" 
 
 Instance: TherapeuticAnticoagulationNMH
 InstanceOf: drug-administration-action
@@ -56,7 +58,19 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/therapeutic-anticoagulant-administration-NMH"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept.coding = $sct#373294004 "Low molecular weight heparin (substance)"
+* productCodeableConcept
+  * coding [atcde] = $atcde#B01AB01 "Heparin"
+  * coding [sct] = $sct#372563008 "Dalteparin (substance)" 
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * low = 5000 $ucum#[iU] "IU"
+    * rateQuantity = 1 '/d' "/d"
 
 Instance: TherapeuticAnticoagulationFondaparinux
 InstanceOf: drug-administration-action
@@ -67,8 +81,9 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/therapeutic-anticoagulant--fondaparinux-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept.coding = $sct#708189008 "Fondaparinux (substance)" 
-
+* productCodeableConcept
+  * coding [atcde] = $atcde#B01AX05 "Fondaparinux (substance)" 
+  * coding [sct]  = $sct#708189008 "Fondaparinux (substance)"
 
 
 

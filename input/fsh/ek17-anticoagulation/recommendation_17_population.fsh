@@ -19,11 +19,11 @@ Description: "Population for recommendation 17 from guideline from https://www.a
 // Include patients with COVID-19 that are considered high-risk (here: ONLY high D-Dimer is counted as such!!!) and that are not treated on ICU currently
   // include covid-19 patients
 * characteristic[0][condition]
-  * linkId = "covid19"
+  //* linkId = "covid19"
   * definitionByTypeAndValue
     * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
     * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
-//* characteristic[condition][=].exclude = false
+* characteristic[condition][=].exclude = false
 
 * characteristic[1].definitionByCombination
   * code = #all-of
@@ -48,7 +48,7 @@ Description: "Population for recommendation 17 from guideline from https://www.a
 
 // Exclude patients having Thrombosis
 * characteristic[condition][+]
-  * linkId = "venous-thrombosis"
+  //* linkId = "venous-thrombosis"
   * definitionByTypeAndValue
     // typeCodeableConcept *must* use the code below
     * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
