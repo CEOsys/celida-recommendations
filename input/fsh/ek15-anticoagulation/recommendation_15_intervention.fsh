@@ -1,5 +1,5 @@
 /************************/
-/* Recommendation Plans */
+/* Intervention Plans */
 /************************/
 Instance: AntithrombLWMHProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
@@ -14,15 +14,11 @@ Description: "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 pati
 * description = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOVenousThrombosisWOCI)
 // correct?
-* action[+]
+* action[drugAdministration][+]
+  * code = $sct#432102000 "Administration of substance (procedure)"
   * definitionCanonical = Canonical(AntithromboticProphylaxisLWMHSubcutaneous)
   * selectionBehavior = #exactly-one
-// * action[+]
-//   * definitionCanonical = Canonical(AntithromboticProphylaxisFondaparinuxSubcutaneous)
-//   * selectionBehavior = #exactly-one
-* relatedArtifact[recommendationJustification].resourceReference = Reference(AntithromboticProphylaxisRecommendationJustification)
-* relatedArtifact[recommendationCitation].resourceReference = Reference(AntithromboticProphylaxisRecommendationCitation)
-* relatedArtifact[guidelineCitation].resourceReference = Reference(COVID19IntensiveCareTreatmentGuidelineCitation)
+  
 
 Instance: AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
@@ -37,12 +33,13 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * description = "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOVenousThrombosisWITHCI)
 // correct?
-* action[+]
+* action[drugAdministration][+]
+  * code = $sct#432102000 "Administration of substance (procedure)"
   * definitionCanonical = Canonical(AntithromboticProphylaxisFondaparinuxSubcutaneous)
   * selectionBehavior = #exactly-one
-* relatedArtifact[recommendationJustification].resourceReference = Reference(AntithromboticProphylaxisRecommendationJustification)
-* relatedArtifact[recommendationCitation].resourceReference = Reference(AntithromboticProphylaxisRecommendationCitation)
-* relatedArtifact[guidelineCitation].resourceReference = Reference(COVID19IntensiveCareTreatmentGuidelineCitation)
+//* relatedArtifact[recommendationJustification].resourceReference = Reference(AntithromboticProphylaxisRecommendationJustification)
+//* relatedArtifact[recommendationCitation].resourceReference = Reference(AntithromboticProphylaxisRecommendationCitation)
+//* relatedArtifact[guidelineCitation].resourceReference = Reference(COVID19IntensiveCareTreatmentGuidelineCitation)
 
 
 Instance: NoAntithrombProphInHospitalisedCOVID19PatientsRecommPlan
@@ -57,53 +54,35 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
 * status = #active
 * description = "No antithrombotic prophylaxis in patients with thrombosis"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWITHThrombosis)
-// correct?
-* action[+]
+* action[drugAdministration][+]
+  * code = $sct#432102000 "Administration of substance (procedure)"
   * definitionCanonical = Canonical(NoAntithromboticProphylaxis)
   * selectionBehavior = #exactly-one
-* relatedArtifact[recommendationJustification].resourceReference = Reference(NoAntithromboticProphylaxisRecommendationJustification)
-* relatedArtifact[recommendationCitation].resourceReference = Reference(NoAntithromboticProphylaxisRecommendationCitation)
-* relatedArtifact[guidelineCitation].resourceReference = Reference(COVID19IntensiveCareTreatmentGuidelineCitation)
+//* relatedArtifact[recommendationJustification].resourceReference = Reference(NoAntithromboticProphylaxisRecommendationJustification)
+//* relatedArtifact[recommendationCitation].resourceReference = Reference(NoAntithromboticProphylaxisRecommendationCitation)
+//* relatedArtifact[guidelineCitation].resourceReference = Reference(COVID19IntensiveCareTreatmentGuidelineCitation)
 
-// Instance: AntithromboticProphylaxisRecommendationCitation
-// InstanceOf: recommendation-citation
-// Usage: #example
-// Title: "Antithrombotic prophylaxis in hospitalised COVID-19 patients"
-// Description: "Citation of Recommendation for antithrombotic prophylaxis in COVID-19 hospitalised patients treatment guideline"
-// * name = "AntithromboticProphylaxisRecommendationCitation"
-// * status = #active
-// * citedArtifact
-//   * identifier.value = "https://www.awmf.org/leitlinien/detail/ll/113-001LG.html"
-// * description = "unclear"  
-//     // can I do this? 
-// * version = "v7.0"
-// * currentState = $cs-cited-artifact-status-type#active "Active"
+
 
 /**********************/
 /* Recommended Action */
 /**********************/
 Instance: AntithromboticProphylaxisLWMHSubcutaneous
-InstanceOf: recommendation-action
+InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with LWMH"
 Description: "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * name = "ProphylacticLWMHApplicationActivity"
 * url = "https://www.ceosys.de/fhir/canonical/recommendation-action/TODO_activity_01"
-// URL is needed (!!!) because canonical Reference!
 * status = #active
-// * code = $sct#182832007 "Procedure related to management of drug administration (procedure)"
-// possible:
-* code = $sct#392129008 "Administration of prophylactic low dose heparin (procedure)"
-// redundant to use snomed code above, when I am using code below?
-// --> "code" is NEEDED! required field
-* productCodeableConcept = $sct#392129008 "Administration of prophylactic low dose heparin (procedure)"
-// productCodeableConcept always is used to reference medical products (substances...)
-// already a finished snomed concept, so no detailed information about drug administration necessary?! 
-// CAVE: this snomed concept includes ALL kinds of
-// low dose heparins, i.e., also UFH (unfractioned heparine, intravenously)
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept 
+  * coding[atcde] = $atcde#C05BA03 "Heparin"
+  * coding[sct] = $sct#372877000 "Heparin (substance)"
+//will need the dose for this one as it is supposed to be low dose heparin!
 
 Instance: AntithromboticProphylaxisFondaparinuxSubcutaneous
-InstanceOf: recommendation-action
+InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Fondaparinux"
 Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients (when contraindications for LWMH exist)"
@@ -111,8 +90,10 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * url = "https://www.ceosys.de/fhir/canonical/recommendation-action/antithrombotic_prophylaxis_fondaparinux"
 //TODO: unique, actual URL!
 * status = #active
-* code = $sct#182832007 "Procedure related to management of drug administration (procedure)"
-* productCodeableConcept = $sct#779321003 "parenteral Fondaparinux (substance)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept 
+  * coding[atcde] = $atcde#B01AX05 "Fondaparinux"
+  * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
 * dosage
   * route = $sct#386362006 "Subcutaneous route"
   * timing
@@ -126,7 +107,7 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 
 
 Instance: NoAntithromboticProphylaxis
-InstanceOf: recommendation-action
+InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Antithrombotic prophylaxis in patients with thrombosis"
 Description: "No antithrombotic prophylaxis in patients with thrombosis"
@@ -134,6 +115,6 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
 * url = "https://www.ceosys.de/fhir/canonical/recommendation-action/No_antithrombotic_prophylaxis"
 // TODO: actual, unique URL
 * status = #active
-* code = $sct#421728001 "Administration of prophylactic anticoagulant (procedure)"
+* code = $sct#432102000 "Administration of substance (procedure)"
 * doNotPerform = true
 
