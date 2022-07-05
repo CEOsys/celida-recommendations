@@ -8,6 +8,7 @@ Title: "Population: Rec17EK, Hospitalised COVID-19 patients without the need for
 Description: "Population for recommendation 17 from guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: without the need for intensive care therapy, without venous thrombosis, considered high-risk for developing venous thrombosis"
 * name = "HospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk"
 //* actual = false
+// TEST
 // extremely difficult to model, as "high-risk" is not very specific...
 * identifier.value = "WOThrombosisWITHHighRisk"
 * identifier.system = $ceosys
