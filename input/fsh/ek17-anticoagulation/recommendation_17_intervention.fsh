@@ -46,8 +46,8 @@ Description: "Therapeutic Anticoagulation Treatment (UFH) for non-intensive care
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding [atcde] = $atcde#B01AB01 "Heparin"
-  * coding [sct] = $sct#372877000 "Heparin (substance)" 
+  * coding[atcde] = $atcde#B01AB01 "Heparin"
+  * coding[sct] = $sct#372877000 "Heparin (substance)" 
 
 Instance: TherapeuticAnticoagulationNMH
 InstanceOf: drug-administration-action
@@ -59,8 +59,8 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding [atcde] = $atcde#B01AB01 "Heparin"
-  * coding [sct] = $sct#372563008 "Dalteparin (substance)" 
+  * coding[atcde] = $atcde#B01AB01 "Heparin"
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)" 
 * dosage
   * timing
     * repeat
@@ -82,8 +82,8 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding [atcde] = $atcde#B01AX05 "Fondaparinux (substance)" 
-  * coding [sct]  = $sct#708189008 "Fondaparinux (substance)"
+  * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)" 
+  * coding[sct]  = $sct#708189008 "Fondaparinux (substance)"
 
 
 
