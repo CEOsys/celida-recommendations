@@ -32,7 +32,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * typeCodeableConcept = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       * valueRange
         * low = 0.3
         * high = 0.39
