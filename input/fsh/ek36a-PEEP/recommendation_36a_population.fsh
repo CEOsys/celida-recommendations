@@ -1,7 +1,7 @@
 /**************/
 /* Population */
 /**************/
-Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-0.3
+Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point3
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.3"
@@ -41,7 +41,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
         * high = 0.39 ''
 * characteristic[=].exclude = false
 
-Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-0.4
+Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point4
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.4"
@@ -81,7 +81,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
         * high = 0.49 ''
 * characteristic[=].exclude = false
 
-Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-0.5
+Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point5
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.5"
@@ -121,7 +121,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
         * high = 0.59 ''
 * characteristic[=].exclude = false
 
-Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-0.6
+Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point6
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.6"
@@ -161,7 +161,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
         * high = 0.69 ''
 * characteristic[=].exclude = false
 
-Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-0.7
+Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point7
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.7"
@@ -201,7 +201,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
         * high = 0.79 ''
 * characteristic[=].exclude = false
 
-Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-0.8
+Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point8
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.8"
@@ -241,7 +241,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
         * high = 0.89 ''
 * characteristic[=].exclude = false
 
-Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-0.9
+Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point9
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.9"
@@ -281,7 +281,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
         * high = 0.99 ''
 * characteristic[=].exclude = false
 
-Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-1.0
+Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-1
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 1.0"
