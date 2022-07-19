@@ -1,7 +1,7 @@
 /************************/
 /* Recommendation Plans */
 /************************/
-//Therapeutic anticoagulation treatment plan (without considering renal function impairment (eGFR >= 30ml/min))
+// Therapeutic anticoagulation treatment plan (without considering renal function impairment (eGFR >= 30ml/min))
 Instance: TherapeuticAnticoagulationNonICUHighRiskCOVID19PatientsPlan
 InstanceOf: recommendation-plan
 Usage: #example
@@ -13,7 +13,7 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
 * date = "2022-02"
 * status = #active
 * description = "In hospitalized, non-intensive care patients with COVID-19 and increased risk (e.g., D-dimers ≥ 2 mg/l), therapeutic anticoagulation can be considered if the risk of bleeding is low. Anticoagulation, preferentially with NMH or UFH, can be considered."
-* subjectCanonical = Canonical(PopHospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk) 
+* subjectCanonical = Canonical(PopHospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMH)
   * selectionBehavior = #exactly-one
@@ -31,7 +31,6 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
   * precheckBehavior = #no
 
 
-
 /**********************/
 /* Recommended Action */
 /**********************/
@@ -47,7 +46,7 @@ Description: "Therapeutic Anticoagulation Treatment (UFH) for non-intensive care
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB01 "Heparin"
-  * coding[sct] = $sct#372877000 "Heparin (substance)" 
+  * coding[sct] = $sct#372877000 "Heparin (substance)"
 
 Instance: TherapeuticAnticoagulationNMH
 InstanceOf: drug-administration-action
@@ -60,7 +59,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB01 "Heparin"
-  * coding[sct] = $sct#372563008 "Dalteparin (substance)" 
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
 * dosage
   * timing
     * repeat
@@ -82,9 +81,5 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)" 
+  * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)"
   * coding[sct]  = $sct#708189008 "Fondaparinux (substance)"
-
-
-
-
