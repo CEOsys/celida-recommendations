@@ -15,7 +15,7 @@ Description: "Hospitalised COVID-19 patients, treated on ICU, without thrombembo
 * description = "COVID 19 patients without a thrombembolic complication"
 * insert canonical-url(covid19-patients-without-thrombembolic-complication)
 
-// Include COVID-19 patients, treated in ICU 
+// Include COVID-19 patients, treated in ICU
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -28,13 +28,13 @@ Description: "Hospitalised COVID-19 patients, treated on ICU, without thrombembo
     * linkId = "intensive-care-treatment"
     * definitionByTypeAndValue
       * typeCodeableConcept = $loinc#78030-4 "Episode of care Type"
-      * valueCodeableConcept = $sct#182810003 "Intensive care monitoring (regime/therapy)"
+      * valueCodeableConcept = $cs-kontaktart-de#intensivstationaer "Intensivstationär"
   * characteristic[episodeOfCare][=].exclude = false
 * characteristic[=].exclude = false
 
 // Exclude patients with Thrombosis or pulmonary embolism
 * characteristic[+].definitionByCombination
-  * code = #any-of  
+  * code = #any-of
   * characteristic[condition][+]
     * linkId = "venous-thrombosis"
     * definitionByTypeAndValue
