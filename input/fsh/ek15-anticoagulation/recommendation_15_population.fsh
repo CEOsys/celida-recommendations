@@ -8,34 +8,23 @@ Title: "Population: Hospitalised COVID-19 patients without (venous) thrombosis a
 Description: "Population for recommendation 15: Hospitalised COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
 * name = "HospitalisedCOVID19PatientsWOVenousThrombosisWOCI"
 * actual = false
-// * characteristic[+]
-//   * code = $cochrane-pico#Population
-// * characteristic[=].exclude = false
-//  do we need this characteristic anymore: $ochrane-pico#Population
 * identifier.value = "WOThrombosisWOCI"
 * identifier.system = $ceosys
-// which values are actually allowed?
 * status = #active
 * name = "COVID19_patients_without_venous_thrombosis_without_contraindications"
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
-* url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WO_Thrombosis_WO_Highrisk"
-// TODO unique URL
-// Beginning of conditions to include patients
+* url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WO_Thrombosis_WO_Highrisk" // TODO unique URL
 * characteristic[condition][+]
   * linkId = "covid19"
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
 * characteristic[condition][=].exclude = false
-
-// Exclude patients with Thrombosis
-* characteristic[condition][+]
+* characteristic[condition][+] // Exclude patients with Thrombosis
   * linkId = "venous-thrombosis"
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#111293003 "Venous Thrombosis"
 * characteristic[condition][=].exclude = true
-
-// Exclude patients with any of the following contraindications
-* characteristic[+].definitionByCombination
+* characteristic[2].definitionByCombination // Exclude patients with any of the following contraindications
   * code = #any-of
   * characteristic[condition][+]
     * linkId = "hit2"
@@ -67,21 +56,13 @@ Title: "Population: Hospitalised COVID-19 patients without (venous) thrombosis, 
 Description: "Population for recommendation 15: Hospitalised COVID-19 patients without (venous) thrombosis, existing contraindications to LWMH"
 * name = "HospitalisedCOVID19PatientsWOVenousThrombosisWITHCI"
 * actual = false
-// * characteristic[+]
-//   * code = $cochrane-pico#Population
-// * characteristic[=].exclude = false
-//  see above, still needed?
 * identifier.value = "WOThrombosisWITHCI"
 * identifier.system = $ceosys
-// which values are actually allowed?
 * status = #active
 * name = "COVID19_patients_without_venous_thrombosis_with_contraindications"
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without (venous) thrombosis, existing contraindications to LWMH"
-* url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WO_Thrombosis_WO_Highrisk"
-// TODO unique URL!
-
+* url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WO_Thrombosis_WO_Highrisk" // TODO unique URL!
 // Include COVID-19 patients without thrombosis
-
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -96,7 +77,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
   * characteristic[condition][=].exclude = true
 * characteristic[=].exclude = false
 // exclude patients with the following contraindications
-* characteristic[+].definitionByCombination 
+* characteristic[+].definitionByCombination
   * code = #any-of
   * characteristic[condition][+]
     * linkId = "hit2"
@@ -116,7 +97,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
   * characteristic[condition][+]
     * linkId = "thrombocytopenia"
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#302215000 " Thrombocytopenic disorder (disorder)"
+      * valueCodeableConcept = $sct#302215000 "Thrombocytopenic disorder (disorder)"
   * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = false
 
@@ -127,17 +108,12 @@ Title: "Population: Hospitalised COVID-19 Patients with (venous) thrombosis"
 Description: "Population for recommendation 15: Hospitalised COVID-19 Patients with (venous) thrombosis"
 * name = "HospitalisedCOVID19PatientsWITHThrombosis"
 * actual = false
-// * characteristic[+]
-//   * code = $cochrane-pico#Population
-// * characteristic[=].exclude = false
-// see above, still needed?
 * identifier.value = "WITHThrombosis"
 * identifier.system = $ceosys
 * status = #active
 * name = "COVID19_patients_with_venous_thrombosis"
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients with (venous) thrombosis"
-* url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WITH_Thrombosis"
-// TODO: unique, actual URL
+* url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WITH_Thrombosis" // TODO: unique, actual URL
 
 // Include COVID-19 patients without thrombosis
 * characteristic[+].definitionByCombination

@@ -13,7 +13,6 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
 * status = #active
 * description = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOVenousThrombosisWOCI)
-// correct?
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWDalteparin)
   * selectionBehavior = #exactly-one
@@ -35,12 +34,6 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
   * selectionBehavior = #exactly-one
   * code = $sct#432102000 "Administration of substance (procedure)"
 
-/*
-* action[drugAdministration][+]
-  * code = $sct#432102000 "Administration of substance (procedure)"
-  * definitionCanonical = Canonical(AntithromboticProphylaxisLWMHSubcutaneous)
-  * selectionBehavior = #exactly-one
- */ 
 
 Instance: AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
@@ -54,7 +47,6 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * status = #active
 * description = "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOVenousThrombosisWITHCI)
-// correct?
 * action[drugAdministration][+]
   * code = $sct#432102000 "Administration of substance (procedure)"
   * definitionCanonical = Canonical(AntithromboticProphylaxisFondaparinuxSubcutaneous)
@@ -92,9 +84,9 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-dalteparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AB04 "Dalteparin"
-  * coding[sct] = $sct#372563008 "Dalteparin (substance)" 
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
 * dosage
   * timing
     * repeat
@@ -115,7 +107,7 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-enoxaparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
   * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
 * dosage
@@ -139,7 +131,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
 * dosage[+]
@@ -166,7 +158,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
 * dosage[+]
@@ -193,7 +185,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-certoparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AE03 "Argatroban"
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
 * dosage
@@ -214,23 +206,19 @@ Usage: #example
 Title: "Antithrombotic prophylaxis with Fondaparinux"
 Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients (when contraindications for LWMH exist)"
 * name = "ProphylacticFondaparinuxApplicationActivity"
-* url = "https://www.ceosys.de/fhir/canonical/recommendation-action/antithrombotic_prophylaxis_fondaparinux"
-//TODO: unique, actual URL!
+* url = "https://www.ceosys.de/fhir/canonical/recommendation-action/antithrombotic_prophylaxis_fondaparinux" //TODO: unique, actual URL!
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AX05 "Fondaparinux"
   * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
 * dosage
-  * route = $sct#386362006 "Subcutaneous route"
+  * route = $sct#386362006 "Administration of drug or medicament via subcutaneous route (procedure)"
   * timing
-    * code = #QD
-    // MUST BE in singular quotation marks '<xyz>'
-    // "once a day" in abbreviated form, see here: http://build.fhir.org/valueset-timing-abbreviation.html
+    * code = $cs-gts-timing#QD // TODO: is redundant with doseAndRate - define profile here?
   * doseAndRate
     * doseQuantity = 2.5 'mg' "mg"
     * rateQuantity = 1 '/d' "/d"
-    // maybe redundant with "QD"!
 
 
 Instance: NoAntithromboticProphylaxis
@@ -243,4 +231,3 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
 * doNotPerform = true
-
