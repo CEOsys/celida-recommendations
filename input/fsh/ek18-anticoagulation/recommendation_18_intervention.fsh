@@ -8,9 +8,9 @@ Title: "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients w
 Description: "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
 * name = "Anticoagulation_Plan_No_Specific_Indication"
 * title = "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients with no specific indication"
-* version = "7.0" 
+* version = "7.0"
 * identifier.value = "TherapeuticAnticoagulationICUCOVID19NoIndication"
-* date = "2022-02" 
+* date = "2022-02"
 * status = #active
 * description = "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
 * subjectCanonical = Canonical(PopHospitalisedICUCOVID19Patients)
@@ -54,13 +54,9 @@ Description: "In intensive care patients without a specific indication (e.g. pul
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 
-
-
 /*************************/
 /* Intervention Activity */
 /*************************/
-
-
 Instance: NonProphylacticAnticoagulationWDalteparin
 InstanceOf: drug-administration-action
 Usage: #example
@@ -70,9 +66,9 @@ Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-i
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-dalteparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AB04 "Dalteparin"
-  * coding[sct] = $sct#372563008 "Dalteparin (substance)" 
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
 * dosage
   * timing
     * repeat
@@ -94,7 +90,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-i
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-enoxaparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
   * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
 * dosage
@@ -118,7 +114,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
 * dosage[+]
@@ -145,7 +141,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
 * dosage[+]
@@ -172,9 +168,8 @@ Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-i
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-certoparin-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
-//couldn't find a atcde code for certoparin!
-  * coding[atcde] = $atcde#B01AE03 "Argatroban"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AB13  "Certoparin"
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
 * dosage
   * timing
@@ -197,9 +192,9 @@ Description: "No Therapeutic Anticoagulation Treatment with UFH for non-intensiv
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-UFH-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#C05BA03 "Heparin"
-  * coding[sct] = $sct#372877000 "Heparin (substance)" 
+  * coding[sct] = $sct#372877000 "Heparin (substance)"
 * doNotPerform = true
 
 Instance: NonProphylacticAnticoagulationWArgatra
@@ -211,7 +206,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Argatroban for non-i
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-argatroban-administration"
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept 
+* productCodeableConcept
   * coding[atcde] = $atcde#B01AE03 "Argatroban"
   * coding[sct] = $sct#116508003 "Argatroban (substance)"
 * doNotPerform = true
