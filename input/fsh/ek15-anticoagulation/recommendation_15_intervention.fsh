@@ -186,7 +186,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AE03 "Argatroban"
+  * coding[atcde] = $atcde#B01AB13  "Certoparin"
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
 * dosage
   * timing
