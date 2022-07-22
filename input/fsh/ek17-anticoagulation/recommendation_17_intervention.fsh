@@ -1,7 +1,7 @@
 /************************/
 /* Recommendation Plans */
 /************************/
-// Therapeutic anticoagulation treatment plan (without considering renal function impairment (eGFR >= 30ml/min))
+//Therapeutic anticoagulation treatment plan (without considering renal function impairment (eGFR >= 30ml/min))
 Instance: TherapeuticAnticoagulationNonICUHighRiskCOVID19PatientsPlan
 InstanceOf: recommendation-plan
 Usage: #example
@@ -13,23 +13,51 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
 * date = "2022-02"
 * status = #active
 * description = "In hospitalized, non-intensive care patients with COVID-19 and increased risk (e.g., D-dimers ≥ 2 mg/l), therapeutic anticoagulation can be considered if the risk of bleeding is low. Anticoagulation, preferentially with NMH or UFH, can be considered."
-* subjectCanonical = Canonical(PopHospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk)
+* subjectCanonical = Canonical(PopHospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk) 
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMH)
   * selectionBehavior = #exactly-one
   * code.coding = $sct#432102000 "Administration of substance (procedure)"
   * precheckBehavior = #yes
+* goal[laboratoryValue][+]
+  * id = "aPTT-goal"
+  * description.text = "aPTT value should be > 50 sec."
+  * category.coding = $sct#118246004 "Laboratory test finding (navigational concept)"
+  * target
+    * measure = $loinc#50754-1 "aPTT in Pooled Platelet poor plasma by Coagulation assay"
+    * detailRange
+      * low = 50 's' "sec"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationUFH)
   * selectionBehavior = #exactly-one
+  * goalId = "aPTT-goal"
   * code = $sct#432102000 "Administration of substance (procedure)"
   * precheckBehavior = #yes
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHDalteparin)
+  * selectionBehavior = #exactly-one
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHEnoxaparin)
+  * selectionBehavior = #exactly-one
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHNadroparinLowWeight)
+  * selectionBehavior = #exactly-one
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHNadroparinHighWeight)
+  * selectionBehavior = #exactly-one
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHCertoparin)
+  * selectionBehavior = #exactly-one
+  * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationFondaparinux)
   * selectionBehavior = #exactly-one
   * code = $sct#432102000 "Administration of substance (procedure)"
   * precheckBehavior = #no
-
 
 /**********************/
 /* Recommended Action */
@@ -46,7 +74,133 @@ Description: "Therapeutic Anticoagulation Treatment (UFH) for non-intensive care
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB01 "Heparin"
-  * coding[sct] = $sct#372877000 "Heparin (substance)"
+  * coding[sct] = $sct#372877000 "Heparin (substance)" 
+
+Instance: TherapeuticAnticoagulationNMHDalteparin
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Therapeutic Anticoagulation Treatment with Dalteparin"
+Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Dalteparin"
+* name = "TherapeuticAnticoagulationDalteparinPlan"
+* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/therapeutic-anticoagulant-dalteparin-administration"
+* status = #active
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept 
+  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)" 
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * low = 5000 $ucum#[iU] "IU"
+    * rateQuantity = 1 '/d' "/d"
+* doNotPerform = true
+
+Instance: TherapeuticAnticoagulationNMHEnoxaparin
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Therapeutic Anticoagulation Treatment with Enoxaparin"
+Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Enoxaparin"
+* name = "TherapeuticAnticoagulationPlanEnoxaparin"
+* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/therapeutic-anticoagulant-enoxaparin-administration"
+* status = #active
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept 
+  * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
+  * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * low = 40 'mg'
+    * rateQuantity = 1 '/d' "/d"
+* doNotPerform = true
+
+Instance: TherapeuticAnticoagulationNMHNadroparinLowWeight
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Therapeutic Anticoagulation Treatment with Nadroparin Low Weight"
+Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients (low weight) with high risk (D-Dimer >= 2mg/l) with Nadroparin"
+* name = "TherapeuticAnticoagulationPlanNadroparinLowWeight"
+* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/therapeutic-anticoagulant-nadroparin-administration"
+* status = #active
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept 
+  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
+  * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.high = 70 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * low = 3800 $ucum#[iU] "IU"
+    * rateQuantity = 1 '/d' "/d"
+* doNotPerform = true
+
+Instance: TherapeuticAnticoagulationNMHNadroparinHighWeight
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Therapeutic Anticoagulation Treatment with Nadroparin High Weight"
+Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients (high weight) with high risk (D-Dimer >= 2mg/l) with Nadroparin"
+* name = "TherapeuticAnticoagulationPlanNadroparinHighWeight"
+* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/therapeutic-anticoagulant-nadroparin-administration"
+* status = #active
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept 
+  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
+  * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 70 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * low = 5700 $ucum#[iU] "IU"
+    * rateQuantity = 1 '/d' "/d"
+* doNotPerform = true
+
+Instance: TherapeuticAnticoagulationNMHCertoparin
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Therapeutic Anticoagulation Treatment with Certoparin"
+Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Certoparin"
+* name = "TherapeuticAnticoagulationPlanCertoparin"
+* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/therapeutic-anticoagulant-certoparin-administration"
+* status = #active
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept 
+  * coding[atcde] = $atcde#B01AB13  "Certoparin"
+  * coding[sct] = $sct#395961003 "Certoparin (substance)"
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * low = 3000 $ucum#[iU] "IU"
+    * rateQuantity = 1 '/d' "/d"
+* doNotPerform = true
 
 Instance: TherapeuticAnticoagulationNMH
 InstanceOf: drug-administration-action
@@ -58,8 +212,8 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB01 "Heparin"
-  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
+  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)" 
 * dosage
   * timing
     * repeat
@@ -70,6 +224,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
     * doseRange
       * low = 5000 $ucum#[iU] "IU"
     * rateQuantity = 1 '/d' "/d"
+* doNotPerform = true
 
 Instance: TherapeuticAnticoagulationFondaparinux
 InstanceOf: drug-administration-action
@@ -81,5 +236,14 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
 * status = #active
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)"
+  * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)" 
   * coding[sct]  = $sct#708189008 "Fondaparinux (substance)"
+* dosage
+  * timing
+    * repeat
+      * frequency = 2
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseQuantity = 2.5 'mg' "mg"
+    * rateQuantity = 1 '/d' "/d"
