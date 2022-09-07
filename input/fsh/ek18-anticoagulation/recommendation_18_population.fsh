@@ -21,13 +21,13 @@ Description: "Hospitalised COVID-19 patients, treated on ICU, without thrombembo
   * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
   * characteristic[condition][=].exclude = false
   * characteristic[episodeOfCare][+]
     * linkId = "intensive-care-treatment"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $loinc#78030-4 "Episode of care Type"
+      * type = $loinc#78030-4 "Episode of care Type"
       * valueCodeableConcept = $cs-kontaktart-de#intensivstationaer "Intensivstationär"
   * characteristic[episodeOfCare][=].exclude = false
 * characteristic[=].exclude = false
@@ -38,13 +38,13 @@ Description: "Hospitalised COVID-19 patients, treated on ICU, without thrombembo
   * characteristic[condition][+]
     * linkId = "venous-thrombosis"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#111293003 "Venous Thrombosis"
   * characteristic[condition][=].exclude = false
   * characteristic[condition][+]
     * linkId = "pulmonary-embolism"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#59282003 "Pulmonary embolism (disorder)"
   * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = true
