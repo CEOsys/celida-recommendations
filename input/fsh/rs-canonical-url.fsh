@@ -1,3 +1,3 @@
 // Author: Gregor Lichtner @glichtner
 RuleSet: canonical-url(url)
-* url = "https://www.ceosys.de/fhir/{url}"
+* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/recommendations/{url}"
