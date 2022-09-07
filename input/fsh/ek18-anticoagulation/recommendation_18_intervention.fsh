@@ -6,9 +6,10 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients with no specific indication"
 Description: "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
+* insert canonical-url(change-me) // TODO: check url
+* insert publisher-experimental-version(7.0)
 * name = "Anticoagulation_Plan_No_Specific_Indication"
 * title = "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients with no specific indication"
-* version = "7.0"
 * identifier.value = "TherapeuticAnticoagulationICUCOVID19NoIndication"
 * date = "2022-02"
 * status = #active
@@ -53,7 +54,6 @@ Description: "In intensive care patients without a specific indication (e.g. pul
   * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 
-
 /*************************/
 /* Intervention Activity */
 /*************************/
@@ -62,9 +62,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Dalteparin"
 Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-dalteparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationDalteparinPlan"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-dalteparin-administration"
 * status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB04 "Dalteparin"
@@ -86,9 +88,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Enoxaparin"
 Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-enoxaparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanEnoxaparin"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-enoxaparin-administration"
 * status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
@@ -110,9 +114,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Nadroparin Low Weight"
 Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanNadroparinLowWeight"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration"
 * status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
@@ -137,9 +143,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Nadroparin High Weight"
 Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanNadroparinHighWeight"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration"
 * status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
@@ -164,9 +172,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Certoparin"
 Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-certoparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanCertoparin"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-certoparin-administration"
 * status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Certoparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB13  "Certoparin"
@@ -188,9 +198,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with UFH"
 Description: "No Therapeutic Anticoagulation Treatment with UFH for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-UFH-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanUFH"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-UFH-administration"
 * status = #active
+* description = "No Therapeutic Anticoagulation Treatment with UFH for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#C05BA03 "Heparin"
@@ -202,9 +214,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Argatroban"
 Description: "No Therapeutic Anticoagulation Treatment with Argatroban for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-argatroban-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanArgatroban"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-argatroban-administration"
 * status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Argatroban for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AE03 "Argatroban"
