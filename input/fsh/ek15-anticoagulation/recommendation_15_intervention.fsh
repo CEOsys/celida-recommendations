@@ -6,9 +6,10 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "Antithrombotic prophylaxis with LWMH"
 Description: "Hospitalized patients with COVID-19 should receive standard drug thromboembolism prophylaxis with low molecular weight heparin in the absence of contraindications. Alternatively, fondaparinux may be used. "
+* insert canonical-url(change-me) // TODO: add proper url
+* insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithLWMH"
 * title = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
-* version = "0.1"
 * date = "2022-04-27"
 * status = #active
 * description = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
@@ -40,9 +41,10 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "Antithrombotic prophylaxis with Fondaparinux"
 Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
+* insert canonical-url(change-me) // TODO: add proper url
+* insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithFondaparinux"
 * title = "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
-* version = "0.1"
 * date = "2022-04-27"
 * status = #active
 * description = "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
@@ -58,9 +60,10 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "No antithrombotic prophylaxis in patients with thrombosis"
 Description: "No antithrombotic prophylaxis in patients with thrombosis"
+* insert canonical-url(change-me) // TODO: add proper url
+* insert publisher-experimental-version(0.1)
 * name = "NoAntithromboticProphylaxis"
 * title = "No antithrombotic prophylaxis in patients with thrombosis"
-* version = "0.1"
 * date = "2022-04-27"
 * status = #active
 * description = "No antithrombotic prophylaxis in patients with thrombosis"
@@ -70,19 +73,19 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
   * definitionCanonical = Canonical(NoAntithromboticProphylaxis)
   * selectionBehavior = #exactly-one
 
-
 /**********************/
 /* Recommended Action */
 /**********************/
-
 Instance: ProphylacticAnticoagulationWDalteparin
 InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Dalteparin"
 Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-dalteparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithDalteparinPlan"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-dalteparin-administration"
 * status = #active
+* description = "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB04 "Dalteparin"
@@ -103,9 +106,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Enoxaparin"
 Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-enoxaparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithEnoxaparinPlan"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-enoxaparin-administration"
 * status = #active
+* description = "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
@@ -121,15 +126,16 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
       * low = 40 'mg'
     * rateQuantity = 1 '/d' "/d"
 
-
 Instance: ProphylacticAnticoagulationWNadroparinLowWeight
 InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Nadroparin Low Weight"
 Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithPlanNadroparinLowWeight"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration"
 * status = #active
+* description = "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
@@ -154,9 +160,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Nadroparin High Weight"
 Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithNadroparinHighWeightPlan"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration"
 * status = #active
+* description = "Antithrombotic prophylaxis with Nadroparin High Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
@@ -181,9 +189,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with with Certoparin"
 Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-certoparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithCertoparinPlan"
-* url = "https://www.netzwerk-universitaetsmedizin.de/fhir/canonical/intervention-activity/no-therapeutic-anticoagulant-certoparin-administration"
 * status = #active
+* description = "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB13  "Certoparin"
@@ -205,9 +215,11 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Fondaparinux"
 Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients (when contraindications for LWMH exist)"
+* insert canonical-url(recommendation-action/antithrombotic_prophylaxis_fondaparinux) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "ProphylacticFondaparinuxApplicationActivity"
-* url = "https://www.ceosys.de/fhir/canonical/recommendation-action/antithrombotic_prophylaxis_fondaparinux" //TODO: unique, actual URL!
 * status = #active
+* description = "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients (when contraindications for LWMH exist)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AX05 "Fondaparinux"
@@ -226,8 +238,10 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Antithrombotic prophylaxis in patients with thrombosis"
 Description: "No antithrombotic prophylaxis in patients with thrombosis"
+* insert canonical-url(recommendation-action/No_antithrombotic_prophylaxis) // TODO: check url
+* insert publisher-experimental-version(0.1)
 * name = "NoAntithromboticProphylaxisApplicationActivity"
-* url = "https://www.ceosys.de/fhir/canonical/recommendation-action/No_antithrombotic_prophylaxis"
 * status = #active
+* description = "No antithrombotic prophylaxis in patients with thrombosis"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * doNotPerform = true
