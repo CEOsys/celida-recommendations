@@ -21,7 +21,7 @@ Description: "Population for recommendation 17 from guideline from https://www.a
 * characteristic[0][condition]
   //* linkId = "covid19"
   * definitionByTypeAndValue
-    * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+    * type = $sct#404684003 "Clinical finding (finding)"
     * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
 * characteristic[condition][=].exclude = false
 
@@ -31,8 +31,8 @@ Description: "Population for recommendation 17 from guideline from https://www.a
   * characteristic[laboratory][+]
     * linkId = "ddimer-range"
     * definitionByTypeAndValue
-    // typeCodeableConcept *must* be from the valueset defined in typeCodeableConcept column (left)
-      * typeCodeableConcept = $loinc#48066-5 "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"
+    // type *must* be from the valueset defined in type column (left)
+      * type = $loinc#48066-5 "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"
       * valueRange
         * low = 2 'mg/L'
   * characteristic[laboratory][=].exclude = false
@@ -40,8 +40,8 @@ Description: "Population for recommendation 17 from guideline from https://www.a
   * characteristic[episodeOfCare][+]
     * linkId = "intensive-care-treatment"
     * definitionByTypeAndValue
-   // typeCodeableConcept *must*use the code below
-      * typeCodeableConcept = $loinc#78030-4 "Episode of care Type"
+   // type *must* use the code below
+      * type = $loinc#78030-4 "Episode of care Type"
       * valueCodeableConcept = $cs-kontaktart-de#intensivstationaer "Intensivstationär"
   * characteristic[episodeOfCare][=].exclude = true
 * characteristic[=].exclude = false
@@ -50,7 +50,7 @@ Description: "Population for recommendation 17 from guideline from https://www.a
 * characteristic[condition][+]
   //* linkId = "venous-thrombosis"
   * definitionByTypeAndValue
-    // typeCodeableConcept *must* use the code below
-    * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+    // type *must* use the code below
+    * type = $sct#404684003 "Clinical finding (finding)"
     * valueCodeableConcept = $sct#111293003 "Venous thrombosis (disorder)"
 * characteristic[condition][=].exclude = true
