@@ -17,25 +17,25 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
   * characteristic[condition][=].exclude = false
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
+      * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       * valueRange
         * low = 0.3 ''
         * high = 0.39 ''
@@ -57,25 +57,25 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
   * characteristic[condition][=].exclude = false
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
+      * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       * valueRange
         * low = 0.4 ''
         * high = 0.49 ''
@@ -97,25 +97,25 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
   * characteristic[condition][=].exclude = false
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
+      * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       * valueRange
         * low = 0.5 ''
         * high = 0.59 ''
@@ -137,25 +137,25 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
   * characteristic[condition][=].exclude = false
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
+      * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       * valueRange
         * low = 0.6 ''
         * high = 0.69 ''
@@ -177,25 +177,25 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
   * characteristic[condition][=].exclude = false
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
+      * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       * valueRange
         * low = 0.7 ''
         * high = 0.79 ''
@@ -217,25 +217,25 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
   * characteristic[condition][=].exclude = false
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
+      * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       * valueRange
         * low = 0.8 ''
         * high = 0.89 ''
@@ -257,25 +257,25 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
   * characteristic[condition][=].exclude = false
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
+      * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       * valueRange
         * low = 0.9 ''
         * high = 0.99 ''
@@ -297,25 +297,25 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[condition][+]
     * linkId = "covid19"
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
   * characteristic[condition][=].exclude = false
 
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
+      * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $sct#404684003 "Clinical finding (finding)"
+      * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * typeCodeableConcept = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
       * valueRange
         * low = 1.0 ''
         * high = 1.0 ''
