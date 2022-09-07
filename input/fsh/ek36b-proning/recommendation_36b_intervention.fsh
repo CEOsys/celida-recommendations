@@ -26,7 +26,7 @@ Description: "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should b
 /* Recommended Action */
 /**********************/
 Instance: AbdominalPositioningARDS
-InstanceOf: recommendation-action
+InstanceOf: body-positioning-action
 Usage: #example
 Title: "Abdominal Positioning in case of ARDS"
 Description: "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours."
