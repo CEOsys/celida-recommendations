@@ -15,20 +15,7 @@ Description: "Population for recommendation 17 from guideline from https://www.a
 * description = "Population for recommendation 17 from guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: without the need for intensive care therapy, without venous thrombosis, considered high-risk for developing venous thrombosis"
 // Include patients with COVID-19 that are considered high-risk (here: ONLY high D-Dimer is counted as such!) and that are not treated on ICU currently
   // include covid-19 patients
-* characteristic[0][condition]
-  * definitionByTypeAndValue
-    * type = $sct#404684003 "Clinical finding (finding)"
-    * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
-* characteristic[condition][=].exclude = false
-// include patients with d-dimer >= 2 mg/l
-* characteristic[laboratory][+]
-  * linkId = "ddimer-range"
-  * definitionByTypeAndValue
-    * type = $loinc#48066-5 "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"
-    * valueRange
-      * low = 2 'mg/L'
-* characteristic[laboratory][=].exclude = false
-* characteristic[2].definitionByCombination
+* characteristic[0].definitionByCombination
   * code = #any-of
   // exclude patients on ICU
   * characteristic[episodeOfCare][+]
@@ -43,4 +30,18 @@ Description: "Population for recommendation 17 from guideline from https://www.a
       * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#111293003 "Venous thrombosis (disorder)"
   * characteristic[condition][=].exclude = false
-* characteristic[12].exclude = true
+* characteristic[0].exclude = true
+
+* characteristic[condition][+]
+  * definitionByTypeAndValue
+    * type = $sct#404684003 "Clinical finding (finding)"
+    * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+* characteristic[condition][=].exclude = false
+// include patients with d-dimer >= 2 mg/l
+* characteristic[laboratory][+]
+  * linkId = "ddimer-range"
+  * definitionByTypeAndValue
+    * type = $loinc#48066-5 "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"
+    * valueRange
+      * low = 2 'mg/L'
+* characteristic[laboratory][=].exclude = false
