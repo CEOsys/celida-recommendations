@@ -22,7 +22,7 @@ Description: "In intensive care patients without a specific indication (e.g. pul
   * target
     * measure = $loinc#50754-1 "aPTT in Pooled Platelet poor plasma by Coagulation assay"
     * detailRange
-      * high = 50 's' "sec"
+      * low = 50 's' "sec"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin)
   * selectionBehavior = #all
