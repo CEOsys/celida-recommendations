@@ -2,8 +2,8 @@ Instance: PopulationVentilatedCOVID19patientsWithARDS
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS"
-Description: "" // TODO: add description
-* insert canonical-url(population-ventilated-covid19-patients-with-ards)
+Description: "Ventilated COVID-19 patients with ARDS"
+* insert canonical-url(population-ventilated-covid19-patients-with-ards) // check url
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS"
 * description = "Ventilated COVID-19 patients with ARDS"
@@ -14,15 +14,12 @@ Description: "" // TODO: add description
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
   * characteristic[condition][=].exclude = false
-
   * characteristic[procedure][+]
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
   * characteristic[procedure][=].exclude = false
-
   * characteristic[+]
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
   * characteristic[procedure][=].exclude = false
-
 * characteristic[=].exclude = false
