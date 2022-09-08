@@ -116,7 +116,7 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 5000 $ucum#[iU] "IU"
+      * high = 5000 '[iU]' "IU"
     * rateQuantity = 1 '/d' "/d"
 
 Instance: ProphylacticAnticoagulationWEnoxaparin
@@ -141,7 +141,7 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 40 'mg'
+      * high = 40 'mg'
     * rateQuantity = 1 '/d' "/d"
 
 Instance: ProphylacticAnticoagulationWNadroparinLowWeight
@@ -169,7 +169,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 3800 $ucum#[iU] "IU"
+      * low = 3800 '[iU]' "IU"
     * rateQuantity = 1 '/d' "/d"
 
 Instance: ProphylacticAnticoagulationWNadroparinHighWeight
@@ -197,7 +197,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 5700 $ucum#[iU] "IU"
+      * high = 5700 '[iU]' "IU"
     * rateQuantity = 1 '/d' "/d"
 
 Instance: ProphylacticAnticoagulationWCertoparin
@@ -222,7 +222,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 3000 $ucum#[iU] "IU"
+      * high = 3000 '[iU]' "IU"
     * rateQuantity = 1 '/d' "/d"
 
 Instance: AntithromboticProphylaxisFondaparinuxSubcutaneous
@@ -247,7 +247,6 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
     * doseQuantity = 2.5 'mg' "mg"
     * rateQuantity = 1 '/d' "/d"
 
-
 /* DO NOT PERFORM actions */
 Instance: NoProphylacticAnticoagulationWDalteparin
 InstanceOf: drug-administration-action
@@ -263,6 +262,16 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB04 "Dalteparin"
   * coding[sct] = $sct#372563008 "Dalteparin (substance)"
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * high = 5000 '[iU]' "IU"
+    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWEnoxaparin
@@ -279,6 +288,16 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
   * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * high = 40 'mg'
+    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWNadroparinLowWeight
@@ -295,6 +314,19 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.high = 70 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * low = 3800 '[iU]' "IU"
+    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWNadroparinHighWeight
@@ -311,6 +343,19 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 70 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * high = 5700 '[iU]' "IU"
+    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWCertoparin
@@ -327,6 +372,16 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AB13 "Certoparin"
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "d"
+  * doseAndRate
+    * doseRange
+      * high = 3000 '[iU]' "IU"
+    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoAntithromboticProphylaxisFondaparinuxSubcutaneous
@@ -343,4 +398,11 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AX05 "Fondaparinux"
   * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
+* dosage
+  * route = $sct#386362006 "Administration of drug or medicament via subcutaneous route (procedure)"
+  * timing
+    * code = $cs-gts-timing#QD // TODO: is redundant with doseAndRate - define profile here?
+  * doseAndRate
+    * doseQuantity = 2.5 'mg' "mg"
+    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true

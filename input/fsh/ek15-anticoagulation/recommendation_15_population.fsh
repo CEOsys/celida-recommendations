@@ -33,16 +33,16 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#111588002 "Heparin-induced thrombocytopenia with thrombosis (disorder)"
   * characteristic[condition][=].exclude = false
-  * characteristic[condition][+]
+  * characteristic[allergy][+]
     * linkId = "heparin-allergy"
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#294872001 "Allergy to heparin (finding)"
-  * characteristic[condition][=].exclude = false
-  * characteristic[condition][+]
+  * characteristic[allergy][=].exclude = false
+  * characteristic[allergy][+]
     * linkId = "heparinoid-allergy"
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#294876003 "Allergy to heparinoid (finding)"
-  * characteristic[condition][=].exclude = false
+  * characteristic[allergy][=].exclude = false
   * characteristic[condition][+]
     * linkId = "thrombocytopenia"
     * definitionByTypeAndValue
@@ -65,19 +65,16 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without (venous) thrombosis, existing contraindications to LWMH"
 * url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WO_Thrombosis_WO_Highrisk" // TODO unique URL!
 // Include COVID-19 patients without thrombosis
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  * characteristic[condition][+]
-    * linkId = "covid19"
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
-  * characteristic[condition][=].exclude = false
-  * characteristic[condition][+]
-    * linkId = "venous-thrombosis"
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#111293003 "Venous thrombosis (disorder)"
-  * characteristic[condition][=].exclude = true
-* characteristic[=].exclude = false
+* characteristic[condition][+]
+  * linkId = "covid19"
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+* characteristic[condition][=].exclude = false
+* characteristic[condition][+]
+  * linkId = "venous-thrombosis"
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#111293003 "Venous thrombosis (disorder)"
+* characteristic[condition][=].exclude = true
 // INCLUDE patients with the following contraindications
 * characteristic[+].definitionByCombination
   * code = #any-of
@@ -117,16 +114,13 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 Patients w
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients with (venous) thrombosis"
 * url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WITH_Thrombosis" // TODO: unique, actual URL
  // Include patients with COVID-19 AND venous thrombosis
-* characteristic[+].definitionByCombination
-  * code = #all-of
-  * characteristic[condition][+]
-    * linkId = "covid19"
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#840539006 "COVID-19"
-  * characteristic[condition][=].exclude = false
-  * characteristic[condition][+]
-    * linkId = "venous-thrombosis"
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#111293003 "Venous Thrombosis"
-  * characteristic[condition][=].exclude = false
-* characteristic[=].exclude = false
+* characteristic[condition][+]
+  * linkId = "covid19"
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+* characteristic[condition][=].exclude = false
+* characteristic[condition][+]
+  * linkId = "venous-thrombosis"
+  * definitionByTypeAndValue
+    * valueCodeableConcept = $sct#111293003 "Venous Thrombosis"
+* characteristic[condition][=].exclude = false
