@@ -25,7 +25,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
   * target
     * measure = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
     * detailRange
-      * low = 5  'cmH2O' // TODO: check unit
+      * low = 5 'cmH2O' "cm[H2O]"
 
 Instance: VentilatedCOVID19patientsWithARDSInterventionPlan-fio2-point4
 InstanceOf: recommendation-plan
@@ -51,7 +51,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
   * target
     * measure = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
     * detailRange
-      * low = 5  'cmH2O' // TODO: check unit
+      * low = 5 'cmH2O' "cm[H2O]"
 
 Instance: VentilatedCOVID19patientsWithARDSInterventionPlan-fio2-point5
 InstanceOf: recommendation-plan
@@ -103,7 +103,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
   * target
     * measure = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
     * detailRange
-      * low = 10  'cmH2O' // TODO: check unit
+      * low = 10 'cmH2O' "cm[H2O]"
 
 Instance: VentilatedCOVID19patientsWithARDSInterventionPlan-fio2-point7
 InstanceOf: recommendation-plan
@@ -129,7 +129,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
   * target
     * measure = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
     * detailRange
-      * low = 10  'cmH2O' // TODO: check unit
+      * low = 10 'cmH2O' "cm[H2O]"
 
 Instance: VentilatedCOVID19patientsWithARDSInterventionPlan-fio2-point8
 InstanceOf: recommendation-plan
@@ -155,7 +155,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
   * target
     * measure = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
     * detailRange
-      * low = 14  'cmH2O' // TODO: check unit
+      * low = 14 'cmH2O' "cm[H2O]"
 
 Instance: VentilatedCOVID19patientsWithARDSInterventionPlan-fio2-point9
 InstanceOf: recommendation-plan
@@ -181,7 +181,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
   * target
     * measure = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
     * detailRange
-      * low = 14 'cmH2O' // TODO: check unit
+      * low = 14 'cmH2O' "cm[H2O]"
 
 Instance: VentilatedCOVID19patientsWithARDSInterventionPlan-fio2-1
 InstanceOf: recommendation-plan
@@ -207,4 +207,4 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
   * target
     * measure = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
     * detailRange
-      * low = 18 'cmH2O' // TODO: check unit
+      * low = 18 'cmH2O' "cm[H2O]"

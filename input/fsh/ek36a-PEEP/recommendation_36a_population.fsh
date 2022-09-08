@@ -6,12 +6,10 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.3"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.3 - 0.39"
+* insert canonical-url(change-me) // TODO unique URL
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.3"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.3 - 0.39"
-* url = "https://www.ceosys.de/fhir/population/Population_TODO"
-// TODO unique URL
-// Beginning of conditions to include patients
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -35,10 +33,10 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
-        * low = 0.3 ''
-        * high = 0.39 ''
+        * low = 30 '%' "%"
+        * high = 39 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point4
@@ -46,12 +44,11 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.4"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.4 - 0.49"
+* insert canonical-url(change-me) // TODO unique URL
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.4"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.4 - 0.49"
-* url = "https://www.ceosys.de/fhir/population/Population_TODO"
-// TODO unique URL
-// Beginning of conditions to include patients
+
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -75,10 +72,10 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
-        * low = 0.4 ''
-        * high = 0.49 ''
+        * low = 40 '%' "%"
+        * high = 49 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point5
@@ -86,12 +83,11 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.5"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.5 - 0.59"
+* insert canonical-url(change-me) // TODO unique URL
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.5"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.5 - 0.59"
-* url = "https://www.ceosys.de/fhir/population/Population_TODO"
-// TODO unique URL
-// Beginning of conditions to include patients
+
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -115,10 +111,10 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
-        * low = 0.5 ''
-        * high = 0.59 ''
+        * low = 50 '%' "%"
+        * high = 59 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point6
@@ -126,12 +122,11 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.6"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.6 - 0.69"
+* insert canonical-url(change-me) // TODO unique URL
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.6"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.6 - 0.69"
-* url = "https://www.ceosys.de/fhir/population/Population_TODO"
-// TODO unique URL
-// Beginning of conditions to include patients
+
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -155,10 +150,10 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
-        * low = 0.6 ''
-        * high = 0.69 ''
+        * low = 60 '%' "%"
+        * high = 69 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point7
@@ -166,12 +161,11 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.7"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.7 - 0.79"
+* insert canonical-url(change-me) // TODO unique URL
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.7"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.7 - 0.79"
-* url = "https://www.ceosys.de/fhir/population/Population_TODO"
-// TODO unique URL
-// Beginning of conditions to include patients
+
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -195,10 +189,10 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
-        * low = 0.7 ''
-        * high = 0.79 ''
+        * low = 70 '%' "%"
+        * high = 79 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point8
@@ -206,12 +200,10 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.8"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.8 - 0.89"
+* insert canonical-url(change-me) // TODO unique URL
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.8"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.8 - 0.89"
-* url = "https://www.ceosys.de/fhir/population/Population_TODO"
-// TODO unique URL
-// Beginning of conditions to include patients
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -235,10 +227,10 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
-        * low = 0.8 ''
-        * high = 0.89 ''
+        * low = 80 '%' "%"
+        * high = 89 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point9
@@ -246,12 +238,11 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.9"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.9 - 0.99"
+* insert canonical-url(change-me) // TODO unique URL
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.9"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.9 - 0.99"
-* url = "https://www.ceosys.de/fhir/population/Population_TODO"
-// TODO unique URL
-// Beginning of conditions to include patients
+
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -275,10 +266,10 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
-        * low = 0.9 ''
-        * high = 0.99 ''
+        * low = 90 '%' "%"
+        * high = 99 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-1
@@ -286,12 +277,10 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 1.0"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 1.0"
+* insert canonical-url(change-me) // TODO unique URL
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_1.0"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 1.0"
-* url = "https://www.ceosys.de/fhir/population/Population_TODO"
-// TODO unique URL
-// Beginning of conditions to include patients
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -315,8 +304,8 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
 
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
-      * type = $loinc#19994-3 "Oxygen/Total gas setting [Volume Fraction] Ventilator"
+      * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
-        * low = 1.0 ''
-        * high = 1.0 ''
+        * low = 100 '%' "%"
+        * high = 100 '%' "%"
 * characteristic[=].exclude = false
