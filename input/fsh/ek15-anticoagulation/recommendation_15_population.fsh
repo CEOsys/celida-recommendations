@@ -50,7 +50,6 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
   * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = true
 
-
 Instance: PopHospitalisedCOVID19PatientsWOVenousThrombosisWITHCI
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
@@ -76,7 +75,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
     * valueCodeableConcept = $sct#111293003 "Venous thrombosis (disorder)"
 * characteristic[condition][=].exclude = true
 // INCLUDE patients with the following contraindications
-* characteristic[+].definitionByCombination
+* characteristic[2].definitionByCombination
   * code = #any-of
   * characteristic[condition][+]
     * linkId = "hit2"
