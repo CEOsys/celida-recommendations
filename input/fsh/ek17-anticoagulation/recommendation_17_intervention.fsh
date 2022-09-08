@@ -19,7 +19,6 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMH)
   * selectionBehavior = #exactly-one
   * code.coding = $sct#432102000 "Administration of substance (procedure)"
-  * precheckBehavior = #yes
 * goal[laboratoryValue][+]
   * id = "aPTT-goal"
   * description.text = "aPTT value should be > 50 sec."
@@ -33,7 +32,6 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
   * selectionBehavior = #exactly-one
   * goalId = "aPTT-goal"
   * code = $sct#432102000 "Administration of substance (procedure)"
-  * precheckBehavior = #yes
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHDalteparin)
   * selectionBehavior = #exactly-one
@@ -100,9 +98,8 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 5000 $ucum#[iU] "IU"
+      * low = 5000 '[iU]' "IU"
     * rateQuantity = 1 '/d' "/d"
-* doNotPerform = true
 
 Instance: TherapeuticAnticoagulationNMHEnoxaparin
 InstanceOf: drug-administration-action
@@ -128,7 +125,6 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
     * doseRange
       * low = 40 'mg'
     * rateQuantity = 1 '/d' "/d"
-* doNotPerform = true
 
 Instance: TherapeuticAnticoagulationNMHNadroparinLowWeight
 InstanceOf: drug-administration-action
@@ -155,9 +151,8 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 3800 $ucum#[iU] "IU"
+      * low = 3800 '[iU]' "IU"
     * rateQuantity = 1 '/d' "/d"
-* doNotPerform = true
 
 Instance: TherapeuticAnticoagulationNMHNadroparinHighWeight
 InstanceOf: drug-administration-action
@@ -184,9 +179,8 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 5700 $ucum#[iU] "IU"
+      * low = 5700 '[iU]' "IU"
     * rateQuantity = 1 '/d' "/d"
-* doNotPerform = true
 
 Instance: TherapeuticAnticoagulationNMHCertoparin
 InstanceOf: drug-administration-action
@@ -200,7 +194,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Certoparin"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB13  "Certoparin"
+  * coding[atcde] = $atcde#B01AB13 "Certoparin"
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
 * dosage
   * timing
@@ -210,9 +204,8 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseRange
-      * low = 3000 $ucum#[iU] "IU"
+      * low = 3000 '[iU]' "IU"
     * rateQuantity = 1 '/d' "/d"
-* doNotPerform = true
 
 Instance: TherapeuticAnticoagulationNMH
 InstanceOf: drug-administration-action
@@ -238,7 +231,6 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
     * doseRange
       * low = 5000 $ucum#[iU] "IU"
     * rateQuantity = 1 '/d' "/d"
-* doNotPerform = true
 
 Instance: TherapeuticAnticoagulationFondaparinux
 InstanceOf: drug-administration-action
@@ -253,7 +245,7 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)"
-  * coding[sct]  = $sct#708189008 "Fondaparinux (substance)"
+  * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
 * dosage
   * timing
     * repeat
@@ -262,4 +254,4 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseQuantity = 2.5 'mg' "mg"
-    * rateQuantity = 1 '/d' "/d"
+    * rateQuantity = 2 '/d' "/d"
