@@ -17,20 +17,18 @@ Description: "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should b
 * description = "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours. "
 * subjectCanonical = Canonical(PopGroup) // TODO: Add reference when population is done: for patients with the above conditions
 * action[bodyPositioning][+]
-  * definitionCanonical = Canonical(AbdominalPositioningARDS)
+  * definitionCanonical = Canonical(PronePositioning)
   * code = $sct#229824005 "Positioning patient (procedure)"
-  * goalId = "Proning-duration-goal"
-  * selectionBehavior = #exactly-one
 
 /**********************/
 /* Recommended Action */
 /**********************/
-Instance: AbdominalPositioningARDS
+Instance: PronePositioning
 InstanceOf: body-positioning-action
 Usage: #example
-Title: "Abdominal Positioning in case of ARDS"
+Title: "Abdominal Positioning"
 Description: "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours."
-* name = "AbdominalPositioningARDS"
+* name = "PronePositioning"
 * insert canonical-url(/intervention-activity/abdominal-positioning-ARDS) // TOOD: Proper URL
 * insert publisher-experimental-version(7.0)
 * description = "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours."
