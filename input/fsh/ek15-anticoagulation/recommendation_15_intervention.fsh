@@ -113,7 +113,7 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * high = 5000 '[iU]' "IU"
@@ -138,7 +138,7 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * high = 40 'mg'
@@ -166,7 +166,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 3800 '[iU]' "IU"
@@ -194,7 +194,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * high = 5700 '[iU]' "IU"
@@ -219,7 +219,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * high = 3000 '[iU]' "IU"
@@ -267,7 +267,7 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * high = 5000 '[iU]' "IU"
@@ -293,7 +293,7 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * high = 40 'mg'
@@ -322,7 +322,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 3800 '[iU]' "IU"
@@ -351,7 +351,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * high = 5700 '[iU]' "IU"
@@ -377,7 +377,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * high = 3000 '[iU]' "IU"
