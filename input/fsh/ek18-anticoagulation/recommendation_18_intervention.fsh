@@ -1,7 +1,7 @@
 /*********************/
 /* Intervention Plan */
 /*********************/
-Instance: TherapeuticAnticoagulationICUCOVID19NoIndicationPlan
+Instance: NoTherapeuticAnticoagulationICUCOVID19NoIndicationPlan
 InstanceOf: recommendation-plan
 Usage: #example
 Title: "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients with no specific indication"
@@ -15,41 +15,41 @@ Description: "In intensive care patients without a specific indication (e.g. pul
 * status = #active
 * description = "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
 * subjectCanonical = Canonical(PopHospitalisedICUCOVID19Patients)
-* action[drugAdministration][+]
-  * definitionCanonical = Canonical(NonProphylacticAnticoagulationWDalteparin)
-  * selectionBehavior = #all
-  * code = $sct#432102000 "Administration of substance (procedure)"
-* action[drugAdministration][+]
-  * definitionCanonical = Canonical(NonProphylacticAnticoagulationWEnoxaparin)
-  * selectionBehavior = #all
-  * code = $sct#432102000 "Administration of substance (procedure)"
-* action[drugAdministration][+]
-  * definitionCanonical = Canonical(NonProphylacticAnticoagulationWNadroparinLowWeight)
-  * selectionBehavior = #all
-  * code = $sct#432102000 "Administration of substance (procedure)"
-* action[drugAdministration][+]
-  * definitionCanonical = Canonical(NonProphylacticAnticoagulationWNadroparinHighWeight)
-  * selectionBehavior = #all
-  * code = $sct#432102000 "Administration of substance (procedure)"
-* action[drugAdministration][+]
-  * definitionCanonical = Canonical(NonProphylacticAnticoagulationWCertoparin)
-  * selectionBehavior = #all
-  * code = $sct#432102000 "Administration of substance (procedure)"
 * goal[laboratoryValue][+]
   * id = "aPTT-goal"
   * description.text = "aPTT value should not be > 50 sec."
-  * category.coding = $sct#118246004 "Laboratory test finding (navigational concept)"
+  * category = $sct#410394004 "Lab findings surveillance (regime/therapy)"
   * target
     * measure = $loinc#50754-1 "aPTT in Pooled Platelet poor plasma by Coagulation assay"
     * detailRange
       * high = 50 's' "sec"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(NonProphylacticAnticoagulationWArgatra)
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWEnoxaparin)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparinLowWeight)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparinHighWeight)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWCertoparin)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWArgatra)
   * goalId = "aPTT-goal"
   * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(NonProphylacticAnticoagulationWUFH)
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWUFH)
   * goalId = "aPTT-goal"
   * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
@@ -57,7 +57,7 @@ Description: "In intensive care patients without a specific indication (e.g. pul
 /*************************/
 /* Intervention Activity */
 /*************************/
-Instance: NonProphylacticAnticoagulationWDalteparin
+Instance: NoTherapeuticAnticoagulationWDalteparin
 InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Dalteparin"
@@ -83,7 +83,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-i
     * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
-Instance: NonProphylacticAnticoagulationWEnoxaparin
+Instance: NoTherapeuticAnticoagulationWEnoxaparin
 InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Enoxaparin"
@@ -109,7 +109,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-i
     * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
-Instance: NonProphylacticAnticoagulationWNadroparinLowWeight
+Instance: NoTherapeuticAnticoagulationWNadroparinLowWeight
 InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Nadroparin Low Weight"
@@ -138,7 +138,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
     * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
-Instance: NonProphylacticAnticoagulationWNadroparinHighWeight
+Instance: NoTherapeuticAnticoagulationWNadroparinHighWeight
 InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Nadroparin High Weight"
@@ -167,7 +167,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
     * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
-Instance: NonProphylacticAnticoagulationWCertoparin
+Instance: NoTherapeuticAnticoagulationWCertoparin
 InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Certoparin"
@@ -179,7 +179,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-i
 * description = "No Therapeutic Anticoagulation Treatment with Certoparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB13  "Certoparin"
+  * coding[atcde] = $atcde#B01AB13 "Certoparin"
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
 * dosage
   * timing
@@ -193,7 +193,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-i
     * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
-Instance: NonProphylacticAnticoagulationWUFH
+Instance: NoTherapeuticAnticoagulationWUFH
 InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with UFH"
@@ -209,7 +209,7 @@ Description: "No Therapeutic Anticoagulation Treatment with UFH for non-intensiv
   * coding[sct] = $sct#372877000 "Heparin (substance)"
 * doNotPerform = true
 
-Instance: NonProphylacticAnticoagulationWArgatra
+Instance: NoTherapeuticAnticoagulationWArgatra
 InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Argatroban"
