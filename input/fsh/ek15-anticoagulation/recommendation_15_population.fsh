@@ -14,17 +14,19 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 * name = "COVID19_patients_without_venous_thrombosis_without_contraindications"
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
 * url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WO_Thrombosis_WO_Highrisk" // TODO unique URL
+// Include COVID-19 patients without thrombosis
 * characteristic[condition][+]
   * linkId = "covid19"
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
 * characteristic[condition][=].exclude = false
-* characteristic[condition][+] // Exclude patients with Thrombosis
+* characteristic[condition][+]
   * linkId = "venous-thrombosis"
   * definitionByTypeAndValue
     * valueCodeableConcept = $sct#111293003 "Venous Thrombosis"
 * characteristic[condition][=].exclude = true
-* characteristic[2].definitionByCombination // Exclude patients with any of the following contraindications
+ // Exclude patients with any of the following contraindications
+* characteristic[2].definitionByCombination
   * code = #any-of
   * characteristic[condition][+]
     * linkId = "hit2"
@@ -76,7 +78,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
       * valueCodeableConcept = $sct#111293003 "Venous thrombosis (disorder)"
   * characteristic[condition][=].exclude = true
 * characteristic[=].exclude = false
-// exclude patients with the following contraindications
+// INCLUDE patients with the following contraindications
 * characteristic[+].definitionByCombination
   * code = #any-of
   * characteristic[condition][+]
@@ -114,8 +116,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 Patients w
 * name = "COVID19_patients_with_venous_thrombosis"
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients with (venous) thrombosis"
 * url = "https://www.ceosys.de/fhir/population/Population_Hospitalised_COVID19_WITH_Thrombosis" // TODO: unique, actual URL
-
-// Include COVID-19 patients without thrombosis
+ // Include patients with COVID-19 AND venous thrombosis
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]

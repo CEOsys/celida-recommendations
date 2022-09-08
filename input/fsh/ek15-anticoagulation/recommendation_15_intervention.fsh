@@ -35,7 +35,6 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
   * selectionBehavior = #exactly-one
   * code = $sct#432102000 "Administration of substance (procedure)"
 
-
 Instance: AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
 Usage: #example
@@ -54,7 +53,6 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
   * definitionCanonical = Canonical(AntithromboticProphylaxisFondaparinuxSubcutaneous)
   * selectionBehavior = #exactly-one
 
-
 Instance: NoAntithrombProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
 Usage: #example
@@ -69,9 +67,29 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
 * description = "No antithrombotic prophylaxis in patients with thrombosis"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWITHThrombosis)
 * action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoProphylacticAnticoagulationWDalteparin)
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
-  * definitionCanonical = Canonical(NoAntithromboticProphylaxis)
-  * selectionBehavior = #exactly-one
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoProphylacticAnticoagulationWEnoxaparin)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoProphylacticAnticoagulationWNadroparinLowWeight)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoProphylacticAnticoagulationWNadroparinHighWeight)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoProphylacticAnticoagulationWCertoparin)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoAntithromboticProphylaxisFondaparinuxSubcutaneous)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
 
 /**********************/
 /* Recommended Action */
@@ -154,7 +172,6 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
       * low = 3800 $ucum#[iU] "IU"
     * rateQuantity = 1 '/d' "/d"
 
-
 Instance: ProphylacticAnticoagulationWNadroparinHighWeight
 InstanceOf: drug-administration-action
 Usage: #example
@@ -183,7 +200,6 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
       * low = 5700 $ucum#[iU] "IU"
     * rateQuantity = 1 '/d' "/d"
 
-
 Instance: ProphylacticAnticoagulationWCertoparin
 InstanceOf: drug-administration-action
 Usage: #example
@@ -196,7 +212,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
 * description = "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB13  "Certoparin"
+  * coding[atcde] = $atcde#B01AB13 "Certoparin"
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
 * dosage
   * timing
@@ -208,7 +224,6 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
     * doseRange
       * low = 3000 $ucum#[iU] "IU"
     * rateQuantity = 1 '/d' "/d"
-
 
 Instance: AntithromboticProphylaxisFondaparinuxSubcutaneous
 InstanceOf: drug-administration-action
@@ -233,15 +248,99 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
     * rateQuantity = 1 '/d' "/d"
 
 
-Instance: NoAntithromboticProphylaxis
+/* DO NOT PERFORM actions */
+Instance: NoProphylacticAnticoagulationWDalteparin
 InstanceOf: drug-administration-action
 Usage: #example
-Title: "No Antithrombotic prophylaxis in patients with thrombosis"
-Description: "No antithrombotic prophylaxis in patients with thrombosis"
-* insert canonical-url(recommendation-action/No_antithrombotic_prophylaxis) // TODO: check url
+Title: "Antithrombotic prophylaxis with Dalteparin"
+Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-dalteparin-administration) // TODO: check url
 * insert publisher-experimental-version(0.1)
-* name = "NoAntithromboticProphylaxisApplicationActivity"
+* name = "AntithromboticProphylaxisWithDalteparinPlan"
 * status = #active
-* description = "No antithrombotic prophylaxis in patients with thrombosis"
+* description = "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
+* doNotPerform = true
+
+Instance: NoProphylacticAnticoagulationWEnoxaparin
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Antithrombotic prophylaxis with Enoxaparin"
+Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-enoxaparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
+* name = "AntithromboticProphylaxisWithEnoxaparinPlan"
+* status = #active
+* description = "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
+  * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
+* doNotPerform = true
+
+Instance: NoProphylacticAnticoagulationWNadroparinLowWeight
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Antithrombotic prophylaxis with Nadroparin Low Weight"
+Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
+* name = "AntithromboticProphylaxisWithPlanNadroparinLowWeight"
+* status = #active
+* description = "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
+  * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+* doNotPerform = true
+
+Instance: NoProphylacticAnticoagulationWNadroparinHighWeight
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Antithrombotic prophylaxis with Nadroparin High Weight"
+Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
+* name = "AntithromboticProphylaxisWithNadroparinHighWeightPlan"
+* status = #active
+* description = "Antithrombotic prophylaxis with Nadroparin High Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
+  * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+* doNotPerform = true
+
+Instance: NoProphylacticAnticoagulationWCertoparin
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Antithrombotic prophylaxis with with Certoparin"
+Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-certoparin-administration) // TODO: check url
+* insert publisher-experimental-version(0.1)
+* name = "AntithromboticProphylaxisWithCertoparinPlan"
+* status = #active
+* description = "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AB13 "Certoparin"
+  * coding[sct] = $sct#395961003 "Certoparin (substance)"
+* doNotPerform = true
+
+Instance: NoAntithromboticProphylaxisFondaparinuxSubcutaneous
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Antithrombotic prophylaxis with Fondaparinux"
+Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients (when contraindications for LWMH exist)"
+* insert canonical-url(recommendation-action/antithrombotic_prophylaxis_fondaparinux) // TODO: check url
+* insert publisher-experimental-version(0.1)
+* name = "ProphylacticFondaparinuxApplicationActivity"
+* status = #active
+* description = "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients (when contraindications for LWMH exist)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AX05 "Fondaparinux"
+  * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
 * doNotPerform = true
