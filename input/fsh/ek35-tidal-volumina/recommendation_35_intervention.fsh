@@ -6,7 +6,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "Ventilation Plan for COVID-19 patients with ARDS"
 Description: "In ventilated patients with COVID-19 and ARDS, tidal volume should be ≤ 6 ml/kg standard body weight, end-inspiratory airway pressure ≤ 30 cm H2O."
-* insert canonical-url(change-me) // TODO: check url
+* insert canonical-url(intervention-plan/ventilation-plan) 
 * insert publisher-experimental-version(7.0)
 * name = "Ventilation_Plan"
 * title = "Ventilation parameters for COVID-19 patients with ARDS"
