@@ -3,7 +3,7 @@ canonical: https://www.ceosys.de/fhir
 name: CELIDA Recommendations
 title: CODEX+ CELIDA Recommendations
 status: draft
-version: 1.0.0
+version: 1.0.0-snapshot
 fhirVersion: 5.0.0-ballot
 copyrightYear: 2021+
 releaseLabel: ci-build

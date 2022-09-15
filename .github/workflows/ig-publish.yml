@@ -1,0 +1,58 @@
+name: ImplementationGuide Publisher
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main or master branch
+  push:
+    branches:
+      - main
+      - master
+      - staging
+  pull_request:
+    branches:
+      - main
+      - master
+      - staging
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  run-publisher:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Run the IG publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: ./scripts/run-ig-publisher.sh
+
+      # deploy implementation guide to github pages
+      - name: Deploy
+        if: (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          force_orphan: true
+
+      - name: Get Version
+        id: version
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: './output/package.manifest.json'
+          prop_path: 'version'
+
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./output/package.tgz
+          asset_name: recommendations.celida.codex.netzwerk-universitaetsmedizin.de-${{ steps.version.outputs.prop }}.tgz
+          tag: v${{ steps.version.outputs.prop }}
+          release_name: Release v${{ steps.version.outputs.prop }}
+          overwrite: true
