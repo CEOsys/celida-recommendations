@@ -53,6 +53,11 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
   * selectionBehavior = #exactly-one
   * code = $sct#432102000 "Administration of substance (procedure)"
   * precheckBehavior = #no
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationWArgatra)
+  * goalId = "aPTT-goal"
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
 
 /**********************/
 /* Recommended Action */
@@ -226,3 +231,18 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
   * doseAndRate
     * doseQuantity = 2.5 'mg' "mg"
     * rateQuantity = 2 '/d' "/d"
+
+Instance: TherapeuticAnticoagulationWArgatra
+InstanceOf: drug-administration-action
+Usage: #example
+Title: "Therapeutic Anticoagulation Treatment with Argatroban"
+Description: "Therapeutic Anticoagulation Treatment with Argatroban for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(recommended-action/drug-administration-action/therapeutic-anticoagulant-argatroban-administration)
+* insert publisher-experimental-version(0.1)
+* name = "TherapeuticAnticoagulationPlanArgatroban"
+* status = #active
+* description = "Therapeutic Anticoagulation Treatment with Argatroban for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AE03 "Argatroban"
+  * coding[sct] = $sct#116508003 "Argatroban (substance)"
