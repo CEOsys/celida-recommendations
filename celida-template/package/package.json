@@ -1,13 +1,13 @@
 {
-  "name": "ceosys.de.template",
+  "name": "de.netzwerk-universitaetsmedizin.codexplus.celida.template",
   "version": "0.0.1",
   "type": "fhir.template",
   "license": "CC0-1.0",
-  "description": "ceosys template extension for FHIR IG",
+  "description": "CODEX+ CELIDA template extension for FHIR IG",
   "author": "Gregor Lichtner",
   "base": "fhir.base.template",
   "dependencies": {
     "fhir.base.template": "current",
-    "hl7.fhir.r4.core": "4.0.1"
+    "hl7.fhir.r5.core": "5.0.0-ballot"
   }
 }
