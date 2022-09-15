@@ -1,9 +1,9 @@
 id: celida-recommendations
 canonical: https://www.ceosys.de/fhir
 name: CELIDA Recommendations
-title: Clinical Practice Guidelines (CPG) on EBMonFHIR
+title: CODEX+ CELIDA Recommendations
 status: draft
-version: 0.1.0
+version: 1.0.0
 fhirVersion: 5.0.0-ballot
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -12,30 +12,26 @@ publisher:
   url: https://www.medizin.uni-greifswald.de/
 
 dependencies:
+  # Explicit dependency on hl7.terminology not required (and probably wrong version), but if this is not specified here
+  # then the IG publisher will insert "hl7.terminology.r5#3.0.0" into the package, which uses version string "4.6.0" which
+  # is otherwise not known by the IG publisher and will yield errors
+  hl7.terminology:
+    version: 3.1.0
   cpg.ceosys.de:
     version: 0.3.1-snapshot
 
 pages:
   index.md:
     title: CELIDA Recommendations
-  profiles.md:
-  codesystems.md:
-    title: Code Systems
-  valuesets.md:
-    title: Value Sets
-  extensions.md:
-  examples.md:
+  #examples.md:
   downloads.xml:
   changelog.md:
     title: Change Log
 
 menu:
   Home: index.html
-  Profiles: profiles.html
-  Code Systems: codesystems.html
-  Value Sets: valuesets.html
-  Extensions: extensions.html
-  Examples: examples.html
+  #Examples: examples.html
+  Artifacts: artifacts.html
   Downloads: downloads.html
   Change Log: changelog.html
 
