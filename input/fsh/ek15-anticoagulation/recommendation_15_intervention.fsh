@@ -6,7 +6,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "Antithrombotic prophylaxis with LWMH"
 Description: "Hospitalized patients with COVID-19 should receive standard drug thromboembolism prophylaxis with low molecular weight heparin in the absence of contraindications. Alternatively, fondaparinux may be used. "
-* insert canonical-url(change-me) // TODO: add proper url
+* insert canonical-url(intervention-plan/antithrombotic-prophylaxis-LMWH) 
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithLWMH"
 * title = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
@@ -40,7 +40,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "Antithrombotic prophylaxis with Fondaparinux"
 Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
-* insert canonical-url(change-me) // TODO: add proper url
+* insert canonical-url(intervention-plan/antithrombotic-prophylaxis-fondaparinux)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithFondaparinux"
 * title = "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
@@ -58,7 +58,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "No antithrombotic prophylaxis in patients with thrombosis"
 Description: "No antithrombotic prophylaxis in patients with thrombosis"
-* insert canonical-url(change-me) // TODO: add proper url
+* insert canonical-url(intervention-plan/no-antithrombotic-prophylaxis)
 * insert publisher-experimental-version(0.1)
 * name = "NoAntithromboticProphylaxis"
 * title = "No antithrombotic prophylaxis in patients with thrombosis"
@@ -99,7 +99,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Dalteparin"
 Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-dalteparin-administration) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/antithrombotic-prophylaxis-dalteparin-administration) 
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithDalteparinPlan"
 * status = #active
@@ -124,7 +124,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Enoxaparin"
 Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-enoxaparin-administration) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/antithrombotic-prophylaxis-enoxaparin-administration)  
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithEnoxaparinPlan"
 * status = #active
@@ -149,7 +149,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Nadroparin Low Weight"
 Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/antithrombotic-prophylaxis-nadroparin-administration-low-weight)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithPlanNadroparinLowWeight"
 * status = #active
@@ -177,7 +177,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Nadroparin High Weight"
 Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/antithrombotic-prophylaxis-nadroparin-administration-high-weight)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithNadroparinHighWeightPlan"
 * status = #active
@@ -203,9 +203,9 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
 Instance: ProphylacticAnticoagulationWCertoparin
 InstanceOf: drug-administration-action
 Usage: #example
-Title: "Antithrombotic prophylaxis with with Certoparin"
+Title: "Antithrombotic prophylaxis with Certoparin"
 Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-certoparin-administration) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/antithrombotic-prophylaxis-certoparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithCertoparinPlan"
 * status = #active
@@ -230,7 +230,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Fondaparinux"
 Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients (when contraindications for LWMH exist)"
-* insert canonical-url(recommendation-action/antithrombotic_prophylaxis_fondaparinux) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/antithrombotic-prophylaxis-fondaparinux-administration)
 * insert publisher-experimental-version(0.1)
 * name = "ProphylacticFondaparinuxApplicationActivity"
 * status = #active
@@ -253,7 +253,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Dalteparin"
 Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-dalteparin-administration) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-dalteparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithDalteparinPlan"
 * status = #active
@@ -279,7 +279,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Enoxaparin"
 Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-enoxaparin-administration) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-enoxaparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithEnoxaparinPlan"
 * status = #active
@@ -305,7 +305,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Nadroparin Low Weight"
 Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-nadroparin-administration-low-weight)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithPlanNadroparinLowWeight"
 * status = #active
@@ -334,7 +334,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Nadroparin High Weight"
 Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-nadroparin-administration) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-nadroparin-administration-high-weight)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithNadroparinHighWeightPlan"
 * status = #active
@@ -363,7 +363,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with with Certoparin"
 Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(intervention-activity/no-therapeutic-anticoagulant-certoparin-administration) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-certoparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithCertoparinPlan"
 * status = #active
@@ -389,7 +389,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Fondaparinux"
 Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients (when contraindications for LWMH exist)"
-* insert canonical-url(recommendation-action/antithrombotic_prophylaxis_fondaparinux) // TODO: check url
+* insert canonical-url(recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-fondaparinux-administration)
 * insert publisher-experimental-version(0.1)
 * name = "ProphylacticFondaparinuxApplicationActivity"
 * status = #active
