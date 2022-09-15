@@ -23,8 +23,8 @@ function box_out()
   tput sgr 0
 }
 
-box_out 'Downloading FHIR R5 CI build'
-/bin/bash $SCRIPT_DIR/download-fhir-r5-ci.sh
+#box_out 'Downloading FHIR R5 CI build'
+#/bin/bash $SCRIPT_DIR/download-fhir-r5-ci.sh
 
 box_out 'Downloading CPG-on-EBMonFHIR package'
 /bin/bash $SCRIPT_DIR/download-cpg-package.sh
@@ -32,8 +32,8 @@ box_out 'Downloading CPG-on-EBMonFHIR package'
 box_out 'Installing SUSHI'
 npm install -g fsh-sushi
 
-box_out 'Downloading FHIR validator (custom build)'
-curl -L https://github.com/CEOsys/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -o ./validator_cli.jar
+box_out 'Downloading FHIR validator'
+curl -L https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -o ./validator_cli.jar
 
 box_out 'Downloading IG Publisher (custom build)'
 curl -L https://github.com/CEOsys/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
