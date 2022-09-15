@@ -35,4 +35,4 @@ Description: "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should b
 * status = #active
 * code = $sct#431182000 "Placing subject in prone position (procedure)"
 * timingRange
-  * low = 57600 's'
+  * low = 16 'h' "hour"
