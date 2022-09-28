@@ -6,7 +6,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients with no specific indication"
 Description: "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
-* insert canonical-url(intervention-plan/no-therapeutic-anticoagulation) 
+* insert canonical-url(intervention-plan/no-therapeutic-anticoagulation)
 * insert publisher-experimental-version(7.0)
 * name = "Anticoagulation_Plan_No_Specific_Indication"
 * title = "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients with no specific indication"
@@ -20,7 +20,7 @@ Description: "In intensive care patients without a specific indication (e.g. pul
   * description.text = "aPTT value should not be > 50 sec."
   * category = $sct#410394004 "Lab findings surveillance (regime/therapy)"
   * target
-    * measure = $loinc#50754-1 "aPTT in Pooled Platelet poor plasma by Coagulation assay"
+    * measure = $loinc#3173-2 "aPTT in Blood by Coagulation assay"
     * detailRange
       * low = 50 's' "sec"
 * action[drugAdministration][+]
@@ -172,7 +172,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Certoparin"
 Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(recommended-action/drug-administration-action/no-therapeutic-anticoagulant-certoparin-administration) 
+* insert canonical-url(recommended-action/drug-administration-action/no-therapeutic-anticoagulant-certoparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanCertoparin"
 * status = #active

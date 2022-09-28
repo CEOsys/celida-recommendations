@@ -20,7 +20,7 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
   * description.text = "aPTT value should be > 50 sec."
   * category.coding = $sct#118246004 "Laboratory test finding (navigational concept)"
   * target
-    * measure = $loinc#50754-1 "aPTT in Pooled Platelet poor plasma by Coagulation assay"
+    * measure = $loinc#3173-2 "aPTT in Blood by Coagulation assay"
     * detailRange
       * low = 50 's' "sec"
 * action[drugAdministration][+]
