@@ -29,7 +29,6 @@ then
   exit 1
 fi
 
-rm input/data/ig.yml
 git add .
 git commit -m "$message"
 git tag -a "v$new_version" -m "$message"
