@@ -37,6 +37,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
       * valueRange
         * low = 30 '%' "%"
         * high = 39.99999999999999999999999 '%' "%"
+  * characteristic[ventilationObservableLOINC][=].exclude = false
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point4
