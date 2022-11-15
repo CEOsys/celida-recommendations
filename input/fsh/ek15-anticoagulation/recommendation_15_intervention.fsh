@@ -6,7 +6,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "Antithrombotic prophylaxis with LWMH"
 Description: "Hospitalized patients with COVID-19 should receive standard drug thromboembolism prophylaxis with low molecular weight heparin in the absence of contraindications. Alternatively, fondaparinux may be used. "
-* insert canonical-url(intervention-plan/antithrombotic-prophylaxis-LMWH) 
+* insert canonical-url(intervention-plan/antithrombotic-prophylaxis-LMWH)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithLWMH"
 * title = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
@@ -68,27 +68,27 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWITHThrombosis)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWDalteparin)
-  * selectionBehavior = #all
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWEnoxaparin)
-  * selectionBehavior = #all
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWNadroparinLowWeight)
-  * selectionBehavior = #all
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWNadroparinHighWeight)
-  * selectionBehavior = #all
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWCertoparin)
-  * selectionBehavior = #all
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoAntithromboticProphylaxisFondaparinuxSubcutaneous)
-  * selectionBehavior = #all
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /**********************/
@@ -99,7 +99,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Dalteparin"
 Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(recommended-action/drug-administration-action/antithrombotic-prophylaxis-dalteparin-administration) 
+* insert canonical-url(recommended-action/drug-administration-action/antithrombotic-prophylaxis-dalteparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithDalteparinPlan"
 * status = #active
@@ -124,7 +124,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "Antithrombotic prophylaxis with Enoxaparin"
 Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
-* insert canonical-url(recommended-action/drug-administration-action/antithrombotic-prophylaxis-enoxaparin-administration)  
+* insert canonical-url(recommended-action/drug-administration-action/antithrombotic-prophylaxis-enoxaparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "AntithromboticProphylaxisWithEnoxaparinPlan"
 * status = #active

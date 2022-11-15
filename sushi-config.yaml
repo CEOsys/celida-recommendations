@@ -18,19 +18,17 @@ dependencies:
   hl7.terminology:
     version: 3.1.0
   cpg.ceosys.de:
-    version: 0.3.5-snapshot
+    version: 0.3.5
 
 pages:
   index.md:
     title: CELIDA Recommendations
-  #examples.md:
   downloads.xml:
   changelog.md:
     title: Change Log
 
 menu:
   Home: index.html
-  #Examples: examples.html
   Artifacts: artifacts.html
   Downloads: downloads.html
   Change Log: changelog.html
@@ -48,6 +46,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   excludettl: 'true' # when true, these parameters will cause the publisher to exclude the generation of the respective formats - xml, json or ttl  - and to exclude the respective tabs from the implementation guide pages.
   excludemap: 'true' # when true, these parameters will cause the publisher to exclude the generation of the respective formats - xml, json or ttl  - and to exclude the respective tabs from the implementation guide pages.
   excludeexample: 'true'
-  extension-domain: # An external domain fro which extensions are allowed to come (else they'll be flagged as invalid when validating).
+  extension-domain: # An external domain for which extensions are allowed to come (else they'll be flagged as invalid when validating).
   - https://www.netzwerk-universitaetsmedizin.de
   - https://simplifier.net

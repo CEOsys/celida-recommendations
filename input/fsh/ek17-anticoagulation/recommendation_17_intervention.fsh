@@ -25,38 +25,38 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
       * low = 50 's' "sec"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationUFH)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * goalId = "aPTT-goal"
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHDalteparin)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHEnoxaparin)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHNadroparinLowWeight)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHNadroparinHighWeight)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHCertoparin)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationFondaparinux)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
   * precheckBehavior = #no
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationWArgatra)
   * goalId = "aPTT-goal"
-  * selectionBehavior = #all
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /**********************/

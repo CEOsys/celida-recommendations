@@ -52,7 +52,6 @@ jobs:
         with:
           node-version: '18'
 
-
       - name: Prepare environment
         run: ./scripts/prepare-environment.sh
 
