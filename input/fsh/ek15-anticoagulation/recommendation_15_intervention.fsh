@@ -237,7 +237,10 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * dosage
   * route = $sct#386362006 "Administration of drug or medicament via subcutaneous route (procedure)"
   * timing
-    * code = $cs-gts-timing#QD // TODO: is redundant with doseAndRate - define profile here?
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseQuantity = 2.5 'mg' "mg"
 
@@ -390,7 +393,10 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * dosage
   * route = $sct#386362006 "Administration of drug or medicament via subcutaneous route (procedure)"
   * timing
-    * code = $cs-gts-timing#QD // TODO: is redundant with doseAndRate - define profile here?
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseQuantity = 2.5 'mg' "mg"
 * doNotPerform = true
