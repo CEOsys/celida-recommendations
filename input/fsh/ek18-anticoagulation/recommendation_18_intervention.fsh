@@ -80,7 +80,6 @@ Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-i
   * doseAndRate
     * doseRange
       * low = 5000 $ucum#[iU] "IU"
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWEnoxaparin
@@ -106,7 +105,6 @@ Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-i
   * doseAndRate
     * doseRange
       * low = 40 'mg'
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWNadroparinLowWeight
@@ -135,7 +133,6 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
   * doseAndRate
     * doseRange
       * low = 3800 $ucum#[iU] "IU"
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWNadroparinHighWeight
@@ -164,7 +161,6 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
   * doseAndRate
     * doseRange
       * low = 5700 $ucum#[iU] "IU"
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWCertoparin
@@ -190,7 +186,6 @@ Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-i
   * doseAndRate
     * doseRange
       * low = 3000 $ucum#[iU] "IU"
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWUFH
