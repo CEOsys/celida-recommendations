@@ -100,7 +100,6 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * doseAndRate
     * doseRange
       * low = 5000 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 
 Instance: TherapeuticAnticoagulationNMHEnoxaparin
 InstanceOf: drug-administration-action
@@ -125,7 +124,6 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * doseAndRate
     * doseRange
       * low = 40 'mg'
-    * rateQuantity = 1 '/d' "/d"
 
 Instance: TherapeuticAnticoagulationNMHNadroparinLowWeight
 InstanceOf: drug-administration-action
@@ -153,7 +151,6 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * doseAndRate
     * doseRange
       * low = 3800 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 
 Instance: TherapeuticAnticoagulationNMHNadroparinHighWeight
 InstanceOf: drug-administration-action
@@ -181,7 +178,6 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * doseAndRate
     * doseRange
       * low = 5700 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 
 Instance: TherapeuticAnticoagulationNMHCertoparin
 InstanceOf: drug-administration-action
@@ -206,7 +202,6 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * doseAndRate
     * doseRange
       * low = 3000 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 
 Instance: TherapeuticAnticoagulationFondaparinux
 InstanceOf: drug-administration-action

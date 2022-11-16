@@ -117,7 +117,6 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
   * doseAndRate
     * doseRange
       * high = 5000 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 
 Instance: ProphylacticAnticoagulationWEnoxaparin
 InstanceOf: drug-administration-action
@@ -142,7 +141,6 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
   * doseAndRate
     * doseRange
       * high = 40 'mg'
-    * rateQuantity = 1 '/d' "/d"
 
 Instance: ProphylacticAnticoagulationWNadroparinLowWeight
 InstanceOf: drug-administration-action
@@ -170,7 +168,6 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
   * doseAndRate
     * doseRange
       * low = 3800 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 
 Instance: ProphylacticAnticoagulationWNadroparinHighWeight
 InstanceOf: drug-administration-action
@@ -198,7 +195,6 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
   * doseAndRate
     * doseRange
       * high = 5700 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 
 Instance: ProphylacticAnticoagulationWCertoparin
 InstanceOf: drug-administration-action
@@ -223,7 +219,6 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
   * doseAndRate
     * doseRange
       * high = 3000 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 
 Instance: AntithromboticProphylaxisFondaparinuxSubcutaneous
 InstanceOf: drug-administration-action
@@ -242,10 +237,12 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * dosage
   * route = $sct#386362006 "Administration of drug or medicament via subcutaneous route (procedure)"
   * timing
-    * code = $cs-gts-timing#QD // TODO: is redundant with doseAndRate - define profile here?
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseQuantity = 2.5 'mg' "mg"
-    * rateQuantity = 1 '/d' "/d"
 
 /* DO NOT PERFORM actions */
 Instance: NoProphylacticAnticoagulationWDalteparin
@@ -271,7 +268,6 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
   * doseAndRate
     * doseRange
       * high = 5000 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWEnoxaparin
@@ -297,7 +293,6 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
   * doseAndRate
     * doseRange
       * high = 40 'mg'
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWNadroparinLowWeight
@@ -326,7 +321,6 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
   * doseAndRate
     * doseRange
       * low = 3800 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWNadroparinHighWeight
@@ -355,7 +349,6 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
   * doseAndRate
     * doseRange
       * high = 5700 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWCertoparin
@@ -381,7 +374,6 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
   * doseAndRate
     * doseRange
       * high = 3000 '[iU]' "IU"
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
 
 Instance: NoAntithromboticProphylaxisFondaparinuxSubcutaneous
@@ -401,8 +393,10 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * dosage
   * route = $sct#386362006 "Administration of drug or medicament via subcutaneous route (procedure)"
   * timing
-    * code = $cs-gts-timing#QD // TODO: is redundant with doseAndRate - define profile here?
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseQuantity = 2.5 'mg' "mg"
-    * rateQuantity = 1 '/d' "/d"
 * doNotPerform = true
