@@ -1,5 +1,5 @@
 id: celida-recommendations
-canonical: https://www.ceosys.de/fhir
+canonical: https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida
 name: CELIDA Recommendations
 title: CODEX+ CELIDA Recommendations
 status: draft
@@ -36,7 +36,7 @@ menu:
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   active-tables: 'true' # Whether to generate active tables in the generated fragments (tables that will expand and contract).
   apply-contact: 'false' # if true, overwrite all canonical resource contact details with that found in the IG.
-  apply-jurisdiction: 'false' # if true, overwrite all canonical resource jurisidiction details with that found in the IG.
+  apply-jurisdiction: 'false' # if true, overwrite all canonical resource jurisdiction details with that found in the IG.
   apply-publisher: 'false' # if true, overwrite all canonical resource publisher details with that found in the IG.
   apply-version: 'false' # if true, overwrite all canonical resource version details with that found in the IG.  Default = false
   show-inherited-invariants: 'false' # If true, render inherited constraints in the full details and invariants view. Default = true
