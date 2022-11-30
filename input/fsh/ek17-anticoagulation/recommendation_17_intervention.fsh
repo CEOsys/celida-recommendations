@@ -225,7 +225,6 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
       * periodUnit = $ucum#d "d"
   * doseAndRate
     * doseQuantity = 2.5 'mg' "mg"
-    * rateQuantity = 2 '/d' "/d"
 
 Instance: TherapeuticAnticoagulationWArgatra
 InstanceOf: drug-administration-action
