@@ -74,8 +74,8 @@ Description: "Therapeutic Anticoagulation Treatment (UFH) for non-intensive care
 * description = "Therapeutic Anticoagulation Treatment (UFH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB01 "Heparin"
   * coding[sct] = $sct#372877000 "Heparin (substance)"
+  * coding[atcde] = $atcde#B01AB01 "Heparin"
 
 Instance: TherapeuticAnticoagulationNMHDalteparin
 InstanceOf: drug-administration-action
@@ -89,14 +89,14 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Dalteparin"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
   * coding[sct] = $sct#372563008 "Dalteparin (substance)"
+  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
 * dosage
   * timing
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 5000 '[iU]' "IU"
@@ -113,14 +113,14 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Enoxaparin"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
   * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
+  * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
 * dosage
   * timing
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 40 'mg'
@@ -137,8 +137,8 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients (low weight) with high risk (D-Dimer >= 2mg/l) with Nadroparin"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
 * dosage[+]
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
@@ -147,7 +147,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 3800 '[iU]' "IU"
@@ -164,8 +164,8 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients (high weight) with high risk (D-Dimer >= 2mg/l) with Nadroparin"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
 * dosage[+]
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
@@ -174,7 +174,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 5700 '[iU]' "IU"
@@ -191,14 +191,14 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Certoparin"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB13 "Certoparin"
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
+  * coding[atcde] = $atcde#B01AB13 "Certoparin"
 * dosage
   * timing
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 3000 '[iU]' "IU"
@@ -215,14 +215,14 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
 * description = "Therapeutic Anticoagulation Treatment with Fondaparinux for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)"
   * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
+  * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)"
 * dosage
   * timing
     * repeat
       * frequency = 2
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseQuantity = 2.5 'mg' "mg"
 
@@ -238,5 +238,5 @@ Description: "Therapeutic Anticoagulation Treatment with Argatroban for non-inte
 * description = "Therapeutic Anticoagulation Treatment with Argatroban for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AE03 "Argatroban"
   * coding[sct] = $sct#116508003 "Argatroban (substance)"
+  * coding[atcde] = $atcde#B01AE03 "Argatroban"

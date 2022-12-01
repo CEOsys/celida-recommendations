@@ -69,14 +69,14 @@ Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-i
 * description = "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
   * coding[sct] = $sct#372563008 "Dalteparin (substance)"
+  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
 * dosage
   * timing
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 5000 $ucum#[iU] "IU"
@@ -94,14 +94,14 @@ Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-i
 * description = "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
   * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
+  * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
 * dosage
   * timing
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 40 'mg'
@@ -119,8 +119,8 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
 * description = "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
 * dosage[+]
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
@@ -129,7 +129,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 3800 $ucum#[iU] "IU"
@@ -147,8 +147,8 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
 * description = "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
 * dosage[+]
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
@@ -157,7 +157,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 5700 $ucum#[iU] "IU"
@@ -175,14 +175,14 @@ Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-i
 * description = "No Therapeutic Anticoagulation Treatment with Certoparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AB13 "Certoparin"
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
+  * coding[atcde] = $atcde#B01AB13 "Certoparin"
 * dosage
   * timing
     * repeat
       * frequency = 1
       * period = 1
-      * periodUnit = $ucum#d "d"
+      * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
       * low = 3000 $ucum#[iU] "IU"
@@ -200,8 +200,8 @@ Description: "No Therapeutic Anticoagulation Treatment with UFH for non-intensiv
 * description = "No Therapeutic Anticoagulation Treatment with UFH for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#C05BA03 "Heparin"
   * coding[sct] = $sct#372877000 "Heparin (substance)"
+  * coding[atcde] = $atcde#C05BA03 "Heparin"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWArgatra
@@ -216,6 +216,6 @@ Description: "No Therapeutic Anticoagulation Treatment with Argatroban for non-i
 * description = "No Therapeutic Anticoagulation Treatment with Argatroban for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[atcde] = $atcde#B01AE03 "Argatroban"
   * coding[sct] = $sct#116508003 "Argatroban (substance)"
+  * coding[atcde] = $atcde#B01AE03 "Argatroban"
 * doNotPerform = true
