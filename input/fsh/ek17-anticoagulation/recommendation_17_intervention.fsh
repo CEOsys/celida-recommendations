@@ -18,7 +18,7 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
 * goal[laboratoryValue][+]
   * id = "aPTT-goal"
   * description.text = "aPTT value should be > 50 sec."
-  * category.coding = $sct#118246004 "Laboratory test finding (navigational concept)"
+  * category = $sct#410394004 "Lab findings surveillance (regime/therapy)"
   * target
     * measure = $loinc#3173-2 "aPTT in Blood by Coagulation assay"
     * detailRange
