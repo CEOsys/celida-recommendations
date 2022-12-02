@@ -13,7 +13,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 * status = #active
 * name = "COVID19_patients_without_venous_thrombosis_without_contraindications"
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
-* insert canonical-url(population/hospitalised-covid19-patients-no-venous-thrombosis-no-LMWH-contraindications) 
+* insert canonical-url(population/hospitalised-covid19-patients-no-venous-thrombosis-no-LMWH-contraindications)
 // Include COVID-19 patients without thrombosis
 * characteristic[condition][+]
   * linkId = "covid19"
@@ -27,7 +27,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 * characteristic[condition][=].exclude = true
  // Exclude patients with any of the following contraindications
 * characteristic[2].definitionByCombination
-  * code = #any-of
+  * code = #one-or-more
   * characteristic[condition][+]
     * linkId = "hit2"
     * definitionByTypeAndValue
@@ -76,7 +76,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 * characteristic[condition][=].exclude = true
 // INCLUDE patients with the following contraindications
 * characteristic[2].definitionByCombination
-  * code = #any-of
+  * code = #one-or-more
   * characteristic[condition][+]
     * linkId = "hit2"
     * definitionByTypeAndValue

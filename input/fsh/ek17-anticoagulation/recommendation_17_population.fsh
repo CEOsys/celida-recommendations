@@ -16,7 +16,7 @@ Description: "Population for recommendation 17 from guideline from https://www.a
 // Include patients with COVID-19 that are considered high-risk (here: ONLY high D-Dimer is counted as such!) and that are not treated on ICU currently
   // include covid-19 patients
 * characteristic[0].definitionByCombination
-  * code = #any-of
+  * code = #one-or-more
   // exclude patients on ICU
   * characteristic[episodeOfCare][+]
     * linkId = "intensive-care-treatment"
