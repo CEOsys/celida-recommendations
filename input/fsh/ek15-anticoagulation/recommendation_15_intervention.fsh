@@ -16,23 +16,23 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOVenousThrombosisWOCI)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWDalteparin)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWEnoxaparin)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWNadroparinLowWeight)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWNadroparinHighWeight)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWCertoparin)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 Instance: AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan
@@ -51,7 +51,7 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * action[drugAdministration][+]
   * code = $sct#432102000 "Administration of substance (procedure)"
   * definitionCanonical = Canonical(AntithromboticProphylaxisFondaparinuxSubcutaneous)
-  * selectionBehavior = #exactly-one
+  * selectionBehavior = #one-or-more
 
 Instance: NoAntithrombProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
