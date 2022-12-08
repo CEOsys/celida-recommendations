@@ -20,7 +20,7 @@ Description: "In ventilated patients with COVID-19 and ARDS, tidal volume should
   * id = "tidal-volume-goal"
   * description.text = "Tidal volume ≤ 6 ml/kg standard body weight"
   * target[+]
-    * measure = $cs-codex-celida#tvpibw "Tidal volume / ideal body weight"
+    * measure = $cs-codex-celida#tvpibw "Tidal volume / ideal body weight (ARDSnet)"
     * detailRange.high = 6 'ml/kg' "ml/kg"
 * goal[ventilatorManagement][+]
   * category = $sct#385857005 "Ventilator care and adjustment (regime/therapy)"
