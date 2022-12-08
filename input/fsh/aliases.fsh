@@ -61,3 +61,4 @@ Alias: $vs-snomed-procedures = http://hl7.org/fhir/ValueSet/procedure-code
 Alias: $cs-gts-timing = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
 
 Alias: $cs-codex-celida = https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida
+Alias: $cs-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
