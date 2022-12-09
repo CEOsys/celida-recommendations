@@ -6,7 +6,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.3"
 Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.3 - 0.39"
-* insert canonical-url(intervention-plan/peep-for-ards-fio2-point3) 
+* insert canonical-url(intervention-plan/peep-for-ards-fio2-point3)
 * insert publisher-experimental-version(7.0)
 * name = "PEEP_Intervention_Plan_With_ARDS_FiO2_0.3"
 * title = "PEEP Intervention plan for COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.3 - 0.39"
@@ -15,6 +15,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
 * status = #active
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.3 - 0.39"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patientsWithARDS-fio2-point3)
+* extension[cpg-partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patientsWithARDS)
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.3-goal"
@@ -32,7 +33,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.3"
 Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.3 - 0.39"
-* insert canonical-url(intervention-plan/peep-for-ards-fio2-point4) 
+* insert canonical-url(intervention-plan/peep-for-ards-fio2-point4)
 * insert publisher-experimental-version(7.0)
 * name = "PEEP_Intervention_Plan_With_ARDS_FiO2_0.4"
 * title = "PEEP Intervention plan for COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.4 - 0.49"
@@ -41,6 +42,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
 * status = #active
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.4 - 0.49"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patientsWithARDS-fio2-point4)
+* extension[cpg-partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patientsWithARDS)
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.4-goal"
@@ -58,7 +60,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.5"
 Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.5 - 0.59"
-* insert canonical-url(intervention-plan/peep-for-ards-fio2-point5) 
+* insert canonical-url(intervention-plan/peep-for-ards-fio2-point5)
 * insert publisher-experimental-version(7.0)
 * name = "PEEP_Intervention_Plan_With_ARDS_FiO2_0.5"
 * title = "PEEP Intervention plan for COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.5 - 0.59"
@@ -67,6 +69,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
 * status = #active
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.5 - 0.59"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patientsWithARDS-fio2-point5)
+* extension[cpg-partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patientsWithARDS)
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.5-goal"
@@ -84,7 +87,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.6"
 Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.6 - 0.69"
-* insert canonical-url(intervention-plan/peep-for-ards-fio2-point6) 
+* insert canonical-url(intervention-plan/peep-for-ards-fio2-point6)
 * insert publisher-experimental-version(7.0)
 * name = "PEEP_Intervention_Plan_With_ARDS_FiO2_0.6"
 * title = "PEEP Intervention plan for COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.6 - 0.69"
@@ -93,6 +96,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
 * status = #active
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.6 - 0.69"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patientsWithARDS-fio2-point6)
+* extension[cpg-partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patientsWithARDS)
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.6-goal"
@@ -110,7 +114,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.7"
 Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.7 - 0.79"
-* insert canonical-url(intervention-plan/peep-for-ards-fio2-point7) 
+* insert canonical-url(intervention-plan/peep-for-ards-fio2-point7)
 * insert publisher-experimental-version(7.0)
 * name = "PEEP_Intervention_Plan_With_ARDS_FiO2_0.7"
 * title = "PEEP Intervention plan for COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.7 - 0.79"
@@ -119,6 +123,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
 * status = #active
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.7 - 0.79"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patientsWithARDS-fio2-point7)
+* extension[cpg-partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patientsWithARDS)
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.7-goal"
@@ -136,7 +141,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.8"
 Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.8 - 0.89"
-* insert canonical-url(intervention-plan/peep-for-ards-fio2-point8) 
+* insert canonical-url(intervention-plan/peep-for-ards-fio2-point8)
 * insert publisher-experimental-version(7.0)
 * name = "PEEP_Intervention_Plan_With_ARDS_FiO2_0.8"
 * title = "PEEP Intervention plan for COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.8 - 0.89"
@@ -145,6 +150,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
 * status = #active
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.8 - 0.89"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patientsWithARDS-fio2-point8)
+* extension[cpg-partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patientsWithARDS)
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.8-goal"
@@ -171,6 +177,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
 * status = #active
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.9 - 0.99"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patientsWithARDS-fio2-point9)
+* extension[cpg-partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patientsWithARDS)
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.9-goal"
@@ -188,7 +195,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 1.0"
 Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 1.0 - 1.09"
-* insert canonical-url(intervention-plan/peep-for-ards-fio2-1) 
+* insert canonical-url(intervention-plan/peep-for-ards-fio2-1)
 * insert publisher-experimental-version(7.0)
 * name = "PEEP_Intervention_Plan_With_ARDS_FiO2_1.0"
 * title = "PEEP Intervention plan for COVID-19 patients with ARDS, inspiratory oxygen fraction currently 1.0 - 1.09"
@@ -197,6 +204,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS,
 * status = #active
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 1.0 - 1.09"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patientsWithARDS-fio2-1)
+* extension[cpg-partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patientsWithARDS)
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-1.0-goal"
