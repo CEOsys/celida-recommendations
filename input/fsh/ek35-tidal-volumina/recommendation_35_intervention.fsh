@@ -15,6 +15,7 @@ Description: "In ventilated patients with COVID-19 and ARDS, tidal volume should
 * status = #active
 * description = "In ventilated patients with COVID-19 and ARDS, tidal volume should be ≤ 6 ml/kg standard body weight, end-inspiratory airway pressure ≤ 30 cm H2O."
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patientsWithARDS)
+* extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilationCOVID19patientsWithARDS)
 * goal[ventilatorManagement][+]
   * category = $sct#385857005 "Ventilator care and adjustment (regime/therapy)"
   * id = "tidal-volume-goal"

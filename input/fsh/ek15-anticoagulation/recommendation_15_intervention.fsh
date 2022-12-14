@@ -14,6 +14,7 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
 * status = #active
 * description = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOVenousThrombosisWOCI)
+* extension[partOf].valueCanonical = Canonical(RecommendationCollectionProphylacticAnticoagulationHospitalizedCOVID19Patients)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWDalteparin)
   * selectionBehavior = #one-or-more
@@ -48,6 +49,7 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * status = #active
 * description = "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOVenousThrombosisWITHCI)
+* extension[partOf].valueCanonical = Canonical(RecommendationCollectionProphylacticAnticoagulationHospitalizedCOVID19Patients)
 * action[drugAdministration][+]
   * code = $sct#432102000 "Administration of substance (procedure)"
   * definitionCanonical = Canonical(AntithromboticProphylaxisFondaparinuxSubcutaneous)
@@ -66,6 +68,7 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
 * status = #active
 * description = "No antithrombotic prophylaxis in patients with thrombosis"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWITHThrombosis)
+* extension[partOf].valueCanonical = Canonical(RecommendationCollectionProphylacticAnticoagulationHospitalizedCOVID19Patients)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWDalteparin)
   * selectionBehavior = #one-or-more
@@ -92,7 +95,7 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /**********************/
-/* Recommended Action */
+/* Recommended Actions */
 /**********************/
 Instance: ProphylacticAnticoagulationWDalteparin
 InstanceOf: drug-administration-action

@@ -15,6 +15,7 @@ Description: "We recommend ventilating patients with ARDS with a VT ≤ 6 ml/kg 
 * status = #active
 * description = "We recommend ventilating patients with ARDS with a VT ≤ 6 ml/kg standard body weight (bw). (Table 1, Appendix)"
 * subjectCanonical = Canonical(PopulationVentilatedARDSPatients)
+* extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedPatientsWithARDS)
 * goal[ventilatorManagement][+]
   * category = $sct#385857005 "Ventilator care and adjustment (regime/therapy)"
   * id = "tidal-volume-ARDS-goal"
