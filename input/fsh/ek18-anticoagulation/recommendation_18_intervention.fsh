@@ -15,6 +15,7 @@ Description: "In intensive care patients without a specific indication (e.g. pul
 * status = #active
 * description = "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
 * subjectCanonical = Canonical(PopHospitalisedICUCOVID19Patients)
+* extension[partOf].valueCanonical = Canonical(RecCollectionNoTherapeuticAnticoagNoIndicationICUCOVID19)
 * goal[laboratoryValue][+]
   * id = "aPTT-goal"
   * description.text = "aPTT value should not be > 50 sec."
@@ -55,7 +56,7 @@ Description: "In intensive care patients without a specific indication (e.g. pul
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /*************************/
-/* Intervention Activity */
+/* Recommended Actions   */
 /*************************/
 Instance: NoTherapeuticAnticoagulationWDalteparin
 InstanceOf: drug-administration-action

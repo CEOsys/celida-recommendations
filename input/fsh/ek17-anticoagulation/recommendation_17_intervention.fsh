@@ -10,11 +10,12 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
 * insert canonical-url(intervention-plan/therapeutic-anticoagulation)
 * insert publisher-experimental-version(7.0)
 * name = "Therapeutic_Anticoagulation_No_Renal_Function_Impairment"
-* title = "Therapeutic Anticoagulation Plan (hospitalised, non-intensive care, COVID-19 patients)"
+* title = "Therapeutic Anticoagulation Plan (hospitalised, non-intensive care, COVID-19 patients"
 * date = "2022-02"
 * status = #active
 * description = "In hospitalized, non-intensive care patients with COVID-19 and increased risk (e.g., D-dimers ≥ 2 mg/l), therapeutic anticoagulation can be considered if the risk of bleeding is low. Anticoagulation, preferentially with NMH or UFH, can be considered."
 * subjectCanonical = Canonical(PopHospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk)
+* extension[partOf].valueCanonical = Canonical(RecCollectionTherapeuticAnticoagNonICUHighRiskCOVID19Patients)
 * goal[laboratoryValue][+]
   * id = "aPTT-goal"
   * description.text = "aPTT value should be > 50 sec."
@@ -59,9 +60,9 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
   * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 
-/**********************/
-/* Recommended Action */
-/**********************/
+/***********************/
+/* Recommended Actions */
+/***********************/
 Instance: TherapeuticAnticoagulationUFH
 InstanceOf: drug-administration-action
 Usage: #example
