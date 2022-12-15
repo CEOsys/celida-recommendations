@@ -12,7 +12,7 @@ Description: "Recommendation Collection for Ventilated COVID-19 patients with AR
 * date = "2022-02-14"
 * status = #active
 * description = "Ventilation Plan for Ventilated COVID-19 patients with ARDS"
-* insert canonical-url(recommendation/therapeutic-anticoagulation) //TO-DO: change URL 
+* insert canonical-url(covid19-inpatient-therapy, recommendation/ventilation-plan-ards-tidal-volume)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"
 * action[+]

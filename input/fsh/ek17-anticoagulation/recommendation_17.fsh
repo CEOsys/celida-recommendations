@@ -12,7 +12,7 @@ Description: "Recommendation Collection for non-ICU, High-Risk COVID-19 Patients
 * date = "2022-02-14"
 * status = #active
 * description = "Therapeutic Anticoagulation for Non-ICU, High-Risk COVID-19 Patients"
-* insert canonical-url(recommendation/therapeutic-anticoagulation) //TO-DO: change URL 
+* insert canonical-url(covid19-inpatient-therapy, recommendation/therapeutic-anticoagulation) //TO-DO: change URL
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"
 * action[+]

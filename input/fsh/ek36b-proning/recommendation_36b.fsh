@@ -12,7 +12,7 @@ Description: "Recommendation Collection for Patients with ARDS and a PaO2/FiO2 <
 * date = "2022-02-14"
 * status = #active
 * description = "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours."
-* insert canonical-url(recommendation/therapeutic-anticoagulation) //To-DO: change URL
+* insert canonical-url(covid19-inpatient-therapy, recommendation/covid19-abdominal-positioning-ards)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"
 * action[+]

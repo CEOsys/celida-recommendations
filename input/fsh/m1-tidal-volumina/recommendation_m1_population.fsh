@@ -3,7 +3,7 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated patients with ARDS"
 Description: "Patients with ARDS"
-* insert canonical-url(population/ventilated-patients-with-ards)
+* insert canonical-url(sepsis, population/ventilated-patients-with-ards)
 * status = #active
 * name = "Population_Ventilated_Patients_With_ARDS"
 * description = "Ventilated patients with ARDS"

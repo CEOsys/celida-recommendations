@@ -6,7 +6,7 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.3"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.3 - 0.39"
-* insert canonical-url(population/ventilated-covid19-patients-with-ards-fio2-point3)
+* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point3)
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.3"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.3 - 0.39"
@@ -45,7 +45,7 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.4"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.4 - 0.49"
-* insert canonical-url(population/ventilated-covid19-patients-with-ards-fio2-point4)
+* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point4)
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.4"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.4 - 0.49"
@@ -84,7 +84,7 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.5"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.5 - 0.59"
-* insert canonical-url(population/ventilated-covid19-patients-with-ards-fio2-point5)
+* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point5)
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.5"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.5 - 0.59"
@@ -123,7 +123,7 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.6"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.6 - 0.69"
-* insert canonical-url(population/ventilated-covid19-patients-with-ards-fio2-point6)
+* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point6)
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.6"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.6 - 0.69"
@@ -162,7 +162,7 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.7"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.7 - 0.79"
-* insert canonical-url(population/ventilated-covid19-patients-with-ards-fio2-point7)
+* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point7)
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.7"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.7 - 0.79"
@@ -201,7 +201,7 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.8"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.8 - 0.89"
-* insert canonical-url(population/ventilated-covid19-patients-with-ards-fio2-point8)
+* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point8)
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.8"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.8 - 0.89"
@@ -239,7 +239,7 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.9"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.9 - 0.99"
-* insert canonical-url(population/ventilated-covid19-patients-with-ards-fio2-point9)
+* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point9)
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_0.9"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.9 - 0.99"
@@ -278,7 +278,7 @@ InstanceOf: recommendation-eligibility-criteria
 Usage: #example
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 1.0"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 1.0"
-* insert canonical-url(population/ventilated-covid19-patients-with-ards-fio2-1)
+* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-1)
 * status = #active
 * name = "Population_COVID19_Ventilated_With_ARDS_FiO2_1.0"
 * description = "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 1.0"
