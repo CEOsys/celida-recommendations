@@ -6,7 +6,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "Ventilation Plan for patients with ARDS"
 Description: "We recommend ventilating patients with ARDS with a VT ≤ 6 ml/kg standard body weight (bw). (Table 1, Appendix)"
-* insert canonical-url(intervention-plan/ventilation-ARDS-plan)
+* insert canonical-url(sepsis, intervention-plan/ventilation-ARDS-plan)
 * insert publisher-experimental-version(7.0)
 * name = "Ventilation_Plan_ARDS"
 * title = "Ventilation parameters for patients with ARDS"
@@ -15,6 +15,7 @@ Description: "We recommend ventilating patients with ARDS with a VT ≤ 6 ml/kg 
 * status = #active
 * description = "We recommend ventilating patients with ARDS with a VT ≤ 6 ml/kg standard body weight (bw). (Table 1, Appendix)"
 * subjectCanonical = Canonical(PopulationVentilatedARDSPatients)
+* extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedPatientsWithARDS)
 * goal[ventilatorManagement][+]
   * category = $sct#385857005 "Ventilator care and adjustment (regime/therapy)"
   * id = "tidal-volume-ARDS-goal"

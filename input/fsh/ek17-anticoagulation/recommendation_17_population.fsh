@@ -4,14 +4,14 @@
 Instance: PopHospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
-Title: "Population: Rec17EK, Hospitalised COVID-19 patients without the need for intensive care therapy, without venous thrombosis, considered high-risk for developing venous thrombosis"
+Title: "Population: Hospitalised COVID-19 patients without the need for intensive care therapy, without venous thrombosis, considered high-risk for developing venous thrombosis"
 Description: "Population for recommendation 17 from guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: without the need for intensive care therapy, without venous thrombosis, considered high-risk for developing venous thrombosis"
 * name = "HospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk"
 * identifier.value = "WOThrombosisWITHHighRisk"
 * identifier.system = $ceosys
 * status = #active
 * name = "COVID19_patients_NOT_ICU_without_venous_thrombosis_with_high_risk"
-* insert canonical-url(population/hospitalised-non-icu-covid19-patients-no-venous-thrombosis-high-risk)
+* insert canonical-url(covid19-inpatient-therapy, population/hospitalised-non-icu-covid19-patients-no-venous-thrombosis-high-risk)
 * description = "Population for recommendation 17 from guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: without the need for intensive care therapy, without venous thrombosis, considered high-risk for developing venous thrombosis"
 // Include patients with COVID-19 that are considered high-risk (here: ONLY high D-Dimer is counted as such!) and that are not treated on ICU currently
   // include covid-19 patients

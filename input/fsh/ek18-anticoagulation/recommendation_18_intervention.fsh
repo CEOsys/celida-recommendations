@@ -6,7 +6,7 @@ InstanceOf: recommendation-plan
 Usage: #example
 Title: "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients with no specific indication"
 Description: "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
-* insert canonical-url(intervention-plan/no-therapeutic-anticoagulation)
+* insert canonical-url(covid19-inpatient-therapy, intervention-plan/no-therapeutic-anticoagulation)
 * insert publisher-experimental-version(7.0)
 * name = "Anticoagulation_Plan_No_Specific_Indication"
 * title = "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients with no specific indication"
@@ -15,6 +15,7 @@ Description: "In intensive care patients without a specific indication (e.g. pul
 * status = #active
 * description = "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
 * subjectCanonical = Canonical(PopHospitalisedICUCOVID19Patients)
+* extension[partOf].valueCanonical = Canonical(RecCollectionNoTherapeuticAnticoagNoIndicationICUCOVID19)
 * goal[laboratoryValue][+]
   * id = "aPTT-goal"
   * description.text = "aPTT value should not be > 50 sec."
@@ -55,14 +56,14 @@ Description: "In intensive care patients without a specific indication (e.g. pul
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /*************************/
-/* Intervention Activity */
+/* Recommended Actions   */
 /*************************/
 Instance: NoTherapeuticAnticoagulationWDalteparin
 InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Dalteparin"
 Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(recommended-action/drug-administration-action/no-therapeutic-anticoagulant-dalteparin-administration)
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-dalteparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationDalteparinPlan"
 * status = #active
@@ -87,7 +88,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Enoxaparin"
 Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(recommended-action/drug-administration-action/no-therapeutic-anticoagulant-enoxaparin-administration)
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-enoxaparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanEnoxaparin"
 * status = #active
@@ -112,7 +113,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Nadroparin Low Weight"
 Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(recommended-action/drug-administration-action/no-therapeutic-anticoagulant-nadroparin-administration-low-weight)
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-nadroparin-administration-low-weight)
 * insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanNadroparinLowWeight"
 * status = #active
@@ -140,7 +141,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Nadroparin High Weight"
 Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(recommended-action/drug-administration-action/no-therapeutic-anticoagulant-nadroparin-administration-high-weight)
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-nadroparin-administration-high-weight)
 * insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanNadroparinHighWeight"
 * status = #active
@@ -168,7 +169,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Certoparin"
 Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(recommended-action/drug-administration-action/no-therapeutic-anticoagulant-certoparin-administration)
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-certoparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanCertoparin"
 * status = #active
@@ -193,7 +194,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with UFH"
 Description: "No Therapeutic Anticoagulation Treatment with UFH for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(recommended-action/drug-administration-action/no-therapeutic-anticoagulant-UFH-administration)
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-UFH-administration)
 * insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanUFH"
 * status = #active
@@ -209,7 +210,7 @@ InstanceOf: drug-administration-action
 Usage: #example
 Title: "No Therapeutic Anticoagulation Treatment with Argatroban"
 Description: "No Therapeutic Anticoagulation Treatment with Argatroban for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(recommended-action/drug-administration-action/no-therapeutic-anticoagulant-argatroban-administration)
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-argatroban-administration)
 * insert publisher-experimental-version(0.1)
 * name = "NoTherapeuticAnticoagulationPlanArgatroban"
 * status = #active

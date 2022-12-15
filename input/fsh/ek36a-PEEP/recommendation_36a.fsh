@@ -6,13 +6,13 @@ InstanceOf: recommendation
 Usage: #example
 Title: "Recommendation Collection: Ventilated COVID-19 Patients with ARDS"
 Description: "Recommendation Collection for Ventilated COVID-19 Patients with ARDS"
-* name = "RecommendationCollectionEk36-a"
+* name = "RecommendationCollection36-a"
 * title = "PEEP Intervention for Population: Ventilated COVID-19 Patients with ARDS"
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active
 * description = "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction 0.3 - 1.09"
-* insert canonical-url(recommendation/therapeutic-anticoagulation)
+* insert canonical-url(covid19-inpatient-therapy, guideline/covid19-inpatient-therapy/recommendation/covid19-ventilation-plan-ards-peep)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"
 * action[+]
@@ -60,6 +60,6 @@ Description: "Recommendation Collection for Ventilated COVID-19 Patients with AR
 * action[+]
   * title = "PEEP_Intervention_Plan_With_ARDS_FiO2_1.0"
   * code = $cs-common-process#guideline-based-care
-  * description = "PEEP Intervention plan for COVID-19 patients with ARDS, inspiratory oxygen fraction currently 1.0 - 1.09"
+  * description = "PEEP Intervention plan for COVID-19 patients with ARDS, inspiratory oxygen fraction currently 1.0 - 1.0"
   * definitionCanonical = Canonical(VentilatedCOVID19patientsWithARDSInterventionPlan-fio2-1)
   * selectionBehavior = #exactly-one

@@ -13,7 +13,7 @@ Description: "Hospitalised COVID-19 patients, treated on ICU, without thrombembo
 * status = #active
 * name = "COVID19_ICU_patients_without_thrombembolic complication"
 * description = "COVID 19 patients without a thrombembolic complication"
-* insert canonical-url(population/hospitalised-icu-covid19-patients-without-thrombembolic-complication)
+* insert canonical-url(covid19-inpatient-therapy, population/hospitalised-icu-covid19-patients-without-thrombembolic-complication)
 // Exclude patients with Thrombosis or pulmonary embolism
 * characteristic[0].definitionByCombination
   * code = #any-of

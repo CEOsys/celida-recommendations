@@ -13,7 +13,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 * status = #active
 * name = "COVID19_patients_without_venous_thrombosis_without_contraindications"
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
-* insert canonical-url(population/hospitalised-covid19-patients-no-venous-thrombosis-no-LMWH-contraindications) 
+* insert canonical-url(covid19-inpatient-therapy, population/hospitalised-covid19-patients-no-venous-thrombosis-no-LMWH-contraindications)
 // Include COVID-19 patients without thrombosis
 * characteristic[condition][+]
   * linkId = "covid19"
@@ -62,7 +62,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 * status = #active
 * name = "COVID19_patients_without_venous_thrombosis_with_contraindications"
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without (venous) thrombosis, existing contraindications to LWMH"
-* insert canonical-url(population/hospitalised-covid19-patients-no-venous-thrombosis-with-LMWH-contraindications)
+* insert canonical-url(covid19-inpatient-therapy, population/hospitalised-covid19-patients-no-venous-thrombosis-with-LMWH-contraindications)
 // Include COVID-19 patients without thrombosis
 * characteristic[condition][+]
   * linkId = "covid19"
@@ -111,7 +111,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 Patients w
 * status = #active
 * name = "COVID19_patients_with_venous_thrombosis"
 * description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients with (venous) thrombosis"
-* insert canonical-url(population/hospitalised-covid19-patients-with-venous-thrombosis)
+* insert canonical-url(covid19-inpatient-therapy, population/hospitalised-covid19-patients-with-venous-thrombosis)
  // Include patients with COVID-19 AND venous thrombosis
 * characteristic[condition][+]
   * linkId = "covid19"
