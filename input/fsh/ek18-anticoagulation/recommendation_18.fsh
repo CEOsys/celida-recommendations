@@ -6,7 +6,7 @@ InstanceOf: recommendation
 Usage: #example
 Title: "Recommendation Collection: ICU COVID-19 Patients with No Specific Indication"
 Description: "Recommendation Collection for ICU COVID-19 Patients with No Specific Indication"
-* name = "RecommendationCollectionEk18"
+* name = "RecommendationCollection18"
 * title = "Anticoagulation Plan for Population: ICU COVID-19 Patients with No Specific Indication"
 * version = "1.0"
 * date = "2022-02-14"

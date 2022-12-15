@@ -4,7 +4,7 @@
 Instance: PopHospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
-Title: "Population: Rec17EK, Hospitalised COVID-19 patients without the need for intensive care therapy, without venous thrombosis, considered high-risk for developing venous thrombosis"
+Title: "Population: Hospitalised COVID-19 patients without the need for intensive care therapy, without venous thrombosis, considered high-risk for developing venous thrombosis"
 Description: "Population for recommendation 17 from guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: without the need for intensive care therapy, without venous thrombosis, considered high-risk for developing venous thrombosis"
 * name = "HospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk"
 * identifier.value = "WOThrombosisWITHHighRisk"

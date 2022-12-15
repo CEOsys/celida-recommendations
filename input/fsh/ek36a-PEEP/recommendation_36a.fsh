@@ -6,7 +6,7 @@ InstanceOf: recommendation
 Usage: #example
 Title: "Recommendation Collection: Ventilated COVID-19 Patients with ARDS"
 Description: "Recommendation Collection for Ventilated COVID-19 Patients with ARDS"
-* name = "RecommendationCollectionEk36-a"
+* name = "RecommendationCollection36-a"
 * title = "PEEP Intervention for Population: Ventilated COVID-19 Patients with ARDS"
 * version = "1.0"
 * date = "2022-02-14"

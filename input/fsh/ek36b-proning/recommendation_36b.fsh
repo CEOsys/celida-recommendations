@@ -6,7 +6,7 @@ InstanceOf: recommendation
 Usage: #example
 Title: "Recommendation Collection: Patients with ARDS and a PaO2/FiO2 < 150 mmHg"
 Description: "Recommendation Collection for Patients with ARDS and a PaO2/FiO2 < 150 mmHg"
-* name = "RecommendationCollectionEk36b"
+* name = "RecommendationCollection36b"
 * title = "Abdominal Positioning Intervention for Population: Patients with ARDS and a PaO2/FiO2 < 150 mmHg"
 * version = "1.0"
 * date = "2022-02-14"
