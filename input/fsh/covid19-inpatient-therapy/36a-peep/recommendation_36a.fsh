@@ -11,7 +11,7 @@ Description: "Recommendation Collection for Ventilated COVID-19 Patients with AR
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active
-* description = "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction 0.3 - 1.09"
+* description = "Für die orientierende Einstellung des PEEP bei COVID-19 sollte die FiO2/PEEP-Tabelle des ARDS-Networks berücksichtigt werden. Durch ein engmaschiges Monitoring kann der PEEP der individuellen Situation des Patienten angepasst werden."
 * insert canonical-url(covid19-inpatient-therapy, recommendation/covid19-ventilation-plan-ards-peep)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"

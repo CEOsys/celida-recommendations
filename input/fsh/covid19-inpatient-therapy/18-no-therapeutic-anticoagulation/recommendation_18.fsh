@@ -11,7 +11,7 @@ Description: "Recommendation Collection for ICU COVID-19 Patients with No Specif
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active
-* description = "In intensive care patients without a specific indication (e.g. pulmonary embolism), therapeutic anticoagulation should not be given."
+* description = "Bei Intensivpatienten ohne spezifische Indikation (z.B. Lungenembolien) sollte eine therapeutische Antikoagulation nicht erfolgen."
 * insert canonical-url(covid19-inpatient-therapy, recommendation/no-therapeutic-anticoagulation)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"

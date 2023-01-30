@@ -11,7 +11,7 @@ Description: "Recommendation Collection for Ventilated Patients with ARDS"
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active
-* description = "We recommend ventilating patients with ARDS with a VT ≤ 6 ml/kg standard body weight (bw). (Table 1, Appendix)"
+* description = "Wir empfehlen die Beatmung von Patienten mit ARDS mit einem VT ≤ 6 ml/kg Standard-Körpergewicht (KG)."
 * insert canonical-url(sepsis, recommendation/ventilation-plan-ards-tidal-volume)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"

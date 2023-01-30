@@ -11,7 +11,7 @@ Description: "Recommendation Collection for non-ICU, High-Risk COVID-19 Patients
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active
-* description = "Therapeutic Anticoagulation for Non-ICU, High-Risk COVID-19 Patients"
+* description = "Bei hospitalisierten, nichtintensivpflichtigen Patienten mit COVID-19 und erhöhtem Risiko (z.B. D-Dimere ≥ 2 mg/l) kann bei niedrigem Blutungsrisiko eine therapeutische Antikoagulation, präferenziell mit NMH oder UFH, erwogen werden."
 * insert canonical-url(covid19-inpatient-therapy, recommendation/therapeutic-anticoagulation) //TO-DO: change URL
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"

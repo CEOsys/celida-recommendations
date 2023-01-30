@@ -11,7 +11,7 @@ Description: "Recommendation Collection for Hospitalized COVID-19 Patients"
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active
-* description = "Prophylactic Anticoagulation in Hospitalized COVID-19 Patients, with and without contraindications"
+* description = "Hospitalisierte Patienten mit COVID-19 sollen in Abwesenheit von Kontraindikationen eine standardmäßige medikamentöse Thromboembolieprophylaxe mit niedermolekularem Heparin erhalten. Alternativ kann Fondaparinux zur Anwendung kommen."
 * insert canonical-url(covid19-inpatient-therapy, recommendation/prophylactic-anticoagulation)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"

@@ -11,7 +11,7 @@ Description: "Recommendation Collection for Ventilated COVID-19 patients with AR
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active
-* description = "Ventilation Plan for Ventilated COVID-19 patients with ARDS"
+* description = "Bei beatmeten Patienten mit COVID-19 und ARDS sollte das Tidalvolumen ≤ 6 ml/kg Standardkörpergewicht betragen, der endinspiratorische Atemwegsdruck ≤ 30 cm H2O."
 * insert canonical-url(covid19-inpatient-therapy, recommendation/ventilation-plan-ards-tidal-volume)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"
