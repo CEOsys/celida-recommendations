@@ -81,4 +81,9 @@ Link: https://www.awmf.org/leitlinien/detail/ll/079-001.html
   * English (machine translation)
     > We recommend ventilating patients with ARDS with a VT ≤ 6 ml/kg standard body weight (bw). (Table 1, Appendix)
 
-  * See [docs/Sepsis_M.1_ Tidal_volumina.md](docs/Sepsis_M.1_ Tidal_volumina.md) for detailed mapping.
+  * See [docs/Sepsis_M.1_Tidal_volumina.md](docs/Sepsis_M.1_Tidal_volumina.md) for detailed mapping.
+
+# Authors (alphabetical order)
+* [Bora Gashi](https://github.com/boraga) (Medical Center rechts der Isar, Technical University of Munich)
+* [Gregor Lichtner](https://github.com/glichtner) (University Medicine Greifswald)
+* [Fridtjof Schiefenhövel](https://github.com/fschiefenhoevel) (Medical Center rechts der Isar, Technical University of Munich)
