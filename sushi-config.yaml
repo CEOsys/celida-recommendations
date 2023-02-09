@@ -17,8 +17,8 @@ dependencies:
   # is otherwise not known by the IG publisher and will yield errors
   hl7.terminology:
     version: 3.1.0
-  cpg.ceosys.de:
-    version: 0.4.1-snapshot
+  ebm-cpg.netzwerk-universitaetsmedizin.de:
+    version: 0.5.1-snapshot
 
 pages:
   index.md:

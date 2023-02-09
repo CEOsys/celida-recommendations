@@ -35,5 +35,5 @@ npm install -g fsh-sushi
 box_out 'Downloading FHIR validator'
 curl -L https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -o ./validator_cli.jar
 
-box_out 'Downloading IG Publisher (custom build)'
-curl -L https://github.com/CEOsys/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+box_out 'Downloading IG Publisher'
+curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
