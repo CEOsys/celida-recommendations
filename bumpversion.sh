@@ -17,6 +17,8 @@ new_version=$(echo "$OUTPUT" | grep new_version | sed -r s,"^.*=",,)
 message="Bump version: $current_version → $new_version"
 echo "$message"
 
+read -p "Press any key to continue..."
+
 # remove trailing whitespace
 sed -i 's/[ \t]*$//' .bumpversion.cfg
 
