@@ -306,7 +306,5 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[ventilationObservableLOINC][+]
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
-      * valueRange
-        * low = 100 '%' "%"
-        * high = 100 '%' "%"
+      * valueQuantity = 100 '%' "%"
 * characteristic[=].exclude = false
