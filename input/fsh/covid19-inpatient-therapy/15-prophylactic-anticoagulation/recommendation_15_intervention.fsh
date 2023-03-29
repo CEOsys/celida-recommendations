@@ -170,7 +170,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 3800 '[iU]' "IU"
+      * high = 3800 '[iU]' "IU"
 
 Instance: ProphylacticAnticoagulationWNadroparinHighWeight
 InstanceOf: drug-administration-action
@@ -323,7 +323,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 3800 '[iU]' "IU"
+      * high = 3800 '[iU]' "IU"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWNadroparinHighWeight
