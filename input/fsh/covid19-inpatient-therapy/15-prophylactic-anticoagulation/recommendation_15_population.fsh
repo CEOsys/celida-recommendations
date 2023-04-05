@@ -82,16 +82,16 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#111588002 "Heparin-induced thrombocytopenia with thrombosis (disorder)"
   * characteristic[condition][=].exclude = false
-  * characteristic[condition][+]
+  * characteristic[allergy][+]
     * linkId = "heparin-allergy"
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#294872001 "Allergy to heparin (finding)"
-  * characteristic[condition][=].exclude = false
-  * characteristic[condition][+]
+  * characteristic[allergy][=].exclude = false
+  * characteristic[allergy][+]
     * linkId = "heparinoid-allergy"
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#294876003 "Allergy to heparinoid (finding)"
-  * characteristic[condition][=].exclude = false
+  * characteristic[allergy][=].exclude = false
   * characteristic[condition][+]
     * linkId = "thrombocytopenia"
     * definitionByTypeAndValue
