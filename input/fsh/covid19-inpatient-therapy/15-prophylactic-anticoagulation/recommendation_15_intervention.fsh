@@ -402,5 +402,5 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 0 '[mg]' "mg" // just use "any dose" for now
+      * low = 0 'mg' "mg" // just use "any dose" for now
 * doNotPerform = true
