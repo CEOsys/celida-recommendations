@@ -71,27 +71,27 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
 * extension[partOf].valueCanonical = Canonical(RecCollectionProphAnticoagulationHospitalizedCOVID19Patients)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWDalteparin)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWEnoxaparin)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWNadroparinLowWeight)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWNadroparinHighWeight)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoProphylacticAnticoagulationWCertoparin)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoAntithromboticProphylaxisFondaparinuxSubcutaneous)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /**********************/
