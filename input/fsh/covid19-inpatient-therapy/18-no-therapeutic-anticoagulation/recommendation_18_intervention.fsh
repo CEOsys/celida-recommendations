@@ -26,33 +26,33 @@ Description: "In intensive care patients without a specific indication (e.g. pul
       * low = 50 's' "sec"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWEnoxaparin)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparinLowWeight)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparinHighWeight)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWCertoparin)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWArgatra)
   * goalId = "aPTT-goal"
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWUFH)
   * goalId = "aPTT-goal"
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /*************************/
