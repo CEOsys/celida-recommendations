@@ -1,6 +1,6 @@
 Instance: PopVentilatedCOVID19patientsWithARDSWithOxygenationFailure
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Ventilated COVID-19 Patients with severe ARDS"
 Description: "Ventilated COVID-19 patients with severe ARDS, defined by oxygenation failure (Horovitz Quotient lower than 150)"
 * insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-with-oxygenation-failure)

@@ -3,7 +3,7 @@
 /*********************/
 Instance: VentilatedARDSPatientsInterventionPlan
 InstanceOf: recommendation-plan
-Usage: #example
+Usage: #definition
 Title: "Ventilation Plan for patients with ARDS"
 Description: "We recommend ventilating patients with ARDS with a VT ≤ 6 ml/kg standard body weight (bw). (Table 1, Appendix)"
 * insert canonical-url(sepsis, intervention-plan/ventilation-ARDS-plan)

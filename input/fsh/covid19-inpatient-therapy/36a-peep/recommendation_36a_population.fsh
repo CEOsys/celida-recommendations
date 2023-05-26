@@ -3,7 +3,7 @@
 /**************/
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point3
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.3"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.3 - 0.39"
 * insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point3)
@@ -36,13 +36,13 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
         * low = 30 '%' "%"
-        * high = 39.99999999999999999999999 '%' "%"
+        * high = 39.9999999999999 '%' "%"
   * characteristic[ventilationObservableLOINC][=].exclude = false
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point4
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.4"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.4 - 0.49"
 * insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point4)
@@ -76,12 +76,12 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
         * low = 40 '%' "%"
-        * high = 49.99999999999999999999999 '%' "%"
+        * high = 49.9999999999999 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point5
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.5"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.5 - 0.59"
 * insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point5)
@@ -114,13 +114,13 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
-        * low = 50 '%' "%"
-        * high = 59.99999999999999999999999 '%' "%"
+        * low = 50.0 '%' "%"
+        * high = 59.9999999999999 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point6
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.6"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.6 - 0.69"
 * insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point6)
@@ -154,12 +154,12 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
         * low = 60 '%' "%"
-        * high = 69.99999999999999999999999 '%' "%"
+        * high = 69.9999999999999 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point7
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.7"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.7 - 0.79"
 * insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point7)
@@ -193,12 +193,12 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
         * low = 70 '%' "%"
-        * high = 79.99999999999999999999999 '%' "%"
+        * high = 79.9999999999999 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point8
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.8"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.8 - 0.89"
 * insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point8)
@@ -231,12 +231,12 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
         * low = 80 '%' "%"
-        * high = 89.99999999999999999999999 '%' "%"
+        * high = 89.9999999999999 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-point9
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 0.9"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 0.9 - 0.99"
 * insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-point9)
@@ -270,12 +270,12 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
         * low = 90 '%' "%"
-        * high = 99.99999999999999999999999 '%' "%"
+        * high = 99.9999999999999 '%' "%"
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patientsWithARDS-fio2-1
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently 1.0"
 Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fraction currently 1.0"
 * insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-with-ards-fio2-1)

@@ -3,7 +3,7 @@
 /************************/
 Instance: AntithrombLWMHProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with LWMH"
 Description: "Hospitalized patients with COVID-19 should receive standard drug thromboembolism prophylaxis with low molecular weight heparin in the absence of contraindications. Alternatively, fondaparinux may be used."
 * insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH)
@@ -38,7 +38,7 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
 
 Instance: AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Fondaparinux"
 Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
 * insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-fondaparinux)
@@ -57,7 +57,7 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 
 Instance: NoAntithrombProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
-Usage: #example
+Usage: #definition
 Title: "No antithrombotic prophylaxis in patients with thrombosis"
 Description: "No antithrombotic prophylaxis in patients with thrombosis"
 * insert canonical-url(covid19-inpatient-therapy, intervention-plan/no-antithrombotic-prophylaxis)
@@ -99,7 +99,7 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
 /**********************/
 Instance: ProphylacticAnticoagulationWDalteparin
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Dalteparin"
 Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/antithrombotic-prophylaxis-dalteparin-administration)
@@ -123,7 +123,7 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
 
 Instance: ProphylacticAnticoagulationWEnoxaparin
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Enoxaparin"
 Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/antithrombotic-prophylaxis-enoxaparin-administration)
@@ -147,7 +147,7 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
 
 Instance: ProphylacticAnticoagulationWNadroparinLowWeight
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Nadroparin Low Weight"
 Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/antithrombotic-prophylaxis-nadroparin-administration-low-weight)
@@ -174,7 +174,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
 
 Instance: ProphylacticAnticoagulationWNadroparinHighWeight
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Nadroparin High Weight"
 Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/antithrombotic-prophylaxis-nadroparin-administration-high-weight)
@@ -201,7 +201,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
 
 Instance: ProphylacticAnticoagulationWCertoparin
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Certoparin"
 Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/antithrombotic-prophylaxis-certoparin-administration)
@@ -225,7 +225,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
 
 Instance: AntithromboticProphylaxisFondaparinuxSubcutaneous
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Fondaparinux"
 Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients (when contraindications for LWMH exist)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/antithrombotic-prophylaxis-fondaparinux-administration)
@@ -250,7 +250,7 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 /* DO NOT PERFORM actions */
 Instance: NoProphylacticAnticoagulationWDalteparin
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Dalteparin"
 Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-dalteparin-administration)
@@ -275,7 +275,7 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
 
 Instance: NoProphylacticAnticoagulationWEnoxaparin
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Enoxaparin"
 Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-enoxaparin-administration)
@@ -300,7 +300,7 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
 
 Instance: NoProphylacticAnticoagulationWNadroparinLowWeight
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Nadroparin Low Weight"
 Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-nadroparin-administration-low-weight)
@@ -328,7 +328,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
 
 Instance: NoProphylacticAnticoagulationWNadroparinHighWeight
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Nadroparin High Weight"
 Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-nadroparin-administration-high-weight)
@@ -356,7 +356,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
 
 Instance: NoProphylacticAnticoagulationWCertoparin
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with with Certoparin"
 Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-certoparin-administration)
@@ -381,7 +381,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
 
 Instance: NoAntithromboticProphylaxisFondaparinuxSubcutaneous
 InstanceOf: drug-administration-action
-Usage: #example
+Usage: #definition
 Title: "Antithrombotic prophylaxis with Fondaparinux"
 Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients (when contraindications for LWMH exist)"
 * insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-fondaparinux-administration)

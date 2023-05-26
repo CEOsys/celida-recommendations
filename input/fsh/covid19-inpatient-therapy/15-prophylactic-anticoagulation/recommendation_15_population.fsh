@@ -3,7 +3,7 @@
 /**************/
 Instance: PopHospitalisedCOVID19PatientsWOVenousThrombosisWOCI
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Hospitalised COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
 Description: "Population for recommendation 15: Hospitalised COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
 * name = "HospitalisedCOVID19PatientsWOVenousThrombosisWOCI"
@@ -52,7 +52,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 
 Instance: PopHospitalisedCOVID19PatientsWOVenousThrombosisWITHCI
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Hospitalised COVID-19 patients without (venous) thrombosis, existing contraindications to LWMH"
 Description: "Population for recommendation 15: Hospitalised COVID-19 patients without (venous) thrombosis, existing contraindications to LWMH"
 * name = "HospitalisedCOVID19PatientsWOVenousThrombosisWITHCI"
@@ -101,7 +101,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
 
 Instance: PopHospitalisedCOVID19PatientsWITHThrombosis
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Hospitalised COVID-19 Patients with (venous) thrombosis"
 Description: "Population for recommendation 15: Hospitalised COVID-19 Patients with (venous) thrombosis"
 * name = "HospitalisedCOVID19PatientsWITHThrombosis"

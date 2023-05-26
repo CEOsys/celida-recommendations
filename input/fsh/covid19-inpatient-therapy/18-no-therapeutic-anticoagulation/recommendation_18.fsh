@@ -3,7 +3,7 @@
 /**********************************/
 Instance: RecCollectionNoTherapeuticAnticoagNoIndicationICUCOVID19
 InstanceOf: recommendation
-Usage: #example
+Usage: #definition
 Title: "Recommendation Collection: ICU COVID-19 Patients with No Specific Indication"
 Description: "Recommendation Collection for ICU COVID-19 Patients with No Specific Indication"
 * name = "RecommendationCollection18"

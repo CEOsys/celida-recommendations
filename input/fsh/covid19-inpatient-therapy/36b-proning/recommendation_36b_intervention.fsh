@@ -4,7 +4,7 @@
 // Abdominal positioning plan in case of ARDS and a PaO2/FiO2 < 150 mmHg
 Instance: AbdominalPositioningARDSPlan
 InstanceOf: recommendation-plan
-Usage: #example
+Usage: #definition
 Title: "Abdominal positioning plan in case of ARDS and a PaO2/FiO2 < 150 mmHg"
 Description: "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours."
 * insert publisher-experimental-version(7.0)
@@ -26,7 +26,7 @@ Description: "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should b
 /**********************/
 Instance: PronePositioning
 InstanceOf: body-positioning-action
-Usage: #example
+Usage: #definition
 Title: "Abdominal Positioning"
 Description: "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours."
 * name = "PronePositioning"

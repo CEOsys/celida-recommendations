@@ -3,7 +3,7 @@
 /*********************/
 Instance: VentilatedCOVID19PatientsWithARDSVentilationPlan
 InstanceOf: recommendation-plan
-Usage: #example
+Usage: #definition
 Title: "Ventilation Plan for COVID-19 patients with ARDS"
 Description: "In ventilated patients with COVID-19 and ARDS, tidal volume should be ≤ 6 ml/kg standard body weight, end-inspiratory airway pressure ≤ 30 cm H2O."
 * insert canonical-url(covid19-inpatient-therapy, intervention-plan/ventilation-plan)

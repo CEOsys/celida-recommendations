@@ -3,7 +3,7 @@
 /**********************************/
 Instance: RecCollectionProphAnticoagulationHospitalizedCOVID19Patients
 InstanceOf: recommendation
-Usage: #example
+Usage: #definition
 Title: "Recommendation Collection: Prophylactic Anticoagulation in Hospitalized COVID-19 Patients"
 Description: "Recommendation Collection for Hospitalized COVID-19 Patients"
 * name = "RecommendationCollection15"

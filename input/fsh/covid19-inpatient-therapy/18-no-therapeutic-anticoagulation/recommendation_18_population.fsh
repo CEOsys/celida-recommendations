@@ -3,7 +3,7 @@
 /**************/
 Instance: PopHospitalisedICUCOVID19Patients
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Hospitalised COVID-19 patients, treated on ICU, without thrombembolic complication"
 Description: "Hospitalised COVID-19 patients, treated on ICU, without thrombembolic complication"
 * name = "HospitalICUCOVID19WOThrombembolic"

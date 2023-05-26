@@ -1,6 +1,6 @@
 Instance: PopulationVentilatedARDSPatients
 InstanceOf: recommendation-eligibility-criteria
-Usage: #example
+Usage: #definition
 Title: "Population: Ventilated patients with ARDS"
 Description: "Patients with ARDS"
 * insert canonical-url(sepsis, population/ventilated-patients-with-ards)

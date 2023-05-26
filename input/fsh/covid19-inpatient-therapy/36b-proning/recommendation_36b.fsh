@@ -3,7 +3,7 @@
 /**********************************/
 Instance: RecommendationCollectionAbdominalPositioningARDS
 InstanceOf: recommendation
-Usage: #example
+Usage: #definition
 Title: "Recommendation Collection: Patients with ARDS and a PaO2/FiO2 < 150 mmHg"
 Description: "Recommendation Collection for Patients with ARDS and a PaO2/FiO2 < 150 mmHg"
 * name = "RecommendationCollection36b"

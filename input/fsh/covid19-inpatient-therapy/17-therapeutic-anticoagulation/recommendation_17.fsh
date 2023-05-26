@@ -3,7 +3,7 @@
 /**********************************/
 Instance: RecCollectionTherapeuticAnticoagNonICUHighRiskCOVID19Patients
 InstanceOf: recommendation
-Usage: #example
+Usage: #definition
 Title: "Recommendation Collection: Therapeutic Anticoagulation in Non-ICU, High-Risk COVID-19 Patients"
 Description: "Recommendation Collection for non-ICU, High-Risk COVID-19 Patients"
 * name = "RecommendationCollection17"

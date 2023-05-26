@@ -3,7 +3,7 @@
 /**********************************/
 Instance: RecommendationCollectionVentilatedCOVID19patientsWithARDS
 InstanceOf: recommendation
-Usage: #example
+Usage: #definition
 Title: "Recommendation Collection: Ventilated COVID-19 Patients with ARDS"
 Description: "Recommendation Collection for Ventilated COVID-19 Patients with ARDS"
 * name = "RecommendationCollection36-a"
