@@ -11,7 +11,7 @@ Description: "Patients with ARDS"
   * code = #all-of
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+      * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
   * characteristic[condition][+]
     * definitionByTypeAndValue

@@ -16,7 +16,7 @@ Description: "Ventilated COVID-19 patients with severe ARDS, defined by oxygenat
   * characteristic[condition][=].exclude = false
   * characteristic[procedure][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+      * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
   * characteristic[condition][+]
     * definitionByTypeAndValue

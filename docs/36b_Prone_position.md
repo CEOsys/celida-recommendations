@@ -41,7 +41,7 @@ Population
 | --- | --- | --- |
 |  |  | Inclusion  / Exclusion  | Name | Category | definition.type | definition.value |
 | VentilatedCOVID19patientsWithARDSWithOxygenationFailure | Ventilated Patients suffering from COVID-19 induced ARDS which exhibit oxygenation failure |  | COVID-19 | Condition | SCT [404684003 "Clinical finding (finding)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2022-04-30&release=&languages=en)" | $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)" |
-|  | Ventilated | Procedure | SCT [71388002 "Procedure (procedure)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=71388002&edition=MAIN/2022-05-31&release=&languages=en)" | $sct#40617009 "Artificial respiration (procedure)" |
+|  | Ventilated | Procedure | SCT [71388002 "Procedure (procedure)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=71388002&edition=MAIN/2022-05-31&release=&languages=en)" | $sct#40617009 "Artificial ventilation (regime/therapy)" |
 |  | ARDS | Condition | SCT [404684003 "Clinical finding (finding)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2022-04-30&release=&languages=en)" | $sct#67782005 "Acute respiratory distress syndrome (disorder)" |
 |  | hypoxic respiratory failure | laboratory | $loinc#50984-4 "Horowitz index in Arterial blood" | Horowitz (=oxygenation) index lower than 150 mmHg |
 

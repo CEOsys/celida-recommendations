@@ -22,7 +22,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[procedure][+]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
-      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+      * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
@@ -62,7 +62,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[procedure][+]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
-      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+      * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
@@ -101,7 +101,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[procedure][+]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
-      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+      * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
@@ -140,7 +140,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[procedure][+]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
-      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+      * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
@@ -179,7 +179,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[procedure][+]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
-      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+      * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
@@ -217,7 +217,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[procedure][+]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
-      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+      * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
@@ -256,7 +256,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[procedure][+]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
-      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+      * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
@@ -294,7 +294,7 @@ Description: "Ventilated COVID-19 patients with ARDS, inspiratory oxygen fractio
   * characteristic[procedure][+]
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
-      * valueCodeableConcept = $sct#40617009 "Artificial respiration (procedure)"
+      * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
   * characteristic[condition][+]
