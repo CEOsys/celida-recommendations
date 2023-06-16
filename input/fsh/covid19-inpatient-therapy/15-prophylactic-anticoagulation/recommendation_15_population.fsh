@@ -43,11 +43,6 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#294876003 "Allergy to heparinoid (finding)"
   * characteristic[allergy][=].exclude = false
-  * characteristic[condition][+]
-    * linkId = "thrombocytopenia"
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#302215000 "Thrombocytopenic disorder (disorder)"
-  * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = true
 
 Instance: PopHospitalisedCOVID19PatientsWOVenousThrombosisWITHCI
@@ -92,11 +87,6 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#294876003 "Allergy to heparinoid (finding)"
   * characteristic[allergy][=].exclude = false
-  * characteristic[condition][+]
-    * linkId = "thrombocytopenia"
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#302215000 "Thrombocytopenic disorder (disorder)"
-  * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = false
 
 Instance: PopHospitalisedCOVID19PatientsWITHThrombosis
