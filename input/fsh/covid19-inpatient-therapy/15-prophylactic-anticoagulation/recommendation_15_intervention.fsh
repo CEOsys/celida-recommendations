@@ -193,8 +193,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * doseQuantity = 5700 '[iU]' "IU"
+    * doseQuantity = 5700 '[iU]' "IU"
 
 Instance: ProphylacticAnticoagulationWCertoparin
 InstanceOf: drug-administration-action
