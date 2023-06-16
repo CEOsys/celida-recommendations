@@ -118,8 +118,7 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * high = 5000 '[iU]' "IU"
+    * doseQuantity = 5000 '[iU]' "IU"
 
 Instance: ProphylacticAnticoagulationWEnoxaparin
 InstanceOf: drug-administration-action
@@ -142,8 +141,7 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * high = 40 'mg'
+    * doseQuantity = 40 'mg'
 
 Instance: ProphylacticAnticoagulationWNadroparinLowWeight
 InstanceOf: drug-administration-action
@@ -169,8 +167,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * high = 3800 '[iU]' "IU"
+    * doseQuantity = 3800 '[iU]' "IU"
 
 Instance: ProphylacticAnticoagulationWNadroparinHighWeight
 InstanceOf: drug-administration-action
@@ -196,8 +193,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * high = 5700 '[iU]' "IU"
+    * doseQuantity = 5700 '[iU]' "IU"
 
 Instance: ProphylacticAnticoagulationWCertoparin
 InstanceOf: drug-administration-action
@@ -220,8 +216,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * high = 3000 '[iU]' "IU"
+    * doseQuantity = 3000 '[iU]' "IU"
 
 Instance: AntithromboticProphylaxisFondaparinuxSubcutaneous
 InstanceOf: drug-administration-action
@@ -269,8 +264,7 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * high = 5000 '[iU]' "IU"
+    * doseQuantity = 5000 '[iU]' "IU"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWEnoxaparin
@@ -294,8 +288,7 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * high = 40 'mg'
+    * doseQuantity = 40 'mg'
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWNadroparinLowWeight
@@ -322,8 +315,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * high = 3800 '[iU]' "IU"
+    * doseQuantity = 3800 '[iU]' "IU"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWNadroparinHighWeight
@@ -350,8 +342,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * high = 5700 '[iU]' "IU"
+    * doseQuantity = 5700 '[iU]' "IU"
 * doNotPerform = true
 
 Instance: NoProphylacticAnticoagulationWCertoparin
@@ -375,8 +366,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * high = 3000 '[iU]' "IU"
+    * doseQuantity = 3000 '[iU]' "IU"
 * doNotPerform = true
 
 Instance: NoAntithromboticProphylaxisFondaparinuxSubcutaneous
