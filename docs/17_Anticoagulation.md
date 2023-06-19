@@ -32,14 +32,9 @@ Seven randomized controlled trials are currently available (124-130) for the adm
 In the absence of a confirmed indication, therapeutically dosed anticoagulation cannot currently be routinely recommended. However, it can be considered on a case-by-case basis, preferentially with NMH or UFH, if patients are at increased risk and low risk of bleeding (e.g., D-dimers ≥ 2 mg/l) or if prompt diagnostic imaging is not available to clarify pulmonary artery embolism or deep vein thrombosis (e.g., acute right heart strain, unexplained worsening of gas exchange, and/or rapidly rising D-dimers).  
 If therapeutic anticoagulation has been indicated, UFH should be preferred over NMH if renal function is markedly impaired (eGFR < 30 ml/min). In case of non-response of aPTT, or pathological prolongation of PTT in coagulopathy, monitoring of UFH therapy should additionally be performed by determination of anti-X activity. If "UFH resistance" is present due to massive inflammation, argatroban may be used as an alternative (131, 132). Because of the potentially high risk of bleeding with argatroban, critical indication, adequate dose adjustment in critically ill patients, and careful monitoring are mandatory.
 
-  
-
 
 Population
 ==========
-
-
-
 | Name | Description | Criteria |
 | --- | --- | --- |
 |  |  | Inclusion/Exclusion | Name | Category | definition.type | definition.value |
@@ -55,11 +50,6 @@ Representation of action priority ("use preferentially ...") is not currently po
 
 Possibly we'll add an "priority" extension to PlanDefinition.action to be able to represent action priorities.
 
-  
-
-
-
-
 | Name | Description | Population | Criteria |
 | --- | --- | --- | --- |
 |  |  |  | Name | Action Category | productCodeableConcept | Drug Dosage | Goal | doNotPerform |
@@ -70,7 +60,5 @@ Possibly we'll add an "priority" extension to PlanDefinition.action to be able t
 | TherapeuticAnticoagulationNMHCertoparin | drugAdministration | $atcde#B01AB13  "Certoparin"$sct#395961003 "Certoparin (substance)" | > 3000 IE/d |  |  |
 | TherapeuticAnticoagulationFondaparinux | drugAdministration | $atcde#B01AX05 "Fondaparinux"$sct#708189008 "Fondaparinux (substance)" | 2.5 mg x 2/d |  |  |
 | TherapeuticAnticoagulationWUFHOrArgatr | drugAdministration | $atcde#B01AE03 "Argatroban"$sct#116508003 "Argatroban (substance)" | - | aPTT > 50 s |  |
-
-  
-
-
+| TherapeuticAnticoagulationNMHTinzaparin | drugAdministration | $atcde#B01AB10 "Tinzaparin" $sct#412608008 "Tinzaparin (substance)" | > 4500 IE/d |  |
+ 
