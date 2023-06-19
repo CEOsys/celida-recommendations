@@ -18,8 +18,4 @@ Description: "Ventilated COVID-19 patients with ARDS"
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
-  * characteristic[condition][+]
-    * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
-  * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = false
