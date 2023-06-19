@@ -54,6 +54,10 @@ Description: "In intensive care patients without a specific indication (e.g. pul
   * goalId = "aPTT-goal"
   * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWTinzaparin)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
 
 /*************************/
 /* Recommended Actions   */
@@ -219,4 +223,28 @@ Description: "No Therapeutic Anticoagulation Treatment with Argatroban for non-i
 * productCodeableConcept
   * coding[sct] = $sct#116508003 "Argatroban (substance)"
   * coding[atcde] = $atcde#B01AE03 "Argatroban"
+* doNotPerform = true
+
+Instance: NoTherapeuticAnticoagulationWTinzaparin
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "No Therapeutic Anticoagulation Treatment with Tinzaparin"
+Description: "No Therapeutic Anticoagulation Treatment with Tinzaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-tinzaparin-administration)
+* insert publisher-experimental-version(0.1)
+* name = "NoTherapeuticAnticoagulationPlanTinzaparin"
+* status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Tinzaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AB10 "Tinzaparin"
+  * coding[sct] = $sct#412608008 "Tinzaparin (substance)"
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 4500 '[iU]' "IU"
 * doNotPerform = true

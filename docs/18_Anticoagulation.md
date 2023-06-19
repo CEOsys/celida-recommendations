@@ -122,7 +122,5 @@ Intervention
 | **Action description:** When using UFH or Argatroban for anticoagulation, aPTT should not be >50 sec. | NoTherapeuticAnticoagulationWUFHOrArgatra |  | /: #any-of | **CAVE**: aPTT values here! |  |  |
 | drugAdministration | $atcde#B01AB01 "Heparin"$sct#372877000 "Heparin (substance)" | $loinc#[3173-2](https://loinc.org/3173-2/) "aPTT in Blood by Coagulation assay" | aPTT >= 50 s |  |
 | drugAdministration | $atcde#B01AE03 "Argatroban"$sct#116508003 "Argatroban (substance)" | aPTT >= 50 s |
-
-  
-
-
+| **Action description:** Upper level of prophylactic dosage for prophylactic anticoagulation of Tinzaparin is 4500 IE | NoTherapeuticAnticoagulationWTinzaparin | drugAdministration | $$atcde#B01AB10 "Tinzaparin" $sct#412608008 "Tinzaparin (substance)" | > 4500 IE |  |  |
+| >70 kg: 5700 IE/d |  |  |
