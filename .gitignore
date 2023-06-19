@@ -31,6 +31,7 @@ Thumbs.db
 ###########################
 package-lock.json
 node_modules/
+package.json
 
 # cache folders
 ###########################
