@@ -53,24 +53,21 @@ Population
 Intervention
 ============
 
-
-
 | Name | Description | Population | Actions/Activities |
 | --- | --- | --- | --- |
 |  |  |  | Name | Action Category | productCodeableConcept | Drug Dosage | doNotPerform |
-| AntithrombLWMHProphInHospitalisedCOVID19PatientsRecommPlan | Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients | PopHospitalisedCOVID19PatientsWOVenousThrombosisWOCI | ProphylacticAnticoagulationWDalteparin | drugAdministration | $atcde#B01AB04 "Dalteparin" $sct#372563008 "Dalteparin (substance)" | < 5000 IU/d |  |
-| ProphylacticAnticoagulationWEnoxaparin | drugAdministration | $atcde#B01AB05 "Enoxaparin"$sct#372562003 "Enoxaparin (substance)" | < 40 mg/d |  |
-| ProphylacticAnticoagulationWNadroparinLowWeight | drugAdministration | $atcde#B01AB06 "Nadroparin"$sct#699946002 "Nadroparin (substance)" | < 3800 IE/d |  |
-| ProphylacticAnticoagulationWNadroparinHighWeight | drugAdministration | $atcde#B01AB06 "Nadroparin"$sct#699946002 "Nadroparin (substance)" | < 5700 IE/d |  |
-| ProphylacticAnticoagulationWCertoparin | drugAdministration | $atcde#B01AB13  "Certoparin"$sct#395961003 "Certoparin (substance)" | < 3000 IE/d |  |
-| AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan | Antithrombotic prophylaxis with Fondaparinux in hospitalized COVID-19 patients | PopHospitalisedCOVID19PatientsWOVenousThrombosisWITHCI | AntithromboticProphylaxisFondaparinuxSubcutaneous | drugAdministration | $atcde#B01AX05 "Fondaparinux"$sct#708189008 "Fondaparinux (substance)" | 2.5 'mg'/day |  |
-| NoAntithrombProphInHospitalisedCOVID19PatientsRecommPlan | No antithrombotic prophylaxis in patients with thrombosis | PopHospitalisedCOVID19PatientsWITHThrombosis | NoProphylacticAnticoagulationWDalteparin | drugAdministration | $atcde#B01AB04 "Dalteparin" $sct#372563008 "Dalteparin (substance)" | < 5000 IU/d |  |
-| NoProphylacticAnticoagulationWEnoxaparin | drugAdministration | $atcde#B01AB05 "Enoxaparin"$sct#372562003 "Enoxaparin (substance)" | < 40 mg/d |  |
-| NoProphylacticAnticoagulationWNadroparinLowWeight | drugAdministration | $atcde#B01AB06 "Nadroparin"$sct#699946002 "Nadroparin (substance)" | < 3800 IE/d |  |
-| NoProphylacticAnticoagulationWNadroparinHighWeight | drugAdministration | $atcde#B01AB06 "Nadroparin"$sct#699946002 "Nadroparin (substance)" | < 5700 IE/d |  |
-| NoProphylacticAnticoagulationWCertoparin | drugAdministration | $atcde#B01AB13  "Certoparin"$sct#395961003 "Certoparin (substance)" | any |  |
-| NoAntithromboticProphylaxisFondaparinuxSubcutaneous | drugAdministration | $atcde#B01AX05 "Fondaparinux"$sct#708189008 "Fondaparinux (substance)" | 2.5 'mg'/day |  |
-
-  
-
-
+| AntithrombLWMHProphInHospitalisedCOVID19PatientsRecommPlan | Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients | PopHospitalisedCOVID19PatientsWOVenousThrombosisWOCI | ProphylacticAnticoagulationWDalteparin | drugAdministration | $atcde#B01AB04 "Dalteparin" $sct#372563008 "Dalteparin (substance)" | = 5000 IU/d |  |
+| ProphylacticAnticoagulationWEnoxaparin | drugAdministration | $atcde#B01AB05 "Enoxaparin" $sct#372562003 "Enoxaparin (substance)" | = 40 mg/d |  |
+| ProphylacticAnticoagulationWNadroparinLowWeight | drugAdministration | $atcde#B01AB06 "Nadroparin" $sct#699946002 "Nadroparin (substance)" | = 3800 IE/d |  |
+| ProphylacticAnticoagulationWNadroparinHighWeight | drugAdministration | $atcde#B01AB06 "Nadroparin" $sct#699946002 "Nadroparin (substance)" | = 5700 IE/d |  |
+| ProphylacticAnticoagulationWCertoparin | drugAdministration | $atcde#B01AB13  "Certoparin" $sct#395961003 "Certoparin (substance)" | = 3000 IE/d |  |
+| ProphylacticAnticoagulationWTinzaparin | drugAdministration | $atcde#B01AB10 "Tinzaparin" $sct#412608008 "Tinzaparin (substance)" | = 4500 IE/d |  |
+| AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan | Antithrombotic prophylaxis with Fondaparinux in hospitalized COVID-19 patients | PopHospitalisedCOVID19PatientsWOVenousThrombosisWITHCI | AntithromboticProphylaxisFondaparinuxSubcutaneous | drugAdministration | $atcde#B01AX05 "Fondaparinux" $sct#708189008 "Fondaparinux (substance)" | = 2.5 'mg'/day |  |
+| NoAntithrombProphInHospitalisedCOVID19PatientsRecommPlan | No antithrombotic prophylaxis in patients with thrombosis | PopHospitalisedCOVID19PatientsWITHThrombosis | NoProphylacticAnticoagulationWDalteparin | drugAdministration | $atcde#B01AB04 "Dalteparin" $sct#372563008 "Dalteparin (substance)" | = 5000 IU/d |  |
+| NoProphylacticAnticoagulationWEnoxaparin | drugAdministration | $atcde#B01AB05 "Enoxaparin" $sct#372562003 "Enoxaparin (substance)" | = 40 mg/d |  |
+| NoProphylacticAnticoagulationWNadroparinLowWeight | drugAdministration | $atcde#B01AB06 "Nadroparin" $sct#699946002 "Nadroparin (substance)" | = 3800 IE/d |  |
+| NoProphylacticAnticoagulationWNadroparinHighWeight | drugAdministration | $atcde#B01AB06 "Nadroparin" $sct#699946002 "Nadroparin (substance)" | = 5700 IE/d |  |
+| NoProphylacticAnticoagulationWCertoparin | drugAdministration | $atcde#B01AB13  "Certoparin" $sct#395961003 "Certoparin (substance)" | any |  |
+| NoAntithromboticProphylaxisFondaparinuxSubcutaneous | drugAdministration | $atcde#B01AX05 "Fondaparinux" $sct#708189008 "Fondaparinux (substance)" | 2.5 'mg'/day |  |
+| NoProphylacticAnticoagulationWTinzaparin | drugAdministration | $atcde#B01AB10 "Tinzaparin" $sct#412608008 "Tinzaparin (substance)" | = 4500 IE/d |  |
+ 
