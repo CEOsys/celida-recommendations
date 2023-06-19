@@ -432,7 +432,7 @@ InstanceOf: drug-administration-action
 Usage: #definition
 Title: "Antithrombotic prophylaxis with Tinzaparin"
 Description: "Antithrombotic prophylaxis with Tinzaparin in hospitalised COVID-19 patients"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/antithrombotic-prophylaxis-tinzaparin-administration)
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-antithrombotic-prophylaxis-tinzaparin-administration)
 * insert publisher-experimental-version(0.1)
 * name = "ProphylacticTinzaparinApplicationActivity"
 * status = #active
