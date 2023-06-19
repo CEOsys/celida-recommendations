@@ -35,6 +35,10 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWCertoparin)
   * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(ProphylacticAnticoagulationWTinzaparin)
+  * selectionBehavior = #one-or-more
+  * code = $sct#432102000 "Administration of substance (procedure)"
 
 Instance: AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
@@ -93,6 +97,11 @@ Description: "No antithrombotic prophylaxis in patients with thrombosis"
   * definitionCanonical = Canonical(NoAntithromboticProphylaxisFondaparinuxSubcutaneous)
   * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoProphylacticAnticoagulationWTinzaparin)
+  * selectionBehavior = #all
+  * code = $sct#432102000 "Administration of substance (procedure)"
+
 
 /**********************/
 /* Recommended Actions */
@@ -241,6 +250,29 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseQuantity = 2.5 'mg' "mg"
+
+Instance: ProphylacticAnticoagulationWTinzaparin
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "Antithrombotic prophylaxis with Tinzaparin"
+Description: "Antithrombotic prophylaxis with Tinzaparin in hospitalised COVID-19 patients"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/antithrombotic-prophylaxis-tinzaparin-administration)
+* insert publisher-experimental-version(0.1)
+* name = "ProphylacticTinzaparinApplicationActivity"
+* status = #active
+* description = "Antithrombotic prophylaxis with Tinzaparin in hospitalised COVID-19 patients"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AB10 "Tinzaparin"
+  * coding[sct] = $sct#412608008 "Tinzaparin (substance)"
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 4500 '[iU]' "IU"
 
 /* DO NOT PERFORM actions */
 Instance: NoProphylacticAnticoagulationWDalteparin
@@ -393,4 +425,28 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
   * doseAndRate
     * doseRange
       * low = 0 'mg' "mg" // just use "any dose" for now
+* doNotPerform = true
+
+Instance: NoProphylacticAnticoagulationWTinzaparin
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "Antithrombotic prophylaxis with Tinzaparin"
+Description: "Antithrombotic prophylaxis with Tinzaparin in hospitalised COVID-19 patients"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/antithrombotic-prophylaxis-tinzaparin-administration)
+* insert publisher-experimental-version(0.1)
+* name = "ProphylacticTinzaparinApplicationActivity"
+* status = #active
+* description = "Antithrombotic prophylaxis with Tinzaparin in hospitalised COVID-19 patients"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AB10 "Tinzaparin"
+  * coding[sct] = $sct#412608008 "Tinzaparin (substance)"
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 4500 '[iU]' "IU"
 * doNotPerform = true

@@ -59,6 +59,10 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
   * goalId = "aPTT-goal"
   * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHTinzaparin)
+  * selectionBehavior = #one-or-more
+  * code = $sct#432102000 "Administration of substance (procedure)"
 
 /***********************/
 /* Recommended Actions */
@@ -241,3 +245,28 @@ Description: "Therapeutic Anticoagulation Treatment with Argatroban for non-inte
 * productCodeableConcept
   * coding[sct] = $sct#116508003 "Argatroban (substance)"
   * coding[atcde] = $atcde#B01AE03 "Argatroban"
+
+
+Instance: TherapeuticAnticoagulationNMHTinzaparin
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "Therapeutic Anticoagulation Treatment with Tinzaparin"
+Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Tinzaparin"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-tinzaparin-administration)
+* insert publisher-experimental-version(0.1)
+* name = "TherapeuticAnticoagulationPlanTinzaparin"
+* status = #active
+* description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Tinzaparin"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[atcde] = $atcde#B01AB10 "Tinzaparin"
+  * coding[sct] = $sct#412608008 "Tinzaparin (substance)"
+* dosage
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseRange
+      * low = 4500 '[iU]' "IU"
