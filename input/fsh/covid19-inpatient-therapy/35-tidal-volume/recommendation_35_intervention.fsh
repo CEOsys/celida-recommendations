@@ -28,7 +28,7 @@ Description: "In ventilated patients with COVID-19 and ARDS, tidal volume should
   * id = "end-inspiratory-pressure-goal"
   * description.text = "End-inspiratory airway pressure ≤ 30 cm H2O"
   * target[+]
-    * measure = $loinc#60951-1 "Pressure max Respiratory system airway --during inspiration"
+    * measure = $loinc#76259-1 "Pressure.plateau Respiratory system airway --on ventilator"
     * detailRange.high = 30 'cm[H2O]' "cm[H2O]"
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
