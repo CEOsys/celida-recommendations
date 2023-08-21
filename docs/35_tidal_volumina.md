@@ -54,7 +54,7 @@ The used LOINC code for tidal volume uses "per body weight" but it should use "p
 | --- | --- | --- | --- |
 |  |  |  | Name | Action Categroy | Goal target measure | Goal target detail |
 | VentilatedCOVID19PatientsWithARDSVentilationPlan | Manage ventilation such that tidal volume ≤ 6 ml/kg standard body weight, end-inspiratory airway pressure ≤ 30 cm H2O. | VentilatedCOVID19patientsWithARDS | Tidal Volume | ventilatorManagement | $loinc#20117-8 "Tidal volume.spontaneous+mechanical/Body weight [Volume/mass] --on ventilator" | range.high = 6 'ml/kg' "ml/kg" |
-| End-inspiratory airway pressure | ventilatorManagement | $loinc#60951-1 "Pressure max Respiratory system airway --during inspiration" | range.high = 30 'cm[H2O]' "cm[H2O]" |
+| End-inspiratory airway pressure | ventilatorManagement | $loinc#76259-1 "Pressure.plateau Respiratory system airway --on ventilator" | range.high = 30 'cm[H2O]' "cm[H2O]" |
 
   
 
