@@ -84,7 +84,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-i
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 5000.0000000000000001 '[iU]' "IU"
+      * low = 5000.0000001 '[iU]' "IU"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWEnoxaparin
@@ -109,7 +109,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-i
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 40.0000000000000001 'mg'
+      * low = 40.0000001 'mg'
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWNadroparinLowWeight
@@ -137,7 +137,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 3800.0000000000000001 '[iU]' "IU"
+      * low = 3800.0000001 '[iU]' "IU"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWNadroparinHighWeight
@@ -165,7 +165,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 5700.0000000000000001 '[iU]' "IU"
+      * low = 5700.0000001 '[iU]' "IU"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWCertoparin
@@ -190,7 +190,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-i
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 3000.0000000000000001 '[iU]' "IU"
+      * low = 3000.0000001 '[iU]' "IU"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWUFH
@@ -247,5 +247,5 @@ Description: "No Therapeutic Anticoagulation Treatment with Tinzaparin for non-i
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 4500.0000000000000001 '[iU]' "IU"
+      * low = 4500.0000001 '[iU]' "IU"
 * doNotPerform = true
