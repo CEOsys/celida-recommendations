@@ -14,7 +14,7 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
 * date = "2022-02"
 * status = #active
 * description = "In hospitalized, non-intensive care patients with COVID-19 and increased risk (e.g., D-dimers ≥ 2 mg/l), therapeutic anticoagulation can be considered if the risk of bleeding is low. Anticoagulation, preferentially with NMH or UFH, can be considered."
-* subjectCanonical = Canonical(PopHospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk)
+* subjectCanonical = Canonical(PopHospitalisedNonICUCOVID19PatientsWITHHighRisk)
 * extension[partOf].valueCanonical = Canonical(RecCollectionTherapeuticAnticoagNonICUHighRiskCOVID19Patients)
 * goal[laboratoryValue][+]
   * id = "aPTT-goal"
