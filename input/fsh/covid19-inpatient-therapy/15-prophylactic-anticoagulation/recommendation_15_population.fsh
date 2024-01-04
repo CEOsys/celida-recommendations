@@ -1,19 +1,19 @@
 /**************/
 /* Population */
 /**************/
-Instance: PopHospitalisedCOVID19PatientsWOVenousThrombosisWOCI
+Instance: PopHospitalisedCOVID19PatientsWOContraIndications
 InstanceOf: recommendation-eligibility-criteria
 Usage: #definition
-Title: "Population: Hospitalised COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
-Description: "Population for recommendation 15: Hospitalised COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
-* name = "HospitalisedCOVID19PatientsWOVenousThrombosisWOCI"
+Title: "Population: Hospitalised COVID-19 patients without contraindications to LWMH"
+Description: "Population for recommendation 15: Hospitalised COVID-19 patients without contraindications to LWMH"
+* name = "HospitalisedCOVID19PatientsWOContraIndications"
 * actual = false
-* identifier.value = "WOThrombosisWOCI"
+* identifier.value = "WithoutContraIndications"
 * identifier.system = $ceosys
 * status = #active
-* name = "COVID19_patients_without_venous_thrombosis_without_contraindications"
-* description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without (venous) thrombosis and without contraindications to LWMH"
-* insert canonical-url(covid19-inpatient-therapy, population/hospitalised-covid19-patients-no-venous-thrombosis-no-LMWH-contraindications)
+* name = "COVID19_patients_without_contraindications"
+* description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without contraindications to LWMH"
+* insert canonical-url(covid19-inpatient-therapy, population/hospitalised-covid19-patients-no-LMWH-contraindications)
 // Include COVID-19 patients
 * characteristic[condition][+]
   * linkId = "covid19"
@@ -40,19 +40,19 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
   * characteristic[allergy][=].exclude = false
 * characteristic[=].exclude = true
 
-Instance: PopHospitalisedCOVID19PatientsWOVenousThrombosisWITHCI
+Instance: PopHospitalisedCOVID19PatientsWithContraIndications
 InstanceOf: recommendation-eligibility-criteria
 Usage: #definition
-Title: "Population: Hospitalised COVID-19 patients without (venous) thrombosis, existing contraindications to LWMH"
-Description: "Population for recommendation 15: Hospitalised COVID-19 patients without (venous) thrombosis, existing contraindications to LWMH"
-* name = "HospitalisedCOVID19PatientsWOVenousThrombosisWITHCI"
+Title: "Population: Hospitalised COVID-19 patients with existing contraindications to LWMH"
+Description: "Population for recommendation 15: Hospitalised COVID-19 patients with existing contraindications to LWMH"
+* name = "PopHospitalisedCOVID19PatientsWithContraIndications"
 * actual = false
-* identifier.value = "WOThrombosisWITHCI"
+* identifier.value = "WithContraIndications"
 * identifier.system = $ceosys
 * status = #active
-* name = "COVID19_patients_without_venous_thrombosis_with_contraindications"
-* description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients without (venous) thrombosis, existing contraindications to LWMH"
-* insert canonical-url(covid19-inpatient-therapy, population/hospitalised-covid19-patients-no-venous-thrombosis-with-LMWH-contraindications)
+* name = "COVID19_patients_with_contraindications"
+* description = "Population for guideline from https://www.awmf.org/leitlinien/detail/ll/113-001LG.html with characteristics: COVID-19 patients, existing contraindications to LWMH"
+* insert canonical-url(covid19-inpatient-therapy, population/hospitalised-covid19-patients-with-LMWH-contraindications)
 // Include COVID-19 patients
 * characteristic[condition][+]
   * linkId = "covid19"

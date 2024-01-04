@@ -13,7 +13,7 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
 * date = "2022-04-27"
 * status = #active
 * description = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
-* subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOVenousThrombosisWOCI)
+* subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOContraIndications)
 * extension[partOf].valueCanonical = Canonical(RecCollectionProphAnticoagulationHospitalizedCOVID19Patients)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWDalteparin)
@@ -52,7 +52,7 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * date = "2022-04-27"
 * status = #active
 * description = "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
-* subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOVenousThrombosisWITHCI)
+* subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWithContraIndications)
 * extension[partOf].valueCanonical = Canonical(RecCollectionProphAnticoagulationHospitalizedCOVID19Patients)
 * action[drugAdministration][+]
   * code = $sct#432102000 "Administration of substance (procedure)"
