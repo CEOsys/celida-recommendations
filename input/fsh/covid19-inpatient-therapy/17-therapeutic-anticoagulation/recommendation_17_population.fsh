@@ -24,14 +24,7 @@ Description: "Population for recommendation 17 from guideline from https://www.a
       * type = $loinc#78030-4 "Episode of care Type"
       * valueCodeableConcept = $cs-kontaktart-de#intensivstationaer "Intensivstationär"
   * characteristic[episodeOfCare][=].exclude = false
-  // Exclude patients having Thrombosis
-  * characteristic[condition][+]
-    * definitionByTypeAndValue
-      * type = $sct#404684003 "Clinical finding (finding)"
-      * valueCodeableConcept = $sct#111293003 "Venous thrombosis (disorder)"
-  * characteristic[condition][=].exclude = false
 * characteristic[0].exclude = true
-
 * characteristic[condition][+]
   * definitionByTypeAndValue
     * type = $sct#404684003 "Clinical finding (finding)"
