@@ -21,7 +21,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
     * valueCodeableConcept = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
 * characteristic[condition][=].exclude = false
  // Exclude patients with any of the following contraindications
-* characteristic[2].definitionByCombination
+* characteristic[1].definitionByCombination
   * code = #any-of
   * characteristic[condition][+]
     * linkId = "hit2"
@@ -60,7 +60,7 @@ Description: "Population for recommendation 15: Hospitalised COVID-19 patients w
     * valueCodeableConcept = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
 * characteristic[condition][=].exclude = false
 // INCLUDE patients with the following contraindications
-* characteristic[2].definitionByCombination
+* characteristic[1].definitionByCombination
   * code = #any-of
   * characteristic[condition][+]
     * linkId = "hit2"
