@@ -27,9 +27,3 @@ Description: "Recommendation Collection for Hospitalized COVID-19 Patients"
   * description = "Antithrombotic prophylaxis with Fondaparinux"
   * definitionCanonical = Canonical(AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan)
   * selectionBehavior = #exactly-one
-* action[+]
-  * title = "NoAntithromboticProphylaxis"
-  * code = $cs-common-process#guideline-based-care
-  * description = "No antithrombotic prophylaxis in patients with thrombosis"
-  * definitionCanonical = Canonical(NoAntithrombProphInHospitalisedCOVID19PatientsRecommPlan)
-  * selectionBehavior = #exactly-one
