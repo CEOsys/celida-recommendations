@@ -35,5 +35,10 @@ Description: "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should b
 * description = "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours."
 * status = #active
 * code = $sct#431182000 "Placing subject in prone position (procedure)"
-* timingRange
-  * low = 16 'h' "hour"
+* timingTiming
+  * repeat
+    * duration = 16
+    * durationUnit = $ucum#h "hour"
+    * frequency = 1
+    * period = 1
+    * periodUnit = $ucum#d "day"
