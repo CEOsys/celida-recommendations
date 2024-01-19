@@ -3,7 +3,7 @@ canonical: https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida
 name: CELIDA Recommendations
 title: CODEX+ CELIDA Recommendations
 status: draft
-version: 1.3.0-snapshot
+version: 1.3.0
 fhirVersion: 5.0.0
 copyrightYear: 2021+
 releaseLabel: ci-build
