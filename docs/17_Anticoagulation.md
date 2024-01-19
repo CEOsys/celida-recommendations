@@ -38,9 +38,8 @@ Population
 | Name | Description | Criteria |
 | --- | --- | --- |
 |  |  | Inclusion/Exclusion | Name | Category | definition.type | definition.value |
-| HospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk | Hospitalised patients (without the need for intensive care therapy), who do currently not have a venous thrombosis but are at high risk for developing one. CAVE: currently, the only condition that constitutes "high risk" at the moment ist an elevated blood level of D-dimer! |  | COVID-19 | Condition | SCT [404684003 "Clinical finding (finding)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2022-04-30&release=&languages=en)" | $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)" |
+| HospitalisedNonICUCOVID19PatientsWITHHighRisk | Hospitalised patients (without the need for intensive care therapy), who are at high risk for developing a venous thrombosis. CAVE: currently, the only condition that constitutes "high risk" is an elevated blood level of D-dimer! |  | COVID-19 | Condition | SCT [404684003 "Clinical finding (finding)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2022-04-30&release=&languages=en)" | $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)" |
 |  | ICU | episodeOfCare | LOINC [78030-4 "Episode of care Type](https://loinc.org/78030-4/)" | [kontaktart-de#intensivstationaer](https://simplifier.net/packages/de.basisprofil.r4/1.4.0/files/656612) |
-|  | Venous Thrombosis | Condition | SCT [404684003 "Clinical finding (finding)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2022-04-30&release=&languages=en)" | $sct#111293003 "Venous Thrombosis" |
 |  | elevated D-dimer | laboratory | $loinc#48066-5 "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma" | >= 2 mg/l |
 
 Intervention
@@ -53,7 +52,7 @@ Possibly we'll add an "priority" extension to PlanDefinition.action to be able t
 | Name | Description | Population | Criteria |
 | --- | --- | --- | --- |
 |  |  |  | Name | Action Category | productCodeableConcept | Drug Dosage | Goal | doNotPerform |
-| TherapeuticAnticoagulationNonICUHighRiskCOVID19PatientsPlan | In hospitalized, non-intensive care patients with COVID-19 and increased risk (e.g., D-dimers ≥ 2 mg/l), therapeutic anticoagulation can be considered if the risk of bleeding is low. Anticoagulation, preferentially with NMH or UFH, can be considered. | HospitalisedNonICUCOVID19PatientsWOThrombosisWITHHighRisk | TherapeuticAnticoagulationUFH | drugAdministration | $atcde#B01AB01 "Heparin"$sct#372877000 "Heparin (substance)" |  - | aPTT > 50 s |  |
+| TherapeuticAnticoagulationNonICUHighRiskCOVID19PatientsPlan | In hospitalized, non-intensive care patients with COVID-19 and increased risk (e.g., D-dimers ≥ 2 mg/l), therapeutic anticoagulation can be considered if the risk of bleeding is low. Anticoagulation, preferentially with NMH or UFH, can be considered. | HospitalisedNonICUCOVID19PatientsWITHHighRisk | TherapeuticAnticoagulationUFH | drugAdministration | $atcde#B01AB01 "Heparin"$sct#372877000 "Heparin (substance)" |  - | aPTT > 50 s |  |
 | TherapeuticAnticoagulationNMHDalteparin | drugAdministration | $atcde#B01AB04 "Dalteparin" $sct#372563008 "Dalteparin (substance)" | > 5000 IU/d |  |  |
 | TherapeuticAnticoagulationNMHNadroparin | drugAdministration | $atcde#B01AB06 "Nadroparin"$sct#699946002 "Nadroparin (substance)" | <70 kg: >3800 IE/d>70 kg: >5700 IE/d |  |  |
 | TherapeuticAnticoagulationNMHEnoxaparin | drugAdministration | $atcde#B01AB05 "Enoxaparin"$sct#372562003 "Enoxaparin (substance)" | > 40 mg/d |  |  |
