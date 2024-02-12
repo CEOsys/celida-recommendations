@@ -157,7 +157,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
 * dosage[+]
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
-    * extension[value].valueRange.low = 70 'kg' "kg"
+    * extension[value].valueRange.low = 70.0000001 'kg' "kg"
   * timing
     * repeat
       * frequency = 1

@@ -23,7 +23,7 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
   * target
     * measure = $loinc#3173-2 "aPTT in Blood by Coagulation assay"
     * detailRange
-      * low = 50 's' "sec"
+      * low = 50.0000001 's' "sec"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationUFH)
   * selectionBehavior = #one-or-more
@@ -104,7 +104,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 5000 '[iU]' "IU"
+      * low = 5000.0000001 '[iU]' "IU"
 
 Instance: TherapeuticAnticoagulationNMHEnoxaparin
 InstanceOf: drug-administration-action
@@ -128,7 +128,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 40 'mg'
+      * low = 40.0000001 'mg'
 
 Instance: TherapeuticAnticoagulationNMHNadroparinLowWeight
 InstanceOf: drug-administration-action
@@ -155,7 +155,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 3800 '[iU]' "IU"
+      * low = 3800.0000001 '[iU]' "IU"
 
 Instance: TherapeuticAnticoagulationNMHNadroparinHighWeight
 InstanceOf: drug-administration-action
@@ -174,7 +174,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * dosage[+]
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
-    * extension[value].valueRange.low = 70 'kg' "kg"
+    * extension[value].valueRange.low = 70.0000001 'kg' "kg"
   * timing
     * repeat
       * frequency = 1
@@ -182,7 +182,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 5700 '[iU]' "IU"
+      * low = 5700.0000001 '[iU]' "IU"
 
 Instance: TherapeuticAnticoagulationNMHCertoparin
 InstanceOf: drug-administration-action
@@ -206,7 +206,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 3000 '[iU]' "IU"
+      * low = 3000.0000001 '[iU]' "IU"
 
 Instance: TherapeuticAnticoagulationFondaparinux
 InstanceOf: drug-administration-action
@@ -269,4 +269,4 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-      * low = 4500 '[iU]' "IU"
+      * low = 4500.0000001 '[iU]' "IU"
