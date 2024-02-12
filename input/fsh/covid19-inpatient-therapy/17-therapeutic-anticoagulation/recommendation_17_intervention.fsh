@@ -104,7 +104,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseRange
-fo      * low = 5000.0000001 '[iU]' "IU"
+      * low = 5000.0000001 '[iU]' "IU"
 
 Instance: TherapeuticAnticoagulationNMHEnoxaparin
 InstanceOf: drug-administration-action
