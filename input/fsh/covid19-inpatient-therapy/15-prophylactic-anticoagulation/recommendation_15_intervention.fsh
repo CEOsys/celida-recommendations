@@ -78,6 +78,7 @@ Description: "Antithrombotic prophylaxis with Dalteparin in hospitalised COVID-1
   * coding[atcde] = $atcde#B01AB04 "Dalteparin"
   * coding[sct] = $sct#372563008 "Dalteparin (substance)"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -101,6 +102,7 @@ Description: "Antithrombotic prophylaxis with Enoxaparin in hospitalised COVID-1
   * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
   * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -127,6 +129,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin Low Weight in hospitali
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
     * extension[value].valueRange.high = 70 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -153,6 +156,7 @@ Description: "Antithrombotic prophylaxis with Nadroparin High Weight in hospital
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
     * extension[value].valueRange.low = 70.0000001 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -176,6 +180,7 @@ Description: "Antithrombotic prophylaxis with Certoparin in hospitalised COVID-1
   * coding[atcde] = $atcde#B01AB13 "Certoparin"
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -199,7 +204,7 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
   * coding[atcde] = $atcde#B01AX05 "Fondaparinux"
   * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
 * dosage
-  * route = $sct#386362006 "Administration of drug or medicament via subcutaneous route (procedure)"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -223,6 +228,7 @@ Description: "Antithrombotic prophylaxis with Tinzaparin in hospitalised COVID-1
   * coding[atcde] = $atcde#B01AB10 "Tinzaparin"
   * coding[sct] = $sct#412608008 "Tinzaparin (substance)"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1

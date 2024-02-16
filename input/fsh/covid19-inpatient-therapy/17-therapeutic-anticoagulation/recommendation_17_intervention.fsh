@@ -81,6 +81,17 @@ Description: "Therapeutic Anticoagulation Treatment (UFH) for non-intensive care
 * productCodeableConcept
   * coding[sct] = $sct#372877000 "Heparin (substance)"
   * coding[atcde] = $atcde#B01AB01 "Heparin"
+* dosage
+  * route = $sct#47625008 "Intravenous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseRange
+      * low = 0 '[iU]' "IU" // any dose of i.v. UFH
+
 
 Instance: TherapeuticAnticoagulationNMHDalteparin
 InstanceOf: drug-administration-action
@@ -97,6 +108,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * coding[sct] = $sct#372563008 "Dalteparin (substance)"
   * coding[atcde] = $atcde#B01AB04 "Dalteparin"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -121,6 +133,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
   * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -148,6 +161,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
     * extension[value].valueRange.high = 70 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -175,6 +189,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
     * extension[value].valueRange.low = 70.0000001 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -199,6 +214,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
   * coding[atcde] = $atcde#B01AB13 "Certoparin"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -223,6 +239,7 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
   * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
   * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 2
@@ -245,7 +262,16 @@ Description: "Therapeutic Anticoagulation Treatment with Argatroban for non-inte
 * productCodeableConcept
   * coding[sct] = $sct#116508003 "Argatroban (substance)"
   * coding[atcde] = $atcde#B01AE03 "Argatroban"
-
+* dosage
+  * route = $sct#47625008 "Intravenous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseRange
+      * low = 0 '[iU]' "IU" // any dose of i.v. Argatroban
 
 Instance: TherapeuticAnticoagulationNMHTinzaparin
 InstanceOf: drug-administration-action
@@ -262,6 +288,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * coding[atcde] = $atcde#B01AB10 "Tinzaparin"
   * coding[sct] = $sct#412608008 "Tinzaparin (substance)"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
