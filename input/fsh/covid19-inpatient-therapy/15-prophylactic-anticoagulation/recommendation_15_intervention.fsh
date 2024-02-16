@@ -242,7 +242,7 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
   * coding[atcde] = $atcde#B01AX05 "Fondaparinux"
   * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
 * dosage
-  * route = $sct#386362006 "Administration of drug or medicament via subcutaneous route (procedure)"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -416,7 +416,7 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
   * coding[atcde] = $atcde#B01AX05 "Fondaparinux"
   * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
 * dosage
-  * route = $sct#386362006 "Administration of drug or medicament via subcutaneous route (procedure)"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
