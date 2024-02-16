@@ -77,6 +77,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-i
   * coding[sct] = $sct#372563008 "Dalteparin (substance)"
   * coding[atcde] = $atcde#B01AB04 "Dalteparin"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -102,6 +103,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-i
   * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
   * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -130,6 +132,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
     * extension[value].valueRange.high = 70 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -158,6 +161,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-i
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
     * extension[value].valueRange.low = 70.0000001 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -183,6 +187,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-i
   * coding[sct] = $sct#395961003 "Certoparin (substance)"
   * coding[atcde] = $atcde#B01AB13 "Certoparin"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
@@ -207,6 +212,16 @@ Description: "No Therapeutic Anticoagulation Treatment with UFH for non-intensiv
 * productCodeableConcept
   * coding[sct] = $sct#372877000 "Heparin (substance)"
   * coding[atcde] = $atcde#C05BA03 "Heparin"
+* dosage
+  * route = $sct#47625008 "Intravenous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseRange
+      * low = 0 '[iU]' "IU" // any dose of i.v. Argatroban
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWArgatra
@@ -223,6 +238,16 @@ Description: "No Therapeutic Anticoagulation Treatment with Argatroban for non-i
 * productCodeableConcept
   * coding[sct] = $sct#116508003 "Argatroban (substance)"
   * coding[atcde] = $atcde#B01AE03 "Argatroban"
+* dosage
+  * route = $sct#47625008 "Intravenous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseRange
+      * low = 0 '[iU]' "IU" // any dose of i.v. Argatroban
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWTinzaparin
@@ -240,6 +265,7 @@ Description: "No Therapeutic Anticoagulation Treatment with Tinzaparin for non-i
   * coding[atcde] = $atcde#B01AB10 "Tinzaparin"
   * coding[sct] = $sct#412608008 "Tinzaparin (substance)"
 * dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
       * frequency = 1
