@@ -1,29 +1,29 @@
 /*********************/
 /* Intervention Plan */
 /*********************/
-Instance: VentilatedCOVID19patientsInterventionPlan-fio2-point3
+Instance: VentilatedCOVID19patientsInterventionPlan-fio2-point2
 InstanceOf: recommendation-plan
 Usage: #definition
-Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.3"
-Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.3 - 0.39"
-* insert canonical-url(covid19-inpatient-therapy, intervention-plan/peep-fio2-point3)
+Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.2"
+Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.2 - 0.39"
+* insert canonical-url(covid19-inpatient-therapy, intervention-plan/peep-fio2-point2)
 * insert publisher-experimental-version(7.0)
 * name = "PEEP_Intervention_Plan_FiO2_0.3"
-* title = "PEEP Intervention plan for COVID-19 patients, inspiratory oxygen fraction currently 0.3 - 0.39"
-* identifier.value = "PEEPPlanCOVIDPatients_OxygenFraction-0.3"
+* title = "PEEP Intervention plan for COVID-19 patients, inspiratory oxygen fraction currently 0.2 - 0.39"
+* identifier.value = "PEEPPlanCOVIDPatients_OxygenFraction-0.2"
 * date = "2022-02"
 * status = #active
-* description = "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.3 - 0.39"
-* subjectCanonical = Canonical(PopulationVentilatedCOVID19patients-fio2-point3)
+* description = "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.2 - 0.39"
+* subjectCanonical = Canonical(PopulationVentilatedCOVID19patients-fio2-point2)
 * extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patients)
 * insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
-  * goalId[+] = "ventilator-management-fio2-0.3-goal"
+  * goalId[+] = "ventilator-management-fio2-0.2-goal"
 * goal[ventilatorManagement][+]
   * category = $sct#385857005 "Ventilator care and adjustment (regime/therapy)"
-  * id = "ventilator-management-fio2-0.3-goal"
-  * description.text = "Positive end-expiratory pressure (PEEP) minimal value setting for COVID-19 Patients, inspiratory oxygen fraction currently 0.3 - 0.39"
+  * id = "ventilator-management-fio2-0.2-goal"
+  * description.text = "Positive end-expiratory pressure (PEEP) minimal value setting for COVID-19 Patients, inspiratory oxygen fraction currently 0.2 - 0.39"
   * target
     * measure = $loinc#76248-4 "PEEP Respiratory system --on ventilator"
     * detailRange
@@ -32,8 +32,8 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspirato
 Instance: VentilatedCOVID19patientsInterventionPlan-fio2-point4
 InstanceOf: recommendation-plan
 Usage: #definition
-Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.3"
-Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.3 - 0.39"
+Title: "PEEP Intervention Plan for Population: Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.4"
+Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 043 - 0.49"
 * insert canonical-url(covid19-inpatient-therapy, intervention-plan/peep-fio2-point4)
 * insert publisher-experimental-version(7.0)
 * name = "PEEP_Intervention_Plan_FiO2_0.4"
