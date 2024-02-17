@@ -15,9 +15,9 @@ Description: "Recommendation Collection for non-ICU, High-Risk COVID-19 Patients
 * insert canonical-url(covid19-inpatient-therapy, recommendation/therapeutic-anticoagulation) //TO-DO: change URL
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"
+* insert rs-combination-exactly(1)
 * action[+]
   * title = "Therapeutic_Anticoagulation_No_Renal_Function_Impairment"
   * code = $cs-common-process#guideline-based-care
   * description = "Therapeutic Anticoagulation Plan (hospitalised, non-intensive care, COVID-19 patients)"
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNonICUHighRiskCOVID19PatientsPlan)
-  * selectionBehavior = #exactly-one

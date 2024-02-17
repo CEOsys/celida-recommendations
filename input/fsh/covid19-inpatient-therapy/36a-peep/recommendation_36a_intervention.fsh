@@ -16,6 +16,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspirato
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.3 - 0.39"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patients-fio2-point3)
 * extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patients)
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.3-goal"
@@ -43,6 +44,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspirato
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.4 - 0.49"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patients-fio2-point4)
 * extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patients)
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.4-goal"
@@ -70,6 +72,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspirato
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.5 - 0.59"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patients-fio2-point5)
 * extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patients)
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.5-goal"
@@ -97,6 +100,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspirato
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.6 - 0.69"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patients-fio2-point6)
 * extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patients)
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.6-goal"
@@ -124,6 +128,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspirato
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.7 - 0.79"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patients-fio2-point7)
 * extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patients)
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.7-goal"
@@ -151,6 +156,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspirato
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.8 - 0.89"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patients-fio2-point8)
 * extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patients)
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.8-goal"
@@ -178,6 +184,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspirato
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.9 - 0.99"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patients-fio2-point9)
 * extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patients)
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-0.9-goal"
@@ -205,6 +212,7 @@ Description: "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspirato
 * description = "PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 1.0 - 1.09"
 * subjectCanonical = Canonical(PopulationVentilatedCOVID19patients-fio2-1)
 * extension[partOf].valueCanonical = Canonical(RecommendationCollectionVentilatedCOVID19patients)
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "ventilator-management-fio2-1.0-goal"

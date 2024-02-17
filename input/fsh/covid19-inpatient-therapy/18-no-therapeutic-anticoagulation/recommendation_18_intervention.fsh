@@ -24,39 +24,32 @@ Description: "In intensive care patients without a specific indication (e.g. pul
     * measure = $loinc#3173-2 "aPTT in Blood by Coagulation assay"
     * detailRange
       * low = 50 's' "sec"
+* insert rs-combination-all
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin)
-  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWEnoxaparin)
-  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparinLowWeight)
-  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparinHighWeight)
-  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWCertoparin)
-  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWArgatra)
   * goalId = "aPTT-goal"
-  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWUFH)
   * goalId = "aPTT-goal"
-  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWTinzaparin)
-  * selectionBehavior = #all
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWHeparinSC)

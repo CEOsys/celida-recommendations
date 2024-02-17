@@ -15,9 +15,9 @@ Description: "Recommendation Collection for ICU COVID-19 Patients with No Specif
 * insert canonical-url(covid19-inpatient-therapy, recommendation/no-therapeutic-anticoagulation)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"
+* insert rs-combination-exactly(1)
 * action[+]
   * title = "Anticoagulation_Plan_No_Specific_Indication"
   * code = $cs-common-process#guideline-based-care
   * description = "Anticoagulation Plan for hospitalized intensive-care COVID-19 patients with no specific indication"
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationICUCOVID19NoIndicationPlan)
-  * selectionBehavior = #exactly-one
