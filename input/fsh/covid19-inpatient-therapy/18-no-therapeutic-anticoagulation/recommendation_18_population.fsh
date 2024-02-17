@@ -29,6 +29,12 @@ Description: "Hospitalised COVID-19 patients, treated on ICU, without thrombembo
       * type = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#59282003 "Pulmonary embolism (disorder)"
   * characteristic[condition][=].exclude = false
+  * characteristic[condition][+]
+    * linkId = "atrial-fibrillation"
+    * definitionByTypeAndValue
+      * type = $sct#404684003 "Clinical finding (finding)"
+      * valueCodeableConcept = $sct#49436004 "Atrial fibrillation (disorder)"
+  * characteristic[condition][=].exclude = false
 * characteristic[=].exclude = true
 // Include COVID-19 patients, treated in ICU
 * characteristic[condition][+]
