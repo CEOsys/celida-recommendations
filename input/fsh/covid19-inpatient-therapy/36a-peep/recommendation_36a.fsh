@@ -17,10 +17,10 @@ Description: "Recommendation Collection for Ventilated COVID-19 Patients"
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"
 * insert rs-combination-exactly(1)
 * action[+]
-  * title = "PEEP_Intervention_Plan_FiO2_0.3"
+  * title = "PEEP_Intervention_Plan_FiO2_0.2"
   * code = $cs-common-process#guideline-based-care
-  * description = "PEEP Intervention plan for COVID-19 patients, inspiratory oxygen fraction currently 0.3 - 0.39"
-  * definitionCanonical = Canonical(VentilatedCOVID19patientsInterventionPlan-fio2-point3)
+  * description = "PEEP Intervention plan for COVID-19 patients, inspiratory oxygen fraction currently 0.2 - 0.39"
+  * definitionCanonical = Canonical(VentilatedCOVID19patientsInterventionPlan-fio2-point2)
 * action[+]
   * title = "PEEP_Intervention_Plan_FiO2_0.4"
   * code = $cs-common-process#guideline-based-care
