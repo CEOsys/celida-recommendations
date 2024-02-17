@@ -17,6 +17,7 @@ Description: "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should b
 * description = "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours. "
 * subjectCanonical = Canonical(PopVentilatedCOVID19patientsWithARDSWithOxygenationFailure)
 * extension[partOf].valueCanonical = Canonical(RecommendationCollectionAbdominalPositioningARDS)
+* insert rs-combination-all
 * action[bodyPositioning][+]
   * definitionCanonical = Canonical(PronePositioning)
   * code = $sct#229824005 "Positioning patient (procedure)"

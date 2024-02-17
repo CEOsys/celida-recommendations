@@ -15,29 +15,24 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
 * description = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOContraIndications)
 * extension[partOf].valueCanonical = Canonical(RecCollectionProphAnticoagulationHospitalizedCOVID19Patients)
+* insert rs-combination-at-least(1)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWDalteparin)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWEnoxaparin)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWNadroparinLowWeight)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWNadroparinHighWeight)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWCertoparin)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWTinzaparin)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 Instance: AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan
@@ -54,10 +49,10 @@ Description: "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID
 * description = "Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWithContraIndications)
 * extension[partOf].valueCanonical = Canonical(RecCollectionProphAnticoagulationHospitalizedCOVID19Patients)
+* insert rs-combination-at-least(1)
 * action[drugAdministration][+]
   * code = $sct#432102000 "Administration of substance (procedure)"
   * definitionCanonical = Canonical(AntithromboticProphylaxisFondaparinuxSubcutaneous)
-  * selectionBehavior = #one-or-more
 
 
 /**********************/

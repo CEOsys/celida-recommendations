@@ -15,15 +15,14 @@ Description: "Recommendation Collection for Hospitalized COVID-19 Patients"
 * insert canonical-url(covid19-inpatient-therapy, recommendation/prophylactic-anticoagulation)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"
+* insert rs-combination-exactly(1)
 * action[+]
   * title = "AntithromboticProphylaxisWithLWMH"
   * code = $cs-common-process#guideline-based-care
   * description = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
   * definitionCanonical = Canonical(AntithrombLWMHProphInHospitalisedCOVID19PatientsRecommPlan)
-  * selectionBehavior = #exactly-one
 * action[+]
   * title = "AntithromboticProphylaxisWithFondaparinux"
   * code = $cs-common-process#guideline-based-care
   * description = "Antithrombotic prophylaxis with Fondaparinux"
   * definitionCanonical = Canonical(AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan)
-  * selectionBehavior = #exactly-one
