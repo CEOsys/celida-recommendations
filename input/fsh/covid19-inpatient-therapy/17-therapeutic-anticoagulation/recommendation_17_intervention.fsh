@@ -24,44 +24,36 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
     * measure = $loinc#3173-2 "aPTT in Blood by Coagulation assay"
     * detailRange
       * low = 50.0000001 's' "sec"
+* insert rs-combination-at-least(1)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationUFH)
-  * selectionBehavior = #one-or-more
   * goalId = "aPTT-goal"
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHDalteparin)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHEnoxaparin)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHNadroparinLowWeight)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHNadroparinHighWeight)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHCertoparin)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationFondaparinux)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
   * precheckBehavior = #no
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationWArgatra)
   * goalId = "aPTT-goal"
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHTinzaparin)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /***********************/
