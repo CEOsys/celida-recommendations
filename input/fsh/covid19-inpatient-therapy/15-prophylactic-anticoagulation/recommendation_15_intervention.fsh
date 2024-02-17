@@ -17,27 +17,27 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
 * extension[partOf].valueCanonical = Canonical(RecCollectionProphAnticoagulationHospitalizedCOVID19Patients)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWDalteparin)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #exactly-one
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWEnoxaparin)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #exactly-one
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWNadroparinLowWeight)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #exactly-one
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWNadroparinHighWeight)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #exactly-one
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWCertoparin)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #exactly-one
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ProphylacticAnticoagulationWTinzaparin)
-  * selectionBehavior = #one-or-more
+  * selectionBehavior = #exactly-one
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 Instance: AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan
