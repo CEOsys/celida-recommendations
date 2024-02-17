@@ -30,6 +30,7 @@ Description: "In ventilated patients with COVID-19 and ARDS, tidal volume should
   * target[+]
     * measure = $loinc#76259-1 "Pressure.plateau Respiratory system airway --on ventilator"
     * detailRange.high = 30 'cm[H2O]' "cm[H2O]"
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "tidal-volume-goal"
