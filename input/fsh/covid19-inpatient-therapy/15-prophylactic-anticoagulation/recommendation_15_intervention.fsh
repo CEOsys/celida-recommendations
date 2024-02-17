@@ -44,6 +44,10 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
   * action[drugAdministration][+]
     * definitionCanonical = Canonical(ProphylacticAnticoagulationWTinzaparin)
     * code = $sct#432102000 "Administration of substance (procedure)"
+  * action[drugAdministration][+]
+    * definitionCanonical = Canonical(ProphylacticAnticoagulationWHeparinSC)
+    * selectionBehavior = #all
+    * code = $sct#432102000 "Administration of substance (procedure)"
 * action[combination][+]
   * insert rs-combination-all
   * action[drugAdministration][+]
@@ -272,3 +276,29 @@ Description: "Antithrombotic prophylaxis with Tinzaparin in hospitalised COVID-1
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseQuantity = 4500 '[iU]' "IU"
+
+Instance: ProphylacticAnticoagulationWHeparinSC
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "Prophylactic Anticoagulation Treatment with UFH subcutaneous"
+Description: "Prophylactic Treatment with UFH subcutaneous for non-intensive care hospitalised COVID-19 patients"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/antithrombotic-prophylaxis-heparin-subcutaneous-administration)
+* insert publisher-experimental-version(0.1)
+* name = "ProphylacticAnticoagulationPlanUFHsc"
+* status = #active
+* description = "Prophylactic Treatment with UFH subcutaneous for non-intensive care hospitalised COVID-19 patients"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#372877000 "Heparin (substance)"
+  * coding[atcde] = $atcde#C05BA03 "Heparin"
+* dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 2
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseRange
+      * low = 5000 '[iU]' "IU"
+      * high = 7500 '[iU]' "IU"
