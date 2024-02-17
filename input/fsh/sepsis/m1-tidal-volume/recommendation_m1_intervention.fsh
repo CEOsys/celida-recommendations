@@ -23,6 +23,7 @@ Description: "We recommend ventilating patients with ARDS with a VT ≤ 6 ml/kg 
   * target[+]
     * measure = $cs-codex-celida#tvpibw "Tidal volume / ideal body weight (ARDSnet)"
     * detailRange.high = 6 'ml/kg' "ml/kg"
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "tidal-volume-ARDS-goal"

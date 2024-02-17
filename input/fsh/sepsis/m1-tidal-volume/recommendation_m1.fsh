@@ -15,9 +15,9 @@ Description: "Recommendation Collection for Ventilated Patients with ARDS"
 * insert canonical-url(sepsis, recommendation/ventilation-plan-ards-tidal-volume)
 * experimental = true
 * publisher = "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"
+* insert rs-combination-exactly(1)
 * action[+]
   * title = "Ventilation_Plan_ARDS"
   * code = $cs-common-process#guideline-based-care
   * description = "We recommend ventilating patients with ARDS with a VT ≤ 6 ml/kg standard body weight (bw). (Table 1, Appendix)"
   * definitionCanonical = Canonical(VentilatedARDSPatientsInterventionPlan)
-  * selectionBehavior = #exactly-one
