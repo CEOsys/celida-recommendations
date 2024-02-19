@@ -47,17 +47,12 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationFondaparinux)
   * code = $sct#432102000 "Administration of substance (procedure)"
-  * precheckBehavior = #no
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationWArgatra)
   * goalId = "aPTT-goal"
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHTinzaparin)
-  * code = $sct#432102000 "Administration of substance (procedure)"
-* action[drugAdministration][+]
-  * definitionCanonical = Canonical(TherapeuticAnticoagulationWHeparinSC)
-  * selectionBehavior = #one-or-more
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 
@@ -294,28 +289,3 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * doseAndRate
     * doseRange
       * low = 4500.0000001 '[iU]' "IU"
-
-Instance: TherapeuticAnticoagulationWHeparinSC
-InstanceOf: drug-administration-action
-Usage: #definition
-Title: "Therapeutic Anticoagulation Treatment with UFH subcutaneous"
-Description: "Therapeutic Anticoagulation Treatment with UFH subcutaneous for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-UFH-administration-sc)
-* insert publisher-experimental-version(0.1)
-* name = "NoTherapeuticAnticoagulationPlanUFHsc"
-* status = #active
-* description = "Therapeutic Anticoagulation Treatment with UFH subcutaneous for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept
-  * coding[sct] = $sct#372877000 "Heparin (substance)"
-  * coding[atcde] = $atcde#C05BA03 "Heparin"
-* dosage
-  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
-  * timing
-    * repeat
-      * frequency = 1
-      * period = 1
-      * periodUnit = $ucum#d "day"
-  * doseAndRate
-    * doseRange
-      * low = 7500.0000001 '[iU]' "IU"
