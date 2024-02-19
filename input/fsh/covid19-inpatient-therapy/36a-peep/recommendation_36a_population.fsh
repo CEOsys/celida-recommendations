@@ -1,15 +1,15 @@
 /**************/
 /* Population */
 /**************/
-Instance: PopulationVentilatedCOVID19patients-fio2-point2
+Instance: PopulationVentilatedCOVID19patients-fio2-point0
 InstanceOf: recommendation-eligibility-criteria
 Usage: #definition
-Title: "Population: Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.2"
-Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currently 0.2 - 0.39"
-* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-fio2-point2)
+Title: "Population: Ventilated COVID-19 Patients, inspiratory oxygen fraction currently 0.0"
+Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currently 0.0 - 0.39"
+* insert canonical-url(covid19-inpatient-therapy, population/ventilated-covid19-patients-fio2-point0)
 * status = #active
-* name = "Population_COVID19_Ventilated_FiO2_0.2"
-* description = "Ventilated COVID-19 patients, inspiratory oxygen fraction currently 0.2 - 0.39"
+* name = "Population_COVID19_Ventilated_FiO2_0.0"
+* description = "Ventilated COVID-19 patients, inspiratory oxygen fraction currently 0.0 - 0.39"
 * characteristic[+].definitionByCombination
   * code = #all-of
   * characteristic[condition][+]
@@ -29,7 +29,7 @@ Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currentl
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
-        * low = 20 '%' "%"
+        * low = 0 '%' "%"
         * high = 39.9999999999999 '%' "%"
   * characteristic[ventilationObservableLOINC][=].exclude = false
 * characteristic[=].exclude = false

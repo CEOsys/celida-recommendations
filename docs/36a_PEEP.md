@@ -35,7 +35,7 @@ Management of analgesia and sedation in ICU-treated patients should be targeted 
 Population
 ==========
 
-* For each FiO2 value (0.2, 0.4 etc) we have defined a different population
+* For each FiO2 value (0.0, 0.4, 0.5 etc) we have defined a different population
 * The selection works via "valueRange", i.e. the range datatype, with valueRange.low and valueRange.high
 * According to the FHIR specicfication for the Range datatype, these values (low/high) are inclusive, and there is no possibility to change that behaviour (because low and high use the SimpleQuantity datatype, which disallows the use of the comparator field, which could have  been used otherwise to specify inclusive or exclusive)
 * There is apparently no real way to define an [exact cover](https://en.wikipedia.org/wiki/Exact_cover) using the Range datatype in FHIR
@@ -43,11 +43,11 @@ Population
 | Name | Description | Criteria |
 | --- | --- | --- |
 |  |  | Inclusion  / Exclusion  | Name | Type | definition.type | definition.value |
-| PopulationVentilatedCOVID19patientsWithARDS-fio2-[0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] | Ventilated Patients suffering from COVID-19 induced ARDS |  | COVID-19 | Condition | SCT [404684003 "Clinical finding (finding)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2022-04-30&release=&languages=en)" | $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)" |
+| PopulationVentilatedCOVID19patientsWithARDS-fio2-[0.0, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] | Ventilated Patients suffering from COVID-19 induced ARDS |  | COVID-19 | Condition | SCT [404684003 "Clinical finding (finding)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2022-04-30&release=&languages=en)" | $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)" |
 |  | ventilated | Procedure | SCT [71388002 "Procedure (procedure)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=71388002&edition=MAIN/2022-05-31&release=&languages=en)" | $sct#40617009 "Artificial ventilation (regime/therapy)" |
 |  | FiO2 | ventilationObservableLOINC | $loinc#3150-0 "Inhaled oxygen concentration"* as used in [GECCO FiO2](https://simplifier.net/guide/GermanCoronaConsensusDataSet-ImplementationGuide-1.0.5/Home/GECCOCore/Vitalsigns/FiO2.guide.md?version=current)
 * Alternative (as decimal, without % unit): [71835-3 Oxygen/Gas total [Pure volume fraction] Inhaled gas](https://loinc.org/71835-3/)
- | FiO2 [0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] |
+ | FiO2 [0.0, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] |
 
 Intervention
 ============
@@ -55,8 +55,8 @@ Intervention
 | Name | Description | Criteria |
 | --- | --- | --- |
 |  |  | Name (Goal ID) | Action Category | Goal target measure | Goal target detail |
-| VentilatedCOVID19patientsWithARDSInterventionPlan-fio2-[0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] | PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently -[0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] 
-| ventilator-management-fio2-0.2-goal | ventilatorManagement | $loinc#76248-4 "PEEP Respiratory system --on ventilator" | >5 cm[H2O] |
+| VentilatedCOVID19patientsWithARDSInterventionPlan-fio2-[0.0, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] | PEEP Intervention Plan for Ventilated COVID-19 Patients with ARDS, inspiratory oxygen fraction currently -[0.0, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] 
+| ventilator-management-fio2-0.0-goal | ventilatorManagement | $loinc#76248-4 "PEEP Respiratory system --on ventilator" | >5 cm[H2O] |
 | ventilator-management-fio2-0.4-goal | ventilatorManagement | $loinc#76248-4 "PEEP Respiratory system --on ventilator" | >5 cm[H2O] |
 | ventilator-management-fio2-0.5-goal | ventilatorManagement | $loinc#76248-4 "PEEP Respiratory system --on ventilator" | >8 cm[H2O] |
 | ventilator-management-fio2-0.6-goal | ventilatorManagement | $loinc#76248-4 "PEEP Respiratory system --on ventilator" | >10 cm[H2O] |
@@ -72,7 +72,7 @@ Since the recommendation is ambiguous (who is considered to be an early-phase AR
 
 
 
-| FiO2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
+| FiO2 | 0.0 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | min. PEEP | 5 | 5 | 8 | 10 | 10 | 14 | 14 | 18 |
 
