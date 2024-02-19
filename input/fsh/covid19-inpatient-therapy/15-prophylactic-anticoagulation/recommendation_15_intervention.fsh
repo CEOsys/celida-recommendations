@@ -76,9 +76,6 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
   * action[drugAdministration][+]
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWTinzaparin)
     * code = $sct#432102000 "Administration of substance (procedure)"
-  * action[drugAdministration][+]
-    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWHeparinSC)
-    * code = $sct#432102000 "Administration of substance (procedure)"
 
 Instance: AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
