@@ -15,14 +15,6 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
 * description = "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients"
 * subjectCanonical = Canonical(PopHospitalisedCOVID19PatientsWOContraIndications)
 * extension[partOf].valueCanonical = Canonical(RecCollectionProphAnticoagulationHospitalizedCOVID19Patients)
-* goal[laboratoryValue][+]
-  * id = "aPTT-goal"
-  * description.text = "aPTT value should not be > 50 sec."
-  * category = $sct#410394004 "Lab findings surveillance (regime/therapy)"
-  * target
-    * measure = $loinc#3173-2 "aPTT in Blood by Coagulation assay"
-    * detailRange
-      * low = 50 's' "sec"
 * insert rs-combination-all
 * action[combination][+]
   * insert rs-combination-exactly(1)
@@ -67,11 +59,9 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWArgatra)
-    * goalId = "aPTT-goal"
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWUFH)
-    * goalId = "aPTT-goal"
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWTinzaparin)
