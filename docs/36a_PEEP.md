@@ -72,7 +72,7 @@ Since the recommendation is ambiguous (who is considered to be an early-phase AR
 
 
 
-| FiO2 | 0.0 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
+| FiO2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1.0 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | min. PEEP | 5 | 5 | 8 | 10 | 10 | 14 | 14 | 18 |
 
