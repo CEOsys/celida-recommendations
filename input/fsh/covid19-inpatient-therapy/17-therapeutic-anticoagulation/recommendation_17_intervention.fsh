@@ -30,16 +30,22 @@ Description: "In hospitalized, non-intensive care patients with COVID-19 and inc
   * goalId = "aPTT-goal"
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHDalteparin)
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHDalteparin1xd)
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHEnoxaparin)
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHDalteparin2xd)
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHNadroparinLowWeight)
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHDalteparinTable)
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHNadroparinHighWeight)
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHNadroparin)
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHEnoxaparin1xd)
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHEnoxaparin2xd)
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapeuticAnticoagulationNMHCertoparin)
@@ -84,13 +90,12 @@ Description: "Therapeutic Anticoagulation Treatment (UFH) for non-intensive care
     * doseRange
       * low = 0 '[iU]' "IU" // any dose of i.v. UFH
 
-
-Instance: TherapeuticAnticoagulationNMHDalteparin
+Instance: TherapeuticAnticoagulationNMHDalteparin1xd
 InstanceOf: drug-administration-action
 Usage: #definition
 Title: "Therapeutic Anticoagulation Treatment with Dalteparin"
 Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Dalteparin"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-dalteparin-administration)
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-dalteparin-administration-1xd)
 * insert publisher-experimental-version(0.1)
 * name = "TherapeuticAnticoagulationDalteparinPlan"
 * status = #active
@@ -99,7 +104,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * productCodeableConcept
   * coding[sct] = $sct#372563008 "Dalteparin (substance)"
   * coding[atcde] = $atcde#B01AB04 "Dalteparin"
-* dosage
+* dosage[+]
   * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
@@ -107,15 +112,105 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * low = 5000.0000001 '[iU]' "IU"
+    * doseQuantity = 200 '[iU]/kg' "IU/kg"
 
-Instance: TherapeuticAnticoagulationNMHEnoxaparin
+Instance: TherapeuticAnticoagulationNMHDalteparin2xd
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "Therapeutic Anticoagulation Treatment with Dalteparin"
+Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Dalteparin"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-dalteparin-administration-2xd)
+* insert publisher-experimental-version(0.1)
+* name = "TherapeuticAnticoagulationDalteparinPlan"
+* status = #active
+* description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Dalteparin"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
+  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 2
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 100 '[iU]/kg' "IU/kg"
+
+Instance: TherapeuticAnticoagulationNMHDalteparinTable
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "Therapeutic Anticoagulation Treatment with Dalteparin"
+Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Dalteparin"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-dalteparin-administration-table)
+* insert publisher-experimental-version(0.1)
+* name = "TherapeuticAnticoagulationDalteparinPlan"
+* status = #active
+* description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Dalteparin"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
+  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 46 'kg' "kg"
+    * extension[value].valueRange.high = 56.999999 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 10000 '[iU]' "IU"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 57 'kg' "kg"
+    * extension[value].valueRange.high = 68.999999 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 12500 '[iU]' "IU"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 69 'kg' "kg"
+    * extension[value].valueRange.high = 82.999999 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 15000 '[iU]' "IU"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 83 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 18000 '[iU]' "IU"
+
+
+Instance: TherapeuticAnticoagulationNMHEnoxaparin1xd
 InstanceOf: drug-administration-action
 Usage: #definition
 Title: "Therapeutic Anticoagulation Treatment with Enoxaparin"
 Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Enoxaparin"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-enoxaparin-administration)
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-enoxaparin-administration-1xd)
 * insert publisher-experimental-version(0.1)
 * name = "TherapeuticAnticoagulationPlanEnoxaparin"
 * status = #active
@@ -124,7 +219,7 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
 * productCodeableConcept
   * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
   * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
-* dosage
+* dosage[+]
   * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
@@ -132,27 +227,57 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * low = 40.0000001 'mg'
+    * doseQuantity = 1.5 'mg/kg' "mg/kg"
 
-Instance: TherapeuticAnticoagulationNMHNadroparinLowWeight
+Instance: TherapeuticAnticoagulationNMHEnoxaparin2xd
 InstanceOf: drug-administration-action
 Usage: #definition
-Title: "Therapeutic Anticoagulation Treatment with Nadroparin Low Weight"
-Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients (low weight) with high risk (D-Dimer >= 2mg/l) with Nadroparin"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-nadroparin-administration-low-weight)
+Title: "Therapeutic Anticoagulation Treatment with Enoxaparin"
+Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Enoxaparin"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-enoxaparin-administration-2xd)
 * insert publisher-experimental-version(0.1)
-* name = "TherapeuticAnticoagulationPlanNadroparinLowWeight"
+* name = "TherapeuticAnticoagulationPlanEnoxaparin"
 * status = #active
-* description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients (low weight) with high risk (D-Dimer >= 2mg/l) with Nadroparin"
+* description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Enoxaparin"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
+  * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 2
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 1 'mg/kg' "mg/kg"
+
+Instance: TherapeuticAnticoagulationNMHNadroparin
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "Therapeutic Anticoagulation Treatment with Nadroparin"
+Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patientswith high risk (D-Dimer >= 2mg/l) with Nadroparin"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-nadroparin-administration)
+* insert publisher-experimental-version(0.1)
+* name = "TherapeuticAnticoagulationPlanNadroparin"
+* status = #active
+* description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients with high risk (D-Dimer >= 2mg/l) with Nadroparin"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[sct] = $sct#699946002 "Nadroparin (substance)"
   * coding[atcde] = $atcde#B01AB06 "Nadroparin"
+// Weight (kg)	Dose s.c. (IE; 2x/d)
+// <50	3800
+// 50-59	4750
+// 60-69	5700
+// 70-79	6650
+// 80-89	7600
+// ≥90	8550
 * dosage[+]
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
-    * extension[value].valueRange.high = 70 'kg' "kg"
+    * extension[value].valueRange.high = 49.999999 'kg' "kg"
   * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
@@ -160,27 +285,12 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * low = 3800.0000001 '[iU]' "IU"
-
-Instance: TherapeuticAnticoagulationNMHNadroparinHighWeight
-InstanceOf: drug-administration-action
-Usage: #definition
-Title: "Therapeutic Anticoagulation Treatment with Nadroparin High Weight"
-Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients (high weight) with high risk (D-Dimer >= 2mg/l) with Nadroparin"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/therapeutic-anticoagulant-nadroparin-administration-high-weight)
-* insert publisher-experimental-version(0.1)
-* name = "TherapeuticAnticoagulationPlanNadroparinHighWeight"
-* status = #active
-* description = "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients (high weight) with high risk (D-Dimer >= 2mg/l) with Nadroparin"
-* code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept
-  * coding[sct] = $sct#699946002 "Nadroparin (substance)"
-  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
+    * doseQuantity = 3800 '[iU]' "IU"
 * dosage[+]
   * extension[condition]
     * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
-    * extension[value].valueRange.low = 70.0000001 'kg' "kg"
+    * extension[value].valueRange.low = 50 'kg' "kg"
+    * extension[value].valueRange.high = 59.999999 'kg' "kg"
   * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
@@ -188,8 +298,58 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * low = 5700.0000001 '[iU]' "IU"
+    * doseQuantity = 4750 '[iU]' "IU"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 60 'kg' "kg"
+    * extension[value].valueRange.high = 69.999999 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 5700 '[iU]' "IU"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 70 'kg' "kg"
+    * extension[value].valueRange.high = 79.999999 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 6650 '[iU]' "IU"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 80 'kg' "kg"
+    * extension[value].valueRange.high = 89.999999 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 7600 '[iU]' "IU"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 90 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 8550 '[iU]' "IU"
 
 Instance: TherapeuticAnticoagulationNMHCertoparin
 InstanceOf: drug-administration-action
@@ -209,12 +369,11 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
   * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
-      * frequency = 1
+      * frequency = 2
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * low = 3000.0000001 '[iU]' "IU"
+    * doseQuantity = 8000 '[iU]' "IU"
 
 Instance: TherapeuticAnticoagulationFondaparinux
 InstanceOf: drug-administration-action
@@ -287,5 +446,4 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * low = 4500.0000001 '[iU]' "IU"
+    * doseQuantity = 175 'IU/kg' "IU/kg"

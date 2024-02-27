@@ -26,16 +26,26 @@ Description: "In intensive care patients without a specific indication (e.g. pul
       * low = 50 's' "sec"
 * insert rs-combination-all
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin)
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWUFH)
+  * goalId = "aPTT-goal"
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWEnoxaparin)
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin1xd)
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparinLowWeight)
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin2xd)
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparinHighWeight)
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparinTable)
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparin)
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWEnoxaparin1xd)
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWEnoxaparin2xd)
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWCertoparin)
@@ -45,152 +55,12 @@ Description: "In intensive care patients without a specific indication (e.g. pul
   * goalId = "aPTT-goal"
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWUFH)
-  * goalId = "aPTT-goal"
-  * code = $sct#432102000 "Administration of substance (procedure)"
-* action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWTinzaparin)
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /*************************/
 /* Recommended Actions   */
 /*************************/
-Instance: NoTherapeuticAnticoagulationWDalteparin
-InstanceOf: drug-administration-action
-Usage: #definition
-Title: "No Therapeutic Anticoagulation Treatment with Dalteparin"
-Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-dalteparin-administration)
-* insert publisher-experimental-version(0.1)
-* name = "NoTherapeuticAnticoagulationDalteparinPlan"
-* status = #active
-* description = "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept
-  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
-  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
-* dosage
-  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
-  * timing
-    * repeat
-      * frequency = 1
-      * period = 1
-      * periodUnit = $ucum#d "day"
-  * doseAndRate
-    * doseRange
-      * low = 5000.0000001 '[iU]' "IU"
-* doNotPerform = true
-
-Instance: NoTherapeuticAnticoagulationWEnoxaparin
-InstanceOf: drug-administration-action
-Usage: #definition
-Title: "No Therapeutic Anticoagulation Treatment with Enoxaparin"
-Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-enoxaparin-administration)
-* insert publisher-experimental-version(0.1)
-* name = "NoTherapeuticAnticoagulationPlanEnoxaparin"
-* status = #active
-* description = "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept
-  * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
-  * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
-* dosage
-  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
-  * timing
-    * repeat
-      * frequency = 1
-      * period = 1
-      * periodUnit = $ucum#d "day"
-  * doseAndRate
-    * doseRange
-      * low = 40.0000001 'mg'
-* doNotPerform = true
-
-Instance: NoTherapeuticAnticoagulationWNadroparinLowWeight
-InstanceOf: drug-administration-action
-Usage: #definition
-Title: "No Therapeutic Anticoagulation Treatment with Nadroparin Low Weight"
-Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-nadroparin-administration-low-weight)
-* insert publisher-experimental-version(0.1)
-* name = "NoTherapeuticAnticoagulationPlanNadroparinLowWeight"
-* status = #active
-* description = "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept
-  * coding[sct] = $sct#699946002 "Nadroparin (substance)"
-  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
-* dosage[+]
-  * extension[condition]
-    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
-    * extension[value].valueRange.high = 70 'kg' "kg"
-  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
-  * timing
-    * repeat
-      * frequency = 1
-      * period = 1
-      * periodUnit = $ucum#d "day"
-  * doseAndRate
-    * doseRange
-      * low = 3800.0000001 '[iU]' "IU"
-* doNotPerform = true
-
-Instance: NoTherapeuticAnticoagulationWNadroparinHighWeight
-InstanceOf: drug-administration-action
-Usage: #definition
-Title: "No Therapeutic Anticoagulation Treatment with Nadroparin High Weight"
-Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-nadroparin-administration-high-weight)
-* insert publisher-experimental-version(0.1)
-* name = "NoTherapeuticAnticoagulationPlanNadroparinHighWeight"
-* status = #active
-* description = "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept
-  * coding[sct] = $sct#699946002 "Nadroparin (substance)"
-  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
-* dosage[+]
-  * extension[condition]
-    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
-    * extension[value].valueRange.low = 70.0000001 'kg' "kg"
-  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
-  * timing
-    * repeat
-      * frequency = 1
-      * period = 1
-      * periodUnit = $ucum#d "day"
-  * doseAndRate
-    * doseRange
-      * low = 5700.0000001 '[iU]' "IU"
-* doNotPerform = true
-
-Instance: NoTherapeuticAnticoagulationWCertoparin
-InstanceOf: drug-administration-action
-Usage: #definition
-Title: "No Therapeutic Anticoagulation Treatment with Certoparin"
-Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-certoparin-administration)
-* insert publisher-experimental-version(0.1)
-* name = "NoTherapeuticAnticoagulationPlanCertoparin"
-* status = #active
-* description = "No Therapeutic Anticoagulation Treatment with Certoparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
-* code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept
-  * coding[sct] = $sct#395961003 "Certoparin (substance)"
-  * coding[atcde] = $atcde#B01AB13 "Certoparin"
-* dosage
-  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
-  * timing
-    * repeat
-      * frequency = 1
-      * period = 1
-      * periodUnit = $ucum#d "day"
-  * doseAndRate
-    * doseRange
-      * low = 3000.0000001 '[iU]' "IU"
-* doNotPerform = true
-
 Instance: NoTherapeuticAnticoagulationWUFH
 InstanceOf: drug-administration-action
 Usage: #definition
@@ -215,6 +85,297 @@ Description: "No Therapeutic Anticoagulation Treatment with UFH for non-intensiv
   * doseAndRate
     * doseRange
       * low = 0 '[iU]' "IU" // any dose of i.v. Argatroban
+* doNotPerform = true
+
+Instance: NoTherapeuticAnticoagulationWDalteparin1xd
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "No Therapeutic Anticoagulation Treatment with Dalteparin"
+Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-dalteparin-administration-1xd)
+* insert publisher-experimental-version(0.1)
+* name = "NoTherapeuticAnticoagulationDalteparinPlan"
+* status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
+  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 200 '[iU]/kg' "IU/kg"
+* doNotPerform = true
+
+Instance: NoTherapeuticAnticoagulationWDalteparin2xd
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "No Therapeutic Anticoagulation Treatment with Dalteparin"
+Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-dalteparin-administration-2xd)
+* insert publisher-experimental-version(0.1)
+* name = "NoTherapeuticAnticoagulationDalteparinPlan"
+* status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
+  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 2
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 100 '[iU]/kg' "IU/kg"
+* doNotPerform = true
+
+Instance: NoTherapeuticAnticoagulationWDalteparinTable
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "No Therapeutic Anticoagulation Treatment with Dalteparin"
+Description: "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-dalteparin-administration-table)
+* insert publisher-experimental-version(0.1)
+* name = "NoTherapeuticAnticoagulationDalteparinPlan"
+* status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#372563008 "Dalteparin (substance)"
+  * coding[atcde] = $atcde#B01AB04 "Dalteparin"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 46 'kg' "kg"
+    * extension[value].valueRange.high = 56.999999 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 10000 '[iU]' "IU"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 57 'kg' "kg"
+    * extension[value].valueRange.high = 68.999999 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 12500 '[iU]' "IU"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 69 'kg' "kg"
+    * extension[value].valueRange.high = 82.999999 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 15000 '[iU]' "IU"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 83 'kg' "kg"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 18000 '[iU]' "IU"
+* doNotPerform = true
+
+Instance: NoTherapeuticAnticoagulationWEnoxaparin1xd
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "No Therapeutic Anticoagulation Treatment with Enoxaparin"
+Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-enoxaparin-administration-1xd)
+* insert publisher-experimental-version(0.1)
+* name = "NoTherapeuticAnticoagulationPlanEnoxaparin"
+* status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
+  * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 1.5 'mg/kg' "mg/kg"
+* doNotPerform = true
+
+Instance: NoTherapeuticAnticoagulationWEnoxaparin2xd
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "No Therapeutic Anticoagulation Treatment with Enoxaparin"
+Description: "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-enoxaparin-administration-2xd)
+* insert publisher-experimental-version(0.1)
+* name = "NoTherapeuticAnticoagulationPlanEnoxaparin"
+* status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Enoxaparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#372562003 "Enoxaparin (substance)"
+  * coding[atcde] = $atcde#B01AB05 "Enoxaparin"
+* dosage[+]
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 2
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 1 'mg/kg' "mg/kg"
+* doNotPerform = true
+
+Instance: NoTherapeuticAnticoagulationWNadroparin
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "No Therapeutic Anticoagulation Treatment with Nadroparin"
+Description: "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-nadroparin-administration)
+* insert publisher-experimental-version(0.1)
+* name = "NoTherapeuticAnticoagulationPlanNadroparin"
+* status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Nadroparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#699946002 "Nadroparin (substance)"
+  * coding[atcde] = $atcde#B01AB06 "Nadroparin"
+// Weight (kg)	Dose s.c. (IE; 2x/d)
+// <50	3800
+// 50-59	4750
+// 60-69	5700
+// 70-79	6650
+// 80-89	7600
+// ≥90	8550
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.high = 49.999999 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 3800 '[iU]' "IU"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 50 'kg' "kg"
+    * extension[value].valueRange.high = 59.999999 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 4750 '[iU]' "IU"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 60 'kg' "kg"
+    * extension[value].valueRange.high = 69.999999 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 5700 '[iU]' "IU"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 70 'kg' "kg"
+    * extension[value].valueRange.high = 79.999999 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 6650 '[iU]' "IU"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 80 'kg' "kg"
+    * extension[value].valueRange.high = 89.999999 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 7600 '[iU]' "IU"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 90 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 8550 '[iU]' "IU"
+* doNotPerform = true
+
+Instance: NoTherapeuticAnticoagulationWCertoparin
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "No Therapeutic Anticoagulation Treatment with Certoparin"
+Description: "No Therapeutic Anticoagulation Treatment with Certoparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-certoparin-administration)
+* insert publisher-experimental-version(0.1)
+* name = "NoTherapeuticAnticoagulationPlanCertoparin"
+* status = #active
+* description = "No Therapeutic Anticoagulation Treatment with Certoparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#395961003 "Certoparin (substance)"
+  * coding[atcde] = $atcde#B01AB13 "Certoparin"
+* dosage
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 2
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 8000 '[iU]' "IU"
 * doNotPerform = true
 
 Instance: NoTherapeuticAnticoagulationWArgatra
@@ -265,6 +426,5 @@ Description: "No Therapeutic Anticoagulation Treatment with Tinzaparin for non-i
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseRange
-      * low = 4500.0000001 '[iU]' "IU"
+    * doseQuantity = 175 'IU/kg' "IU/kg"
 * doNotPerform = true
