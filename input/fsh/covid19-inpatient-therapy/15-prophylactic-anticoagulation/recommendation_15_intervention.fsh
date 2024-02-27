@@ -43,16 +43,25 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
 * action[combination][+]
   * insert rs-combination-all
   * action[drugAdministration][+]
-    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin)
+    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWUFH)
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
-    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWEnoxaparin)
+    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin1xd)
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
-    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparinLowWeight)
+    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin2xd)
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
-    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparinHighWeight)
+    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparinTable)
+    * code = $sct#432102000 "Administration of substance (procedure)"
+  * action[drugAdministration][+]
+    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWNadroparin)
+    * code = $sct#432102000 "Administration of substance (procedure)"
+  * action[drugAdministration][+]
+    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWEnoxaparin1xd)
+    * code = $sct#432102000 "Administration of substance (procedure)"
+  * action[drugAdministration][+]
+    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWEnoxaparin2xd)
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWCertoparin)
@@ -61,11 +70,9 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWArgatra)
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
-    * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWUFH)
-    * code = $sct#432102000 "Administration of substance (procedure)"
-  * action[drugAdministration][+]
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWTinzaparin)
     * code = $sct#432102000 "Administration of substance (procedure)"
+
 
 Instance: AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan
 InstanceOf: recommendation-plan
