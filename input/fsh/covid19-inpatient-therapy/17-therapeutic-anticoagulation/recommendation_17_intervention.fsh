@@ -446,4 +446,4 @@ Description: "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseQuantity = 175 'IU/kg' "IU/kg"
+    * doseQuantity = 175 '[iU]/kg' "IU/kg"

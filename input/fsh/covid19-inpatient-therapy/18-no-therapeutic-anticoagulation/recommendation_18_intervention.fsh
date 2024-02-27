@@ -426,5 +426,5 @@ Description: "No Therapeutic Anticoagulation Treatment with Tinzaparin for non-i
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseQuantity = 175 'IU/kg' "IU/kg"
+    * doseQuantity = 175 '[iU]/kg' "IU/kg"
 * doNotPerform = true

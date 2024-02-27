@@ -44,7 +44,6 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
   * insert rs-combination-all
   * action[drugAdministration][+]
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWUFH)
-    * goalId = "aPTT-goal"
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWDalteparin1xd)
@@ -69,7 +68,6 @@ Description: "Hospitalized patients with COVID-19 should receive standard drug t
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWArgatra)
-    * goalId = "aPTT-goal"
     * code = $sct#432102000 "Administration of substance (procedure)"
   * action[drugAdministration][+]
     * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWTinzaparin)
