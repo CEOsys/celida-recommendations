@@ -389,15 +389,43 @@ Description: "Therapeutic Anticoagulation Treatment with Fondaparinux for non-in
 * productCodeableConcept
   * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
   * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)"
-* dosage
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.high = 49.999999 'kg' "kg"
   * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing
     * repeat
-      * frequency = 2
+      * frequency = 1
       * period = 1
       * periodUnit = $ucum#d "day"
   * doseAndRate
-    * doseQuantity = 2.5 'mg' "mg"
+    * doseQuantity = 5 'mg' "mg"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 50 'kg' "kg"
+    * extension[value].valueRange.high = 100 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 7.5 'mg' "mg"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 100.00001 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 10 'mg' "mg"
 
 Instance: TherapeuticAnticoagulationWArgatra
 InstanceOf: drug-administration-action
