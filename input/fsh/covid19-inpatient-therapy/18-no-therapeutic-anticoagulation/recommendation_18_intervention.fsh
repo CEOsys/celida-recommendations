@@ -57,6 +57,10 @@ Description: "In intensive care patients without a specific indication (e.g. pul
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(NoTherapeuticAnticoagulationWTinzaparin)
   * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(NoTherapeuticAnticoagulationFondaparinux)
+  * code = $sct#432102000 "Administration of substance (procedure)"
+
 
 /*************************/
 /* Recommended Actions   */
@@ -427,4 +431,57 @@ Description: "No Therapeutic Anticoagulation Treatment with Tinzaparin for non-i
       * periodUnit = $ucum#d "day"
   * doseAndRate
     * doseQuantity = 175 '[iU]/kg' "IU/kg"
+* doNotPerform = true
+
+Instance: NoTherapeuticAnticoagulationFondaparinux
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "NO Therapeutic Anticoagulation Treatment with Fondaparinux"
+Description: "No Therapeutic Anticoagulation Treatment with Fondaparinux for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* insert canonical-url(covid19-inpatient-therapy, recommended-action/drug-administration-action/no-therapeutic-anticoagulant-fondaparinux-administration)
+* insert publisher-experimental-version(0.1)
+* name = "NoTherapeuticAnticoagulationPlanFondaparinux"
+* status = #active
+* description = "NoTherapeutic Anticoagulation Treatment with Fondaparinux for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#708189008 "Fondaparinux (substance)"
+  * coding[atcde] = $atcde#B01AX05 "Fondaparinux (substance)"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.high = 49.999999 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 5 'mg' "mg"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 50 'kg' "kg"
+    * extension[value].valueRange.high = 100 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 7.5 'mg' "mg"
+* dosage[+]
+  * extension[condition]
+    * extension[type].valueCodeableConcept = $loinc#29463-7 "Body weight"
+    * extension[value].valueRange.low = 100.00001 'kg' "kg"
+  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
+  * timing
+    * repeat
+      * frequency = 1
+      * period = 1
+      * periodUnit = $ucum#d "day"
+  * doseAndRate
+    * doseQuantity = 10 'mg' "mg"
 * doNotPerform = true
