@@ -22,11 +22,11 @@ Description: "Ventilated COVID-19 patients with severe ARDS, defined by oxygenat
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#67782005 "Acute respiratory distress syndrome (disorder)"
   * characteristic[condition][=].exclude = false
-  * characteristic[laboratory][+]
+  * characteristic[observation][+]
     * linkId = "horowitz-limit"
     * definitionByTypeAndValue
       * type = $loinc#50984-4 "Horowitz index in Arterial blood"
       * valueRange
         * high = 150 'mm[Hg]' "mm[Hg]"
-  * characteristic[laboratory][=].exclude = false
+  * characteristic[observation][=].exclude = false
 * characteristic[=].exclude = false

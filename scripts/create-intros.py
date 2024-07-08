@@ -7,7 +7,8 @@ import yaml
 import os
 from pathlib import Path
 
-base_path = Path(os.path.dirname(os.path.realpath(__file__)))
+#base_path = Path(os.path.dirname(os.path.realpath(__file__)))
+base_path = Path.cwd()
 output_path = base_path / 'input' / 'intro-notes'
 ig_fname = base_path / 'input' / 'data' / 'ig.yml'
 linklist_fname = base_path / 'input' / 'includes' / 'link-list-generated.md'

@@ -31,10 +31,10 @@ Description: "Population for recommendation 17 from guideline from https://www.a
     * valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
 * characteristic[condition][=].exclude = false
 // include patients with d-dimer >= 2 mg/l
-* characteristic[laboratory][+]
+* characteristic[observation][+]
   * linkId = "ddimer-range"
   * definitionByTypeAndValue
     * type = $loinc#48066-5 "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"
     * valueRange
       * low = 2 'mg/L'
-* characteristic[laboratory][=].exclude = false
+* characteristic[observation][=].exclude = false
