@@ -125,7 +125,7 @@ jobs:
       - name: Run the IG publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          args: ./run-ig-publisher.sh
+          args: ./scripts/run-ig-publisher.sh
 
       - name: Move package.tgz to output directory
         run: |
