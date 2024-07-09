@@ -25,13 +25,13 @@ Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currentl
       * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
+  * characteristic[observation][+]
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
         * low = 0 '%' "%"
         * high = 39.9999999999999 '%' "%"
-  * characteristic[ventilationObservableLOINC][=].exclude = false
+  * characteristic[observation][=].exclude = false
 * characteristic[=].exclude = false
 
 Instance: PopulationVentilatedCOVID19patients-fio2-point4
@@ -59,7 +59,7 @@ Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currentl
       * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
+  * characteristic[observation][+]
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
@@ -92,7 +92,7 @@ Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currentl
       * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
+  * characteristic[observation][+]
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
@@ -125,7 +125,7 @@ Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currentl
       * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
+  * characteristic[observation][+]
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
@@ -158,7 +158,7 @@ Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currentl
       * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
+  * characteristic[observation][+]
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
@@ -190,7 +190,7 @@ Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currentl
       * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
+  * characteristic[observation][+]
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
@@ -223,7 +223,7 @@ Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currentl
       * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
+  * characteristic[observation][+]
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueRange
@@ -255,7 +255,7 @@ Description: "Ventilated COVID-19 patients, inspiratory oxygen fraction currentl
       * valueCodeableConcept = $sct#40617009 "Artificial ventilation (regime/therapy)"
   * characteristic[procedure][=].exclude = false
 
-  * characteristic[ventilationObservableLOINC][+]
+  * characteristic[observation][+]
     * definitionByTypeAndValue
       * type = $loinc#3150-0 "Inhaled oxygen concentration"
       * valueQuantity = 100 '%' "%"

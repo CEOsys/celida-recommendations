@@ -45,7 +45,7 @@ Population
 |  |  | Inclusion  / Exclusion  | Name | Type | definition.type | definition.value |
 | PopulationVentilatedCOVID19patientsWithARDS-fio2-[0.0, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] | Ventilated Patients suffering from COVID-19 induced ARDS |  | COVID-19 | Condition | SCT [404684003 "Clinical finding (finding)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2022-04-30&release=&languages=en)" | $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)" |
 |  | ventilated | Procedure | SCT [71388002 "Procedure (procedure)](https://browser.ihtsdotools.org/?perspective=full&conceptId1=71388002&edition=MAIN/2022-05-31&release=&languages=en)" | $sct#40617009 "Artificial ventilation (regime/therapy)" |
-|  | FiO2 | ventilationObservableLOINC | $loinc#3150-0 "Inhaled oxygen concentration"* as used in [GECCO FiO2](https://simplifier.net/guide/GermanCoronaConsensusDataSet-ImplementationGuide-1.0.5/Home/GECCOCore/Vitalsigns/FiO2.guide.md?version=current)
+|  | FiO2 | observation | $loinc#3150-0 "Inhaled oxygen concentration"* as used in [GECCO FiO2](https://simplifier.net/guide/GermanCoronaConsensusDataSet-ImplementationGuide-1.0.5/Home/GECCOCore/Vitalsigns/FiO2.guide.md?version=current)
 * Alternative (as decimal, without % unit): [71835-3 Oxygen/Gas total [Pure volume fraction] Inhaled gas](https://loinc.org/71835-3/)
  | FiO2 [0.0, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9] |
 
