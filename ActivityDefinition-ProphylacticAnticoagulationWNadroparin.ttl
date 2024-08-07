@@ -1,0 +1,173 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/ActivityDefinition/ProphylacticAnticoagulationWNadroparin> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ProphylacticAnticoagulationWNadroparin"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition ProphylacticAnticoagulationWNadroparin</b></p><a name=\"ProphylacticAnticoagulationWNadroparin\"> </a><a name=\"hcProphylacticAnticoagulationWNadroparin\"> </a><a name=\"ProphylacticAnticoagulationWNadroparin-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-ProphylacticAnticoagulationWNadroparin.html\">ActivityDefinition Antithrombotic prophylaxis with Nadroparin</a></p><p><b>version</b>: 0.1</p><p><b>name</b>: AntithromboticProphylaxisWithPlanNadroparin</p><p><b>title</b>: Antithrombotic prophylaxis with Nadroparin</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-08-07 14:55:39+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Antithrombotic prophylaxis with Nadroparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 699946002}, {http://fhir.de/CodeSystem/bfarm/atc B01AB06}\">Nadroparin (substance)</span></p><blockquote><p><b>dosage</b></p></blockquote><blockquote><p><b>dosage</b></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommended-action/drug-administration-action/antithrombotic-prophylaxis-nadroparin-administration"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1"] ; # 
+  fhir:name [ fhir:v "AntithromboticProphylaxisWithPlanNadroparin"] ; # 
+  fhir:title [ fhir:v "Antithrombotic prophylaxis with Nadroparin"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2024-08-07T14:55:39+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "Antithrombotic prophylaxis with Nadroparin in hospitalised COVID-19 patients (in absence of contraindications for LWMH)"] ; # 
+  fhir:kind [ fhir:v "MedicationRequest"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:432102000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "432102000" ] ;
+       fhir:display [ fhir:v "Administration of substance (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:product [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:699946002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "699946002" ] ;
+       fhir:display [ fhir:v "Nadroparin (substance)" ]
+     ] [
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/bfarm/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "B01AB06" ] ;
+       fhir:display [ fhir:v "Nadroparin" ]
+     ] )
+  ] ; # 
+  fhir:dosage ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             a loinc:29463-7 ;
+             fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "29463-7" ] ;
+             fhir:display [ fhir:v "Body weight" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Range ;
+           fhir:high [
+             fhir:value [ fhir:v "70"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "kg" ] ;
+             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "kg" ]
+           ]
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition"^^xsd:anyURI ]
+     ] ) ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:34206005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "34206005" ] ;
+         fhir:display [ fhir:v "Subcutaneous route (qualifier value)" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "3800"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "IU" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "[iU]" ]
+       ]
+     ] )
+  ] [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             a loinc:29463-7 ;
+             fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "29463-7" ] ;
+             fhir:display [ fhir:v "Body weight" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Range ;
+           fhir:low [
+             fhir:value [ fhir:v "70.0000001"^^xsd:decimal ] ;
+             fhir:unit [ fhir:v "kg" ] ;
+             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "kg" ]
+           ]
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition"^^xsd:anyURI ]
+     ] ) ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:34206005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "34206005" ] ;
+         fhir:display [ fhir:v "Subcutaneous route (qualifier value)" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "5700"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "IU" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "[iU]" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,72 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "RecCollectionProphAnticoagulationHospitalizedCOVID19Patients",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition RecCollectionProphAnticoagulationHospitalizedCOVID19Patients</b></p><a name=\"RecCollectionProphAnticoagulationHospitalizedCOVID19Patients\"> </a><a name=\"hcRecCollectionProphAnticoagulationHospitalizedCOVID19Patients\"> </a><a name=\"RecCollectionProphAnticoagulationHospitalizedCOVID19Patients-en-US\"> </a><p><b>url</b>: <a href=\"PlanDefinition-RecCollectionProphAnticoagulationHospitalizedCOVID19Patients.html\">PlanDefinition Prophylactic anticoagulation in hospitalized COVID-19 patients</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: 15 - Prophylactic Anticoagulation</p><p><b>title</b>: Prophylactic anticoagulation in hospitalized COVID-19 patients</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2022-02-14</p><p><b>publisher</b>: Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)</p><p><b>description</b>: </p><div><p>Hospitalisierte Patienten mit COVID-19 sollen in Abwesenheit von Kontraindikationen eine standardmäßige medikamentöse Thromboembolieprophylaxe mit niedermolekularem Heparin erhalten. Alternativ kann Fondaparinux zur Anwendung kommen.</p>\n</div><blockquote><p><b>action</b></p><p><b>title</b>: AntithromboticProphylaxisWithLWMH</p><p><b>description</b>: </p><div><p>Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-AntithrombLWMHProphInHospitalisedCOVID19PatientsRecommPlan.html\">Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: AntithromboticProphylaxisWithFondaparinux</p><p><b>description</b>: </p><div><p>Antithrombotic prophylaxis with Fondaparinux</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan.html\">Antithrombotic prophylaxis with Fondaparinux in hospitalised COVID-19 patients</a></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  },
+  {
+    "extension" : [{
+      "url" : "method",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method",
+          "code" : "exactly"
+        }]
+      }
+    },
+    {
+      "url" : "threshold",
+      "valuePositiveInt" : 1
+    }],
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommendation/prophylactic-anticoagulation",
+  "version" : "1.0",
+  "name" : "15 - Prophylactic Anticoagulation",
+  "title" : "Prophylactic anticoagulation in hospitalized COVID-19 patients",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code" : "workflow-definition"
+    }]
+  },
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2022-02-14",
+  "publisher" : "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)",
+  "description" : "Hospitalisierte Patienten mit COVID-19 sollen in Abwesenheit von Kontraindikationen eine standardmäßige medikamentöse Thromboembolieprophylaxe mit niedermolekularem Heparin erhalten. Alternativ kann Fondaparinux zur Anwendung kommen.",
+  "action" : [{
+    "title" : "AntithromboticProphylaxisWithLWMH",
+    "description" : "Antithrombotic prophylaxis with LWMH in hospitalised COVID-19 patients",
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+        "code" : "guideline-based-care"
+      }]
+    },
+    "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/intervention-plan/antithrombotic-prophylaxis-LMWH"
+  },
+  {
+    "title" : "AntithromboticProphylaxisWithFondaparinux",
+    "description" : "Antithrombotic prophylaxis with Fondaparinux",
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+        "code" : "guideline-based-care"
+      }]
+    },
+    "definitionCanonical" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/intervention-plan/antithrombotic-prophylaxis-fondaparinux"
+  }]
+}

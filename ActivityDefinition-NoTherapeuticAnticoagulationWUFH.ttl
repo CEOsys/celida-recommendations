@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/ActivityDefinition/NoTherapeuticAnticoagulationWUFH> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NoTherapeuticAnticoagulationWUFH"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition NoTherapeuticAnticoagulationWUFH</b></p><a name=\"NoTherapeuticAnticoagulationWUFH\"> </a><a name=\"hcNoTherapeuticAnticoagulationWUFH\"> </a><a name=\"NoTherapeuticAnticoagulationWUFH-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-NoTherapeuticAnticoagulationWUFH.html\">ActivityDefinition No Therapeutic Anticoagulation Treatment with UFH</a></p><p><b>version</b>: 0.1</p><p><b>name</b>: NoTherapeuticAnticoagulationPlanUFH</p><p><b>title</b>: No Therapeutic Anticoagulation Treatment with UFH</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-08-07 14:55:39+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>No Therapeutic Anticoagulation Treatment with UFH for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>doNotPerform</b>: true</p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372877000}, {http://fhir.de/CodeSystem/bfarm/atc C05BA03}\">Heparin (substance)</span></p><blockquote><p><b>dosage</b></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommended-action/drug-administration-action/no-therapeutic-anticoagulant-UFH-administration"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1"] ; # 
+  fhir:name [ fhir:v "NoTherapeuticAnticoagulationPlanUFH"] ; # 
+  fhir:title [ fhir:v "No Therapeutic Anticoagulation Treatment with UFH"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2024-08-07T14:55:39+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "No Therapeutic Anticoagulation Treatment with UFH for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"] ; # 
+  fhir:kind [ fhir:v "MedicationRequest"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:432102000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "432102000" ] ;
+       fhir:display [ fhir:v "Administration of substance (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:doNotPerform [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:product [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:372877000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "372877000" ] ;
+       fhir:display [ fhir:v "Heparin (substance)" ]
+     ] [
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/bfarm/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C05BA03" ] ;
+       fhir:display [ fhir:v "Heparin" ]
+     ] )
+  ] ; # 
+  fhir:dosage ( [
+     fhir:timing [
+       fhir:repeat [
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:47625008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "47625008" ] ;
+         fhir:display [ fhir:v "Intravenous route (qualifier value)" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "IU" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "[iU]" ]
+         ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

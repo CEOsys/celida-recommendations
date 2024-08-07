@@ -1,0 +1,264 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "TherapeuticAnticoagulationNMHDalteparinTable",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition TherapeuticAnticoagulationNMHDalteparinTable</b></p><a name=\"TherapeuticAnticoagulationNMHDalteparinTable\"> </a><a name=\"hcTherapeuticAnticoagulationNMHDalteparinTable\"> </a><a name=\"TherapeuticAnticoagulationNMHDalteparinTable-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-TherapeuticAnticoagulationNMHDalteparinTable.html\">ActivityDefinition Therapeutic Anticoagulation Treatment with Dalteparin</a></p><p><b>version</b>: 0.1</p><p><b>name</b>: TherapeuticAnticoagulationDalteparinPlan</p><p><b>title</b>: Therapeutic Anticoagulation Treatment with Dalteparin</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-08-07 14:55:39+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer &gt;= 2mg/l) with Dalteparin</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372563008}, {http://fhir.de/CodeSystem/bfarm/atc B01AB04}\">Dalteparin (substance)</span></p><blockquote><p><b>dosage</b></p></blockquote><blockquote><p><b>dosage</b></p></blockquote><blockquote><p><b>dosage</b></p></blockquote><blockquote><p><b>dosage</b></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommended-action/drug-administration-action/therapeutic-anticoagulant-dalteparin-administration-table",
+  "version" : "0.1",
+  "name" : "TherapeuticAnticoagulationDalteparinPlan",
+  "title" : "Therapeutic Anticoagulation Treatment with Dalteparin",
+  "status" : "active",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-08-07T14:55:39+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Dalteparin",
+  "kind" : "MedicationRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "432102000",
+      "display" : "Administration of substance (procedure)"
+    }]
+  },
+  "productCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "372563008",
+      "display" : "Dalteparin (substance)"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "code" : "B01AB04",
+      "display" : "Dalteparin"
+    }]
+  },
+  "dosage" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "29463-7",
+            "display" : "Body weight"
+          }]
+        }
+      },
+      {
+        "url" : "value",
+        "valueRange" : {
+          "low" : {
+            "value" : 46,
+            "unit" : "kg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "kg"
+          },
+          "high" : {
+            "value" : 56.999999,
+            "unit" : "kg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "kg"
+          }
+        }
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition"
+    }],
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "34206005",
+        "display" : "Subcutaneous route (qualifier value)"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 10000,
+        "unit" : "IU",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "[iU]"
+      }
+    }]
+  },
+  {
+    "extension" : [{
+      "extension" : [{
+        "url" : "type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "29463-7",
+            "display" : "Body weight"
+          }]
+        }
+      },
+      {
+        "url" : "value",
+        "valueRange" : {
+          "low" : {
+            "value" : 57,
+            "unit" : "kg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "kg"
+          },
+          "high" : {
+            "value" : 68.999999,
+            "unit" : "kg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "kg"
+          }
+        }
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition"
+    }],
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "34206005",
+        "display" : "Subcutaneous route (qualifier value)"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 12500,
+        "unit" : "IU",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "[iU]"
+      }
+    }]
+  },
+  {
+    "extension" : [{
+      "extension" : [{
+        "url" : "type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "29463-7",
+            "display" : "Body weight"
+          }]
+        }
+      },
+      {
+        "url" : "value",
+        "valueRange" : {
+          "low" : {
+            "value" : 69,
+            "unit" : "kg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "kg"
+          },
+          "high" : {
+            "value" : 82.999999,
+            "unit" : "kg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "kg"
+          }
+        }
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition"
+    }],
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "34206005",
+        "display" : "Subcutaneous route (qualifier value)"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 15000,
+        "unit" : "IU",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "[iU]"
+      }
+    }]
+  },
+  {
+    "extension" : [{
+      "extension" : [{
+        "url" : "type",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "29463-7",
+            "display" : "Body weight"
+          }]
+        }
+      },
+      {
+        "url" : "value",
+        "valueRange" : {
+          "low" : {
+            "value" : 83,
+            "unit" : "kg",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "kg"
+          }
+        }
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition"
+    }],
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "34206005",
+        "display" : "Subcutaneous route (qualifier value)"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 18000,
+        "unit" : "IU",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "[iU]"
+      }
+    }]
+  }]
+}

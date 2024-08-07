@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/PlanDefinition/RecommendationCollectionAbdominalPositioningARDS> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecommendationCollectionAbdominalPositioningARDS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition RecommendationCollectionAbdominalPositioningARDS</b></p><a name=\"RecommendationCollectionAbdominalPositioningARDS\"> </a><a name=\"hcRecommendationCollectionAbdominalPositioningARDS\"> </a><a name=\"RecommendationCollectionAbdominalPositioningARDS-en-US\"> </a><p><b>url</b>: <a href=\"PlanDefinition-RecommendationCollectionAbdominalPositioningARDS.html\">PlanDefinition Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2 &lt; 150 mmHg</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: 36b - Abdominal Positioning</p><p><b>title</b>: Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2 &lt; 150 mmHg</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2022-02-14</p><p><b>publisher</b>: Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)</p><p><b>description</b>: </p><div><p>Bei ARDS und einem PaO2/FiO2 &lt; 150 mmHg soll konsequent eine Bauchlagerung durchgeführt werden, das Bauchlagerungsintervall beträgt dabei mind. 16 Stunden.</p>\n</div><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Title</b></td><td><b>Description</b></td><td><b>Code</b></td><td><b>Definition[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Abdominal_Positioning_Plan_In_Case_Of_ARDS_And_PaO2/FiO2_&lt;_150mmHg</td><td><div><p>In ARDS and a PaO2/FiO2 &lt; 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours.</p>\n</div></td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></td><td><a href=\"PlanDefinition-AbdominalPositioningARDSPlan.html\">Abdominal positioning plan in case of ARDS and a PaO2/FiO2 &lt; 150 mmHg</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "exactly" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "threshold"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommendation/covid19-abdominal-positioning-ards"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0"] ; # 
+  fhir:name [ fhir:v "36b - Abdominal Positioning"] ; # 
+  fhir:title [ fhir:v "Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2 < 150 mmHg"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "workflow-definition" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-02-14"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"] ; # 
+  fhir:description [ fhir:v "Bei ARDS und einem PaO2/FiO2 < 150 mmHg soll konsequent eine Bauchlagerung durchgeführt werden, das Bauchlagerungsintervall beträgt dabei mind. 16 Stunden."] ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "Abdominal_Positioning_Plan_In_Case_Of_ARDS_And_PaO2/FiO2_<_150mmHg" ] ;
+     fhir:description [ fhir:v "In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/intervention-plan/abdominal-positioning-ARDS-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/intervention-plan/abdominal-positioning-ARDS-plan>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

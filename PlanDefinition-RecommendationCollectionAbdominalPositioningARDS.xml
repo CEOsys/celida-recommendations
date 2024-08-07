@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="RecommendationCollectionAbdominalPositioningARDS"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition RecommendationCollectionAbdominalPositioningARDS</b></p><a name="RecommendationCollectionAbdominalPositioningARDS"> </a><a name="hcRecommendationCollectionAbdominalPositioningARDS"> </a><a name="RecommendationCollectionAbdominalPositioningARDS-en-US"> </a><p><b>url</b>: <a href="PlanDefinition-RecommendationCollectionAbdominalPositioningARDS.html">PlanDefinition Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2 &lt; 150 mmHg</a></p><p><b>version</b>: 1.0</p><p><b>name</b>: 36b - Abdominal Positioning</p><p><b>title</b>: Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2 &lt; 150 mmHg</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2022-02-14</p><p><b>publisher</b>: Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)</p><p><b>description</b>: </p><div><p>Bei ARDS und einem PaO2/FiO2 &lt; 150 mmHg soll konsequent eine Bauchlagerung durchgeführt werden, das Bauchlagerungsintervall beträgt dabei mind. 16 Stunden.</p>
+</div><h3>Actions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Title</b></td><td><b>Description</b></td><td><b>Code</b></td><td><b>Definition[x]</b></td></tr><tr><td style="display: none">*</td><td>Abdominal_Positioning_Plan_In_Case_Of_ARDS_And_PaO2/FiO2_&lt;_150mmHg</td><td><div><p>In ARDS and a PaO2/FiO2 &lt; 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours.</p>
+</div></td><td><span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></td><td><a href="PlanDefinition-AbdominalPositioningARDSPlan.html">Abdominal positioning plan in case of ARDS and a PaO2/FiO2 &lt; 150 mmHg</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="exactly"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="threshold">
+      <valuePositiveInt value="1"/>
+    </extension>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommendation/covid19-abdominal-positioning-ards"/>
+  <version value="1.0"/>
+  <name value="36b - Abdominal Positioning"/>
+  <title value="Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2 &lt; 150 mmHg"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="workflow-definition"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-02-14"/>
+  <publisher value="Deutsche Gesellschaft für Internistische Intensivmedizin und Notfallmedizin e.V. (DGIIN)"/>
+  <description value="Bei ARDS und einem PaO2/FiO2 &lt; 150 mmHg soll konsequent eine Bauchlagerung durchgeführt werden, das Bauchlagerungsintervall beträgt dabei mind. 16 Stunden."/>
+  <action>
+    <title value="Abdominal_Positioning_Plan_In_Case_Of_ARDS_And_PaO2/FiO2_&lt;_150mmHg"/>
+    <description value="In ARDS and a PaO2/FiO2 &lt; 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours."/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/intervention-plan/abdominal-positioning-ARDS-plan"/>
+  </action>
+</PlanDefinition>

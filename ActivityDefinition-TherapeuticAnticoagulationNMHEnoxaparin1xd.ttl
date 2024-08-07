@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/ActivityDefinition/TherapeuticAnticoagulationNMHEnoxaparin1xd> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TherapeuticAnticoagulationNMHEnoxaparin1xd"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition TherapeuticAnticoagulationNMHEnoxaparin1xd</b></p><a name=\"TherapeuticAnticoagulationNMHEnoxaparin1xd\"> </a><a name=\"hcTherapeuticAnticoagulationNMHEnoxaparin1xd\"> </a><a name=\"TherapeuticAnticoagulationNMHEnoxaparin1xd-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-TherapeuticAnticoagulationNMHEnoxaparin1xd.html\">ActivityDefinition Therapeutic Anticoagulation Treatment with Enoxaparin</a></p><p><b>version</b>: 0.1</p><p><b>name</b>: TherapeuticAnticoagulationPlanEnoxaparin</p><p><b>title</b>: Therapeutic Anticoagulation Treatment with Enoxaparin</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-08-07 14:55:39+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer &gt;= 2mg/l) with Enoxaparin</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372562003}, {http://fhir.de/CodeSystem/bfarm/atc B01AB05}\">Enoxaparin (substance)</span></p><blockquote><p><b>dosage</b></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommended-action/drug-administration-action/therapeutic-anticoagulant-enoxaparin-administration-1xd"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1"] ; # 
+  fhir:name [ fhir:v "TherapeuticAnticoagulationPlanEnoxaparin"] ; # 
+  fhir:title [ fhir:v "Therapeutic Anticoagulation Treatment with Enoxaparin"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2024-08-07T14:55:39+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "Therapeutic Anticoagulation Treatment (NMH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l) with Enoxaparin"] ; # 
+  fhir:kind [ fhir:v "MedicationRequest"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:432102000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "432102000" ] ;
+       fhir:display [ fhir:v "Administration of substance (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:product [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:372562003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "372562003" ] ;
+       fhir:display [ fhir:v "Enoxaparin (substance)" ]
+     ] [
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/bfarm/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "B01AB05" ] ;
+       fhir:display [ fhir:v "Enoxaparin" ]
+     ] )
+  ] ; # 
+  fhir:dosage ( [
+     fhir:timing [
+       fhir:repeat [
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:34206005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "34206005" ] ;
+         fhir:display [ fhir:v "Subcutaneous route (qualifier value)" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "1.5"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg/kg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg/kg" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

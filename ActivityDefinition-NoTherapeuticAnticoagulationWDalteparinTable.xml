@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="NoTherapeuticAnticoagulationWDalteparinTable"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition NoTherapeuticAnticoagulationWDalteparinTable</b></p><a name="NoTherapeuticAnticoagulationWDalteparinTable"> </a><a name="hcNoTherapeuticAnticoagulationWDalteparinTable"> </a><a name="NoTherapeuticAnticoagulationWDalteparinTable-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-NoTherapeuticAnticoagulationWDalteparinTable.html">ActivityDefinition No Therapeutic Anticoagulation Treatment with Dalteparin</a></p><p><b>version</b>: 0.1</p><p><b>name</b>: NoTherapeuticAnticoagulationDalteparinPlan</p><p><b>title</b>: No Therapeutic Anticoagulation Treatment with Dalteparin</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title="Codes:{http://hl7.org/fhir/fhir-types Patient}">Patient</span></p><p><b>date</b>: 2024-08-07 14:55:39+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)</p>
+</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 432102000}">Administration of substance (procedure)</span></p><p><b>doNotPerform</b>: true</p><p><b>product</b>: <span title="Codes:{http://snomed.info/sct 372563008}, {http://fhir.de/CodeSystem/bfarm/atc B01AB04}">Dalteparin (substance)</span></p><blockquote><p><b>dosage</b></p></blockquote><blockquote><p><b>dosage</b></p></blockquote><blockquote><p><b>dosage</b></p></blockquote><blockquote><p><b>dosage</b></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommended-action/drug-administration-action/no-therapeutic-anticoagulant-dalteparin-administration-table"/>
+  <version value="0.1"/>
+  <name value="NoTherapeuticAnticoagulationDalteparinPlan"/>
+  <title value="No Therapeutic Anticoagulation Treatment with Dalteparin"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2024-08-07T14:55:39+00:00"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="No Therapeutic Anticoagulation Treatment with Dalteparin for non-intensive care hospitalised COVID-19 patients patients with no specific indications (i.e., pulmonary embolism)"/>
+  <kind value="MedicationRequest"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="432102000"/>
+      <display value="Administration of substance (procedure)"/>
+    </coding>
+  </code>
+  <doNotPerform value="true"/>
+  <productCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="372563008"/>
+      <display value="Dalteparin (substance)"/>
+    </coding>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <code value="B01AB04"/>
+      <display value="Dalteparin"/>
+    </coding>
+  </productCodeableConcept>
+  <dosage>
+    <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition">
+      <extension url="type">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="value">
+        <valueRange>
+          <low>
+            <value value="46"/>
+            <unit value="kg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg"/>
+          </low>
+          <high>
+            <value value="56.999999"/>
+            <unit value="kg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg"/>
+          </high>
+        </valueRange>
+      </extension>
+    </extension>
+    <timing>
+      <repeat>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="34206005"/>
+        <display value="Subcutaneous route (qualifier value)"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="10000"/>
+        <unit value="IU"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[iU]"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+  <dosage>
+    <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition">
+      <extension url="type">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="value">
+        <valueRange>
+          <low>
+            <value value="57"/>
+            <unit value="kg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg"/>
+          </low>
+          <high>
+            <value value="68.999999"/>
+            <unit value="kg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg"/>
+          </high>
+        </valueRange>
+      </extension>
+    </extension>
+    <timing>
+      <repeat>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="34206005"/>
+        <display value="Subcutaneous route (qualifier value)"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="12500"/>
+        <unit value="IU"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[iU]"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+  <dosage>
+    <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition">
+      <extension url="type">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="value">
+        <valueRange>
+          <low>
+            <value value="69"/>
+            <unit value="kg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg"/>
+          </low>
+          <high>
+            <value value="82.999999"/>
+            <unit value="kg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg"/>
+          </high>
+        </valueRange>
+      </extension>
+    </extension>
+    <timing>
+      <repeat>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="34206005"/>
+        <display value="Subcutaneous route (qualifier value)"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="15000"/>
+        <unit value="IU"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[iU]"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+  <dosage>
+    <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-dosage-condition">
+      <extension url="type">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body weight"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="value">
+        <valueRange>
+          <low>
+            <value value="83"/>
+            <unit value="kg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="kg"/>
+          </low>
+        </valueRange>
+      </extension>
+    </extension>
+    <timing>
+      <repeat>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="34206005"/>
+        <display value="Subcutaneous route (qualifier value)"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="18000"/>
+        <unit value="IU"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[iU]"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosage>
+</ActivityDefinition>

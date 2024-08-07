@@ -1,0 +1,80 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "TherapeuticAnticoagulationUFH",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition TherapeuticAnticoagulationUFH</b></p><a name=\"TherapeuticAnticoagulationUFH\"> </a><a name=\"hcTherapeuticAnticoagulationUFH\"> </a><a name=\"TherapeuticAnticoagulationUFH-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-TherapeuticAnticoagulationUFH.html\">ActivityDefinition Therapeutic Anticoagulation Treatment UFH</a></p><p><b>version</b>: 0.1</p><p><b>name</b>: TherapeuticAnticoagulationPlanUFH</p><p><b>title</b>: Therapeutic Anticoagulation Treatment UFH</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2024-08-07 14:55:39+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>Therapeutic Anticoagulation Treatment (UFH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer &gt;= 2mg/l)</p>\n</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>product</b>: <span title=\"Codes:{http://snomed.info/sct 372877000}, {http://fhir.de/CodeSystem/bfarm/atc B01AB01}\">Heparin (substance)</span></p><blockquote><p><b>dosage</b></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommended-action/drug-administration-action/therapeutic-anticoagulant-UFH-administration",
+  "version" : "0.1",
+  "name" : "TherapeuticAnticoagulationPlanUFH",
+  "title" : "Therapeutic Anticoagulation Treatment UFH",
+  "status" : "active",
+  "experimental" : true,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2024-08-07T14:55:39+00:00",
+  "publisher" : "NUM CODEX+ CELIDA",
+  "description" : "Therapeutic Anticoagulation Treatment (UFH) for non-intensive care hospitalised COVID-19 patients patients with high risk (D-Dimer >= 2mg/l)",
+  "kind" : "MedicationRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "432102000",
+      "display" : "Administration of substance (procedure)"
+    }]
+  },
+  "productCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "372877000",
+      "display" : "Heparin (substance)"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "code" : "B01AB01",
+      "display" : "Heparin"
+    }]
+  },
+  "dosage" : [{
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "47625008",
+        "display" : "Intravenous route (qualifier value)"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseRange" : {
+        "low" : {
+          "value" : 0,
+          "unit" : "IU",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "[iU]"
+        }
+      }
+    }]
+  }]
+}

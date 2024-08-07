@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/PlanDefinition/VentilatedCOVID19PatientsWithARDSVentilationPlan> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VentilatedCOVID19PatientsWithARDSVentilationPlan"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition VentilatedCOVID19PatientsWithARDSVentilationPlan</b></p><a name=\"VentilatedCOVID19PatientsWithARDSVentilationPlan\"> </a><a name=\"hcVentilatedCOVID19PatientsWithARDSVentilationPlan\"> </a><a name=\"VentilatedCOVID19PatientsWithARDSVentilationPlan-en-US\"> </a><p><b>url</b>: <a href=\"PlanDefinition-VentilatedCOVID19PatientsWithARDSVentilationPlan.html\">PlanDefinition Ventilation parameters for COVID-19 patients with ARDS</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: Ventilation_Plan</p><p><b>title</b>: Ventilation parameters for COVID-19 patients with ARDS</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopulationVentilatedCOVID19patientsWithARDS.html\">Population: Ventilated COVID-19 Patients with ARDS</a></p><p><b>date</b>: 2022-02</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>In ventilated patients with COVID-19 and ARDS, tidal volume should be ≤ 6 ml/kg standard body weight, end-inspiratory airway pressure ≤ 30 cm H2O.</p>\n</div><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>tidal-volume-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 385857005}\">Ventilator care and adjustment (regime/therapy)</span></p><p><b>description</b>: <span title=\"Codes:\">Tidal volume ≤ 6 ml/kg standard body weight</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida tvpibw}\">Tidal volume / ideal body weight (ARDSnet)</span></td><td>?-6</td></tr></table></blockquote><blockquote><p><b>goal</b></p><blockquote><p><b>id</b></p>end-inspiratory-pressure-goal</blockquote><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 385857005}\">Ventilator care and adjustment (regime/therapy)</span></p><p><b>description</b>: <span title=\"Codes:\">End-inspiratory airway pressure ≤ 30 cm H2O</span></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Detail[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 76259-1}\">Pressure.plateau Respiratory system airway --on ventilator</span></td><td>?-30</td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 410210009}\">Ventilator care management (procedure)</span></p><p><b>goalId</b>: tidal-volume-goal, end-inspiratory-pressure-goal</p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommendation/ventilation-plan-ards-tidal-volume"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommendation/ventilation-plan-ards-tidal-volume>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "all" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/intervention-plan/ventilation-plan"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "7.0"] ; # 
+  fhir:name [ fhir:v "Ventilation_Plan"] ; # 
+  fhir:title [ fhir:v "Ventilation parameters for COVID-19 patients with ARDS"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:subject [
+     fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/population/ventilated-covid19-patients-with-ards"^^xsd:anyURI ;
+     fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/population/ventilated-covid19-patients-with-ards>
+  ] ; # 
+  fhir:date [ fhir:v "2022-02"^^xsd:gYearMonth] ; # 
+  fhir:publisher [ fhir:v "NUM CODEX+ CELIDA"] ; # 
+  fhir:description [ fhir:v "In ventilated patients with COVID-19 and ARDS, tidal volume should be ≤ 6 ml/kg standard body weight, end-inspiratory airway pressure ≤ 30 cm H2O."] ; # 
+  fhir:goal ( [
+     fhir:id [ fhir:v "tidal-volume-goal" ] ;
+     fhir:category [
+       fhir:coding ( [
+         a sct:385857005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "385857005" ] ;
+         fhir:display [ fhir:v "Ventilator care and adjustment (regime/therapy)" ]
+       ] )
+     ] ;
+     fhir:description [
+       fhir:text [ fhir:v "Tidal volume ≤ 6 ml/kg standard body weight" ]
+     ] ;
+     fhir:target ( [
+       fhir:measure [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/CodeSystem/codex-celida"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "tvpibw" ] ;
+           fhir:display [ fhir:v "Tidal volume / ideal body weight (ARDSnet)" ]
+         ] )
+       ] ;
+       fhir:detail [
+         a fhir:Range ;
+         fhir:high [
+           fhir:value [ fhir:v "6"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "ml/kg" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ml/kg" ]
+         ]
+       ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "end-inspiratory-pressure-goal" ] ;
+     fhir:category [
+       fhir:coding ( [
+         a sct:385857005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "385857005" ] ;
+         fhir:display [ fhir:v "Ventilator care and adjustment (regime/therapy)" ]
+       ] )
+     ] ;
+     fhir:description [
+       fhir:text [ fhir:v "End-inspiratory airway pressure ≤ 30 cm H2O" ]
+     ] ;
+     fhir:target ( [
+       fhir:measure [
+         fhir:coding ( [
+           a loinc:76259-1 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "76259-1" ] ;
+           fhir:display [ fhir:v "Pressure.plateau Respiratory system airway --on ventilator" ]
+         ] )
+       ] ;
+       fhir:detail [
+         a fhir:Range ;
+         fhir:high [
+           fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "cm[H2O]" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "cm[H2O]" ]
+         ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:action ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:410210009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "410210009" ] ;
+         fhir:display [ fhir:v "Ventilator care management (procedure)" ]
+       ] )
+     ] ;
+     fhir:goalId ( [ fhir:v "tidal-volume-goal" ] [ fhir:v "end-inspiratory-pressure-goal" ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

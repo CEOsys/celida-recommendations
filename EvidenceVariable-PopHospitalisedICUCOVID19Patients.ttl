@@ -1,0 +1,152 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/EvidenceVariable/PopHospitalisedICUCOVID19Patients> a fhir:EvidenceVariable ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PopHospitalisedICUCOVID19Patients"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable PopHospitalisedICUCOVID19Patients</b></p><a name=\"PopHospitalisedICUCOVID19Patients\"> </a><a name=\"hcPopHospitalisedICUCOVID19Patients\"> </a><a name=\"PopHospitalisedICUCOVID19Patients-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-PopHospitalisedICUCOVID19Patients.html\">EvidenceVariable Hospitalised COVID-19 patients, treated on ICU, without thrombembolic complication</a></p><p><b>identifier</b>: <code>https://www.ceosys.de</code>/HospitalICUCOVID19WOThrombembolic</p><p><b>name</b>: COVID19_ICU_patients_without_thrombembolic complication</p><p><b>title</b>: Hospitalised COVID-19 patients, treated on ICU, without thrombembolic complication</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-08-07 14:55:39+0000</p><p><b>description</b>: </p><div><p>COVID 19 patients without a thrombembolic complication</p>\n</div><p><b>actual</b>: false</p><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: true</p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: Any of</p><blockquote><p><b>characteristic</b></p></blockquote><blockquote><p><b>characteristic</b></p></blockquote><blockquote><p><b>characteristic</b></p></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: covid19</p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 840539006}\">Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: intensive-care-treatment</p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 78030-4}\">Episode of care Type</span></td><td><span title=\"Codes:{http://fhir.de/CodeSystem/kontaktart-de intensivstationaer}\">Intensivstationär</span></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/population/hospitalised-icu-covid19-patients-without-thrombembolic-complication"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://www.ceosys.de"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HospitalICUCOVID19WOThrombembolic" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "COVID19_ICU_patients_without_thrombembolic complication"] ; # 
+  fhir:title [ fhir:v "Hospitalised COVID-19 patients, treated on ICU, without thrombembolic complication"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-08-07T14:55:39+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "COVID 19 patients without a thrombembolic complication"] ; # 
+  fhir:actual [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:characteristic ( [
+     fhir:exclude [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:definitionByCombination [
+       fhir:code [ fhir:v "any-of" ] ;
+       fhir:characteristic ( [
+         fhir:linkId [ fhir:v "venous-thrombosis" ] ;
+         fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:definitionByTypeAndValue [
+           fhir:type [
+             fhir:coding ( [
+               a sct:404684003 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "404684003" ] ;
+               fhir:display [ fhir:v "Clinical finding (finding)" ]
+             ] )
+           ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               a sct:111293003 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "111293003" ] ;
+               fhir:display [ fhir:v "Venous Thrombosis" ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:linkId [ fhir:v "pulmonary-embolism" ] ;
+         fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:definitionByTypeAndValue [
+           fhir:type [
+             fhir:coding ( [
+               a sct:404684003 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "404684003" ] ;
+               fhir:display [ fhir:v "Clinical finding (finding)" ]
+             ] )
+           ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               a sct:59282003 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "59282003" ] ;
+               fhir:display [ fhir:v "Pulmonary embolism (disorder)" ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:linkId [ fhir:v "atrial-fibrillation" ] ;
+         fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:definitionByTypeAndValue [
+           fhir:type [
+             fhir:coding ( [
+               a sct:404684003 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "404684003" ] ;
+               fhir:display [ fhir:v "Clinical finding (finding)" ]
+             ] )
+           ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               a sct:49436004 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "49436004" ] ;
+               fhir:display [ fhir:v "Atrial fibrillation (disorder)" ]
+             ] )
+           ]
+         ]
+       ] )
+     ]
+  ] [
+     fhir:linkId [ fhir:v "covid19" ] ;
+     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a sct:404684003 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "404684003" ] ;
+           fhir:display [ fhir:v "Clinical finding (finding)" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:840539006 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "840539006" ] ;
+           fhir:display [ fhir:v "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)" ]
+         ] )
+       ]
+     ]
+  ] [
+     fhir:linkId [ fhir:v "intensive-care-treatment" ] ;
+     fhir:exclude [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:definitionByTypeAndValue [
+       fhir:type [
+         fhir:coding ( [
+           a loinc:78030-4 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "78030-4" ] ;
+           fhir:display [ fhir:v "Episode of care Type" ]
+         ] )
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.de/CodeSystem/kontaktart-de"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "intensivstationaer" ] ;
+           fhir:display [ fhir:v "Intensivstationär" ]
+         ] )
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

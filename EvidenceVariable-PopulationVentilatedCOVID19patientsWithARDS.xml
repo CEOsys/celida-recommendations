@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EvidenceVariable xmlns="http://hl7.org/fhir">
+  <id value="PopulationVentilatedCOVID19patientsWithARDS"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: EvidenceVariable PopulationVentilatedCOVID19patientsWithARDS</b></p><a name="PopulationVentilatedCOVID19patientsWithARDS"> </a><a name="hcPopulationVentilatedCOVID19patientsWithARDS"> </a><a name="PopulationVentilatedCOVID19patientsWithARDS-en-US"> </a><p><b>url</b>: <a href="EvidenceVariable-PopulationVentilatedCOVID19patientsWithARDS.html">EvidenceVariable Population: Ventilated COVID-19 Patients with ARDS</a></p><p><b>name</b>: Population_COVID19_Ventilated_With_ARDS</p><p><b>title</b>: Population: Ventilated COVID-19 Patients with ARDS</p><p><b>status</b>: Active</p><p><b>date</b>: 2024-08-07 14:55:39+0000</p><p><b>description</b>: </p><div><p>Ventilated COVID-19 patients with ARDS</p>
+</div><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p></blockquote><blockquote><p><b>characteristic</b></p></blockquote><blockquote><p><b>characteristic</b></p></blockquote></blockquote></blockquote></div>
+  </text>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/population/ventilated-covid19-patients-with-ards"/>
+  <name value="Population_COVID19_Ventilated_With_ARDS"/>
+  <title value="Population: Ventilated COVID-19 Patients with ARDS"/>
+  <status value="active"/>
+  <date value="2024-08-07T14:55:39+00:00"/>
+  <description value="Ventilated COVID-19 patients with ARDS"/>
+  <characteristic>
+    <exclude value="false"/>
+    <definitionByCombination>
+      <code value="all-of"/>
+      <characteristic>
+        <linkId value="covid19"/>
+        <exclude value="false"/>
+        <definitionByTypeAndValue>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="404684003"/>
+              <display value="Clinical finding (finding)"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="840539006"/>
+              <display value="Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"/>
+            </coding>
+          </valueCodeableConcept>
+        </definitionByTypeAndValue>
+      </characteristic>
+      <characteristic>
+        <exclude value="false"/>
+        <definitionByTypeAndValue>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="71388002"/>
+              <display value="Procedure (procedure)"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="40617009"/>
+              <display value="Artificial ventilation (regime/therapy)"/>
+            </coding>
+          </valueCodeableConcept>
+        </definitionByTypeAndValue>
+      </characteristic>
+      <characteristic>
+        <definitionByTypeAndValue>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="404684003"/>
+              <display value="Clinical finding (finding)"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="67782005"/>
+              <display value="Acute respiratory distress syndrome (disorder)"/>
+            </coding>
+          </valueCodeableConcept>
+        </definitionByTypeAndValue>
+      </characteristic>
+    </definitionByCombination>
+  </characteristic>
+</EvidenceVariable>

@@ -1,0 +1,2811 @@
+{
+  "date" : "Wed, 07 Aug, 2024 14:55:39 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-recommendations.celida.codex.netzwerk-universitaetsmedizin.de.json",
+      "size" : 32361,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 8
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 56
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 375
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 70,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 154
+        },
+        {
+          "activity" : "generate2",
+          "start" : 72,
+          "length" : 125
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-AntithromboticProphylaxisFondaparinuxSubcutaneous.json",
+      "size" : 2435,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 59
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 705
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationFondaparinux.json",
+      "size" : 6469,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 6
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 355
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 17
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 97,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationWArgatra.json",
+      "size" : 2549,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 252
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 13
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationWCertoparin.json",
+      "size" : 2516,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 130
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationWDalteparin1xd.json",
+      "size" : 2528,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 150
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationWDalteparin2xd.json",
+      "size" : 2528,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 25,
+          "length" : 30
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 70,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationWDalteparinTable.json",
+      "size" : 8309,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 6
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 244
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 16
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationWEnoxaparin1xd.json",
+      "size" : 2526,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 165
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationWEnoxaparin2xd.json",
+      "size" : 2524,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationWNadroparin.json",
+      "size" : 11385,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 371
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 21
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationWTinzaparin.json",
+      "size" : 2521,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 133
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-NoTherapeuticAnticoagulationWUFH.json",
+      "size" : 2511,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 26,
+          "length" : 102
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-PronePositioning.json",
+      "size" : 1583,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 138
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-ProphylacticAnticoagulationWCertoparin.json",
+      "size" : 2420,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 14
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-ProphylacticAnticoagulationWDalteparin.json",
+      "size" : 3011,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 26
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 34
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-ProphylacticAnticoagulationWEnoxaparin.json",
+      "size" : 2390,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-ProphylacticAnticoagulationWHeparinSC.json",
+      "size" : 3595,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 26
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-ProphylacticAnticoagulationWNadroparin.json",
+      "size" : 4718,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 142
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 12
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-ProphylacticAnticoagulationWTinzaparin.json",
+      "size" : 2375,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 97,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationFondaparinux.json",
+      "size" : 6433,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 21,
+          "length" : 5
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 141
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationNMHCertoparin.json",
+      "size" : 2465,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 23
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationNMHDalteparin1xd.json",
+      "size" : 2477,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 20
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 70,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 7
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationNMHDalteparin2xd.json",
+      "size" : 2477,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationNMHDalteparinTable.json",
+      "size" : 8258,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 191
+        },
+        {
+          "activity" : "generate1",
+          "start" : 70,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationNMHEnoxaparin1xd.json",
+      "size" : 2475,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 9
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationNMHEnoxaparin2xd.json",
+      "size" : 2473,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationNMHNadroparin.json",
+      "size" : 11325,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 255
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationNMHTinzaparin.json",
+      "size" : 2470,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 10
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationUFH.json",
+      "size" : 2443,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 20
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ActivityDefinition-TherapeuticAnticoagulationWArgatra.json",
+      "size" : 2512,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 19
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-KontaktArtDe.json",
+      "size" : 3570,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 55
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 70,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 2539
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-codex-celida.json",
+      "size" : 564,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 60
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopHospitalisedCOVID19PatientsWOContraIndications.json",
+      "size" : 3986,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 443
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 966
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopHospitalisedCOVID19PatientsWithContraIndications.json",
+      "size" : 3993,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopHospitalisedICUCOVID19Patients.json",
+      "size" : 4474,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 10358
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 9
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopHospitalisedNonICUCOVID19PatientsWITHHighRisk.json",
+      "size" : 3085,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 10248
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopVentilatedCOVID19patientsWithARDSWithOxygenationFailure.json",
+      "size" : 3798,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 49,
+          "length" : 8802
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopulationVentilatedARDSPatients.json",
+      "size" : 2155,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 58,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopulationVentilatedCOVID19patients-fio2-1.json",
+      "size" : 2884,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 58,
+          "length" : 9607
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopulationVentilatedCOVID19patients-fio2-point0.json",
+      "size" : 3185,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 16
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 9
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopulationVentilatedCOVID19patients-fio2-point4.json",
+      "size" : 3156,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopulationVentilatedCOVID19patients-fio2-point5.json",
+      "size" : 3156,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 7
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopulationVentilatedCOVID19patients-fio2-point6.json",
+      "size" : 3156,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 14
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopulationVentilatedCOVID19patients-fio2-point7.json",
+      "size" : 3156,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopulationVentilatedCOVID19patients-fio2-point8.json",
+      "size" : 3156,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 7
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopulationVentilatedCOVID19patients-fio2-point9.json",
+      "size" : 3156,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EvidenceVariable-PopulationVentilatedCOVID19patientsWithARDS.json",
+      "size" : 2957,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-AbdominalPositioningARDSPlan.json",
+      "size" : 2732,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 7
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 79
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-AntithrombFondapProphInHospitalisedCOVID19PatientsRecommPlan.json",
+      "size" : 3183,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 27
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-AntithrombLWMHProphInHospitalisedCOVID19PatientsRecommPlan.json",
+      "size" : 12337,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 252
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 45
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 11
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-NoTherapeuticAnticoagulationICUCOVID19NoIndicationPlan.json",
+      "size" : 8561,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 233
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 36
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 10
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-RecCollectionNoTherapeuticAnticoagNoIndicationICUCOVID19.json",
+      "size" : 2587,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 38
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 70,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-RecCollectionProphAnticoagulationHospitalizedCOVID19Patients.json",
+      "size" : 3157,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "scan",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 35
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-RecCollectionTherapeuticAnticoagNonICUHighRiskCOVID19Patients.json",
+      "size" : 2674,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 34
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-RecommendationCollectionAbdominalPositioningARDS.json",
+      "size" : 2667,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 33
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-RecommendationCollectionVentilatedCOVID19patients.json",
+      "size" : 6423,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 44
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 34
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-RecommendationCollectionVentilatedPatientsWithARDS.json",
+      "size" : 2444,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 32
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-RecommendationCollectionVentilationCOVID19patientsWithARDS.json",
+      "size" : 2616,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 32
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 97,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-TherapeuticAnticoagulationNonICUHighRiskCOVID19PatientsPlan.json",
+      "size" : 8617,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 88
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 49
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 12
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-VentilatedARDSPatientsInterventionPlan.json",
+      "size" : 3387,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 176
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-VentilatedCOVID19PatientsWithARDSVentilationPlan.json",
+      "size" : 4462,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 191
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 30
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 9
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-VentilatedCOVID19patientsInterventionPlan-fio2-1.json",
+      "size" : 3635,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 128
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-VentilatedCOVID19patientsInterventionPlan-fio2-point0.json",
+      "size" : 3649,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-VentilatedCOVID19patientsInterventionPlan-fio2-point4.json",
+      "size" : 3649,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 41
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-VentilatedCOVID19patientsInterventionPlan-fio2-point5.json",
+      "size" : 3649,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-VentilatedCOVID19patientsInterventionPlan-fio2-point6.json",
+      "size" : 3650,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 35
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-VentilatedCOVID19patientsInterventionPlan-fio2-point7.json",
+      "size" : 3650,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 36
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-VentilatedCOVID19patientsInterventionPlan-fio2-point8.json",
+      "size" : 3650,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "scan",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 36
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/PlanDefinition-VentilatedCOVID19patientsInterventionPlan-fio2-point9.json",
+      "size" : 3650,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 70,
+          "length" : 34
+        },
+        {
+          "activity" : "generate1",
+          "start" : 71,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 8
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 91,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="PronePositioning"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/body-positioning-action"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition PronePositioning</b></p><a name="PronePositioning"> </a><a name="hcPronePositioning"> </a><a name="PronePositioning-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-PronePositioning.html">ActivityDefinition Abdominal Positioning</a></p><p><b>version</b>: 7.0</p><p><b>name</b>: PronePositioning</p><p><b>title</b>: Abdominal Positioning</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>subject</b>: <span title="Codes:{http://hl7.org/fhir/fhir-types Patient}">Patient</span></p><p><b>date</b>: 2024-08-07 14:55:39+0000</p><p><b>publisher</b>: NUM CODEX+ CELIDA</p><p><b>description</b>: </p><div><p>In ARDS and a PaO2/FiO2 &lt; 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours.</p>
+</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 431182000}">Placing subject in prone position (procedure)</span></p><p><b>timing</b>: Duration 16days , Once per1 days</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommended-action/body-positioning-action/abdominal-positioning-ARDS"/>
+  <version value="7.0"/>
+  <name value="PronePositioning"/>
+  <title value="Abdominal Positioning"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2024-08-07T14:55:39+00:00"/>
+  <publisher value="NUM CODEX+ CELIDA"/>
+  <description value="In ARDS and a PaO2/FiO2 &lt; 150 mmHg, abdominal positioning should be consistently performed, with an abdominal positioning interval of at least 16 hours."/>
+  <kind value="ServiceRequest"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="431182000"/>
+      <display value="Placing subject in prone position (procedure)"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <duration value="16"/>
+      <durationUnit value="h"/>
+      <frequency value="1"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>
