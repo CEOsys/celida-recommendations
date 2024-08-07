@@ -95,6 +95,13 @@ definition:
     name: Abdominal Positioning
     reference:
       reference: ActivityDefinition/PronePositioning
+  - description: Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2
+      < 150 mmHg
+    isExample: false
+    name: Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2
+      < 150 mmHg
+    reference:
+      reference: PlanDefinition/RecommendationCollectionAbdominalPositioningARDS
   - description: In ARDS and a PaO2/FiO2 < 150 mmHg, abdominal positioning should
       be consistently performed, with an abdominal positioning interval of at least
       16 hours.
@@ -174,6 +181,13 @@ definition:
     name: KontaktArtDe
     reference:
       reference: CodeSystem/KontaktArtDe
+  - description: No therapeutic anticoagulation for intensive care COVID-19 patients
+      with no specific indication
+    isExample: false
+    name: No therapeutic anticoagulation for intensive care COVID-19 patients with
+      no specific indication
+    reference:
+      reference: PlanDefinition/RecCollectionNoTherapeuticAnticoagNoIndicationICUCOVID19
   - description: No Therapeutic Anticoagulation Treatment with Argatroban for non-intensive
       care hospitalised COVID-19 patients patients with no specific indications (i.e.,
       pulmonary embolism)
@@ -251,6 +265,11 @@ definition:
     name: No Therapeutic Anticoagulation Treatment with UFH
     reference:
       reference: ActivityDefinition/NoTherapeuticAnticoagulationWUFH
+  - description: PEEP for ventilated COVID-19 patients
+    isExample: false
+    name: PEEP for ventilated COVID-19 patients
+    reference:
+      reference: PlanDefinition/RecommendationCollectionVentilatedCOVID19patients
   - description: PEEP Intervention Plan for Ventilated COVID-19 Patients, inspiratory
       oxygen fraction currently 0.0 - 0.39
     isExample: false
@@ -401,52 +420,23 @@ definition:
     name: 'Population: Ventilated patients with ARDS'
     reference:
       reference: EvidenceVariable/PopulationVentilatedARDSPatients
+  - description: Prophylactic anticoagulation in hospitalized COVID-19 patients
+    isExample: false
+    name: Prophylactic anticoagulation in hospitalized COVID-19 patients
+    reference:
+      reference: PlanDefinition/RecCollectionProphAnticoagulationHospitalizedCOVID19Patients
   - description: Prophylactic Treatment with UFH subcutaneous for non-intensive care
       hospitalised COVID-19 patients
     isExample: false
     name: Prophylactic Anticoagulation Treatment with UFH subcutaneous
     reference:
       reference: ActivityDefinition/ProphylacticAnticoagulationWHeparinSC
-  - description: Recommendation Collection for ICU COVID-19 Patients with No Specific
-      Indication
+  - description: Therapeutic anticoagulation in non-intensive care, high-risk COVID-19
+      patients
     isExample: false
-    name: 'Recommendation Collection: ICU COVID-19 Patients with No Specific Indication'
-    reference:
-      reference: PlanDefinition/RecCollectionNoTherapeuticAnticoagNoIndicationICUCOVID19
-  - description: Recommendation Collection for Patients with ARDS and a PaO2/FiO2
-      < 150 mmHg
-    isExample: false
-    name: 'Recommendation Collection: Patients with ARDS and a PaO2/FiO2 < 150 mmHg'
-    reference:
-      reference: PlanDefinition/RecommendationCollectionAbdominalPositioningARDS
-  - description: Recommendation Collection for Hospitalized COVID-19 Patients
-    isExample: false
-    name: 'Recommendation Collection: Prophylactic Anticoagulation in Hospitalized
-      COVID-19 Patients'
-    reference:
-      reference: PlanDefinition/RecCollectionProphAnticoagulationHospitalizedCOVID19Patients
-  - description: Recommendation Collection for non-ICU, High-Risk COVID-19 Patients
-    isExample: false
-    name: 'Recommendation Collection: Therapeutic Anticoagulation in Non-ICU, High-Risk
-      COVID-19 Patients'
+    name: Therapeutic anticoagulation in non-intensive care, high-risk COVID-19 patients
     reference:
       reference: PlanDefinition/RecCollectionTherapeuticAnticoagNonICUHighRiskCOVID19Patients
-  - description: Recommendation Collection for Ventilated COVID-19 Patients
-    isExample: false
-    name: 'Recommendation Collection: Ventilated COVID-19 Patients'
-    reference:
-      reference: PlanDefinition/RecommendationCollectionVentilatedCOVID19patients
-  - description: Recommendation Collection for Ventilated Patients with ARDS
-    isExample: false
-    name: 'Recommendation Collection: Ventilated Patients with ARDS'
-    reference:
-      reference: PlanDefinition/RecommendationCollectionVentilatedPatientsWithARDS
-  - description: Recommendation Collection for Ventilated COVID-19 patients with ARDS
-    isExample: false
-    name: 'Recommendation Collection: Ventilation Plan for Ventilated COVID-19 patients
-      with ARDS'
-    reference:
-      reference: PlanDefinition/RecommendationCollectionVentilationCOVID19patientsWithARDS
   - description: "In hospitalized, non-intensive care patients with COVID-19 and increased\
       \ risk (e.g., D-dimers \u2265 2 mg/l), therapeutic anticoagulation can be considered\
       \ if the risk of bleeding is low. Anticoagulation, preferentially with NMH or\
@@ -531,6 +521,18 @@ definition:
     name: Therapeutic Anticoagulation Treatment with Tinzaparin
     reference:
       reference: ActivityDefinition/TherapeuticAnticoagulationNMHTinzaparin
+  - description: Tidal volume / end-inspiratory airway pressure for ventilated COVID-19
+      patients with ARDS
+    isExample: false
+    name: Tidal volume / end-inspiratory airway pressure for ventilated COVID-19 patients
+      with ARDS
+    reference:
+      reference: PlanDefinition/RecommendationCollectionVentilationCOVID19patientsWithARDS
+  - description: Tidal volume for ventilated patients with ARDS
+    isExample: false
+    name: Tidal volume for ventilated patients with ARDS
+    reference:
+      reference: PlanDefinition/RecommendationCollectionVentilatedPatientsWithARDS
   - description: "In ventilated patients with COVID-19 and ARDS, tidal volume should\
       \ be \u2264 6 ml/kg standard body weight, end-inspiratory airway pressure \u2264\
       \ 30 cm H2O."
@@ -548,7 +550,7 @@ dependsOn:
 - id: de_netzwerk_universitaetsmedizin_ebm_cpg
   packageId: de.netzwerk-universitaetsmedizin.ebm-cpg
   uri: https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg
-  version: 0.8.0-snapshot
+  version: 1.0.0
 fhirVersion:
 - 5.0.0
 id: recommendations.celida.codex.netzwerk-universitaetsmedizin.de

@@ -4,10 +4,10 @@
 Instance: RecommendationCollectionVentilationCOVID19patientsWithARDS
 InstanceOf: recommendation
 Usage: #definition
-Title: "Recommendation Collection: Ventilation Plan for Ventilated COVID-19 patients with ARDS"
-Description: "Recommendation Collection for Ventilated COVID-19 patients with ARDS"
-* name = "RecommendationCollection35"
-* title = "Ventilation Plan for Population: Ventilated COVID-19 patients with ARDS"
+Title: "Tidal volume / end-inspiratory airway pressure for ventilated COVID-19 patients with ARDS"
+Description: "Tidal volume / end-inspiratory airway pressure for ventilated COVID-19 patients with ARDS"
+* name = "35 - Tidal Volume"
+* title = "Tidal volume / end-inspiratory airway pressure for ventilated COVID-19 patients with ARDS"
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active

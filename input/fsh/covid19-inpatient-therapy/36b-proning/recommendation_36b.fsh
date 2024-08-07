@@ -4,10 +4,10 @@
 Instance: RecommendationCollectionAbdominalPositioningARDS
 InstanceOf: recommendation
 Usage: #definition
-Title: "Recommendation Collection: Patients with ARDS and a PaO2/FiO2 < 150 mmHg"
-Description: "Recommendation Collection for Patients with ARDS and a PaO2/FiO2 < 150 mmHg"
-* name = "RecommendationCollection36b"
-* title = "Abdominal Positioning Intervention for Population: Patients with ARDS and a PaO2/FiO2 < 150 mmHg"
+Title: "Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2 < 150 mmHg"
+Description: "Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2 < 150 mmHg"
+* name = "36b - Abdominal Positioning"
+* title = "Abdominal positioning for ventilated patients with ARDS and a PaO2/FiO2 < 150 mmHg"
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active

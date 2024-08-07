@@ -4,10 +4,10 @@
 Instance: RecommendationCollectionVentilatedCOVID19patients
 InstanceOf: recommendation
 Usage: #definition
-Title: "Recommendation Collection: Ventilated COVID-19 Patients"
-Description: "Recommendation Collection for Ventilated COVID-19 Patients"
-* name = "RecommendationCollection36-a"
-* title = "PEEP Intervention for Population: Ventilated COVID-19 Patients"
+Title: "PEEP for ventilated COVID-19 patients"
+Description: "PEEP for ventilated COVID-19 patients"
+* name = "36a - PEEP"
+* title = "PPEEP for ventilated COVID-19 patients"
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active
