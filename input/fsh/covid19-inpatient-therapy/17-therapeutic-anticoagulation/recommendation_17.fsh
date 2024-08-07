@@ -4,10 +4,10 @@
 Instance: RecCollectionTherapeuticAnticoagNonICUHighRiskCOVID19Patients
 InstanceOf: recommendation
 Usage: #definition
-Title: "Recommendation Collection: Therapeutic Anticoagulation in Non-ICU, High-Risk COVID-19 Patients"
-Description: "Recommendation Collection for non-ICU, High-Risk COVID-19 Patients"
-* name = "RecommendationCollection17"
-* title = "Prophylactic Anticoagulation for Population: non-ICU, High-Risk COVID-19 Patients"
+Title: "Therapeutic anticoagulation in non-intensive care, high-risk COVID-19 patients"
+Description: "Therapeutic anticoagulation in non-intensive care, high-risk COVID-19 patients"
+* name = "17 - Therapeutic Anticoagulation"
+* title = "Therapeutic anticoagulation in non-intensive care, high-risk COVID-19 patients"
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active

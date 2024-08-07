@@ -4,10 +4,10 @@
 Instance: RecCollectionProphAnticoagulationHospitalizedCOVID19Patients
 InstanceOf: recommendation
 Usage: #definition
-Title: "Recommendation Collection: Prophylactic Anticoagulation in Hospitalized COVID-19 Patients"
-Description: "Recommendation Collection for Hospitalized COVID-19 Patients"
-* name = "RecommendationCollection15"
-* title = "Prophylactic Anticoagulation for Population: Hospitalized COVID-19 Patients"
+Title: "Prophylactic anticoagulation in hospitalized COVID-19 patients"
+Description: "Prophylactic anticoagulation in hospitalized COVID-19 patients"
+* name = "15 - Prophylactic Anticoagulation"
+* title = "Prophylactic anticoagulation in hospitalized COVID-19 patients"
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active

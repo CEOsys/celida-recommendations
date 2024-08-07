@@ -4,10 +4,10 @@
 Instance: RecommendationCollectionVentilatedPatientsWithARDS
 InstanceOf: recommendation
 Usage: #definition
-Title: "Recommendation Collection: Ventilated Patients with ARDS"
-Description: "Recommendation Collection for Ventilated Patients with ARDS"
-* name = "RecommendationCollectionM1"
-* title = "Ventilation Plan for Population: Ventilated Patients with ARDS"
+Title: "Tidal volume for ventilated patients with ARDS"
+Description: "Tidal volume for ventilated patients with ARDS"
+* name = "Sepis M.1 - Tidal Volume"
+* title = "Tidal volume for ventilated patients with ARDS"
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active

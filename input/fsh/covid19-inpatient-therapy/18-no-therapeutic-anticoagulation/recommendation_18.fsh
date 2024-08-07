@@ -4,10 +4,10 @@
 Instance: RecCollectionNoTherapeuticAnticoagNoIndicationICUCOVID19
 InstanceOf: recommendation
 Usage: #definition
-Title: "Recommendation Collection: ICU COVID-19 Patients with No Specific Indication"
-Description: "Recommendation Collection for ICU COVID-19 Patients with No Specific Indication"
-* name = "RecommendationCollection18"
-* title = "Anticoagulation Plan for Population: ICU COVID-19 Patients with No Specific Indication"
+Title: "No therapeutic anticoagulation for intensive care COVID-19 patients with no specific indication"
+Description: "No therapeutic anticoagulation for intensive care COVID-19 patients with no specific indication"
+* name = "18 - No Therapeutic Anticoagulation"
+* title = "No therapeutic anticoagulation for intensive care COVID-19 patients with no specific indication"
 * version = "1.0"
 * date = "2022-02-14"
 * status = #active
